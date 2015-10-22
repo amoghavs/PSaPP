@@ -35,6 +35,7 @@ public abstract class DynamicAggregator {
     public String file = null;
     public int line = 0;
     public int loopCount = 0;
+    public int loopDepth = 0;
     public int insns = 0;
     public int memOps = 0;
     public int fpOps = 0;
@@ -123,10 +124,13 @@ public abstract class DynamicAggregator {
         sdag.file = file;
         sdag.line = line;
         sdag.loopCount = loopCount;
+        sdag.loopDepth = loopDepth;
         sdag.insns = insns;
         sdag.memOps = memOps;
         sdag.fpOps = fpOps;
         sdag.intOps = intOps;
+        sdag.entryCount = entryCount;
+        sdag.visitCount = visitCount;
 
         sdag.dInsns = ((Double)(dInsns * scaleRatio)).longValue();
         assert( sdag.dInsns >= 0 );
@@ -310,6 +314,7 @@ public abstract class DynamicAggregator {
         this.blocks.add(bb.bbid);
 
         this.visitCount += visitCount;
+        this.loopDepth = loopDepth;
         this.dInsns += (bb.insns * visitCount);
         this.dMemOps += (bb.memOps * visitCount);
         this.dFpOps += (bb.fpOps * visitCount);

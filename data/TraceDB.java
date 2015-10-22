@@ -553,8 +553,8 @@ public class TraceDB {
               "imgHash BIGINT, " +
               "rank INTEGER, " +
               "thread INTEGER, " +
-              "lowerBound INTEGER, " +
-              "upperBound INTEGER, " +
+              "lowerBound BIGINT, " +
+              "upperBound BIGINT, " +
               "accesses BIGINT, " +
               "CONSTRAINT SpatialToBasicBlocks FOREIGN KEY (bbid, imgHash) REFERENCES BasicBlocks(bbid, imgHash)" +
               ");";
@@ -889,8 +889,8 @@ public class TraceDB {
                     if (loop.headBlock.blockHash.longValue() == 0){
                         loop.setUnknown();
                     }
-                    loop.loopCount = 1;
-    
+                    loop.loopCount = bb.loopCount;//1;
+                    loop.loopDepth = bb.loopDepth;
                     loopStats.put(loop.headBlock, loop);
                 }
             }
@@ -905,12 +905,36 @@ public class TraceDB {
                     f.file = bb.file;
                     f.line = bb.line;
                     f.loopCount = bb.loopCount;
+                    f.loopDepth = bb.loopDepth;
                     f.headBlock = bbid;
                     funcStats.put(fid, f);
                 }
 
             }
         }
+
+        for (Iterator<BasicBlock> it = blockStatic.values().iterator(); it.hasNext(); ){
+            BasicBlock bb = it.next();
+            BlockID bbid = bb.bbid;
+            FunctionID fid = bb.functionID;
+            BlockID loopHead = bb.loopHead;
+            if( loopStats != null ) {
+
+                    Loop loop = loopStats.get(bb.loopHead);
+                    assert(loop != null);
+                    loop.loopCount = 0;
+                    while (true){
+                      if (loop.headBlock.equals(loop.parentHead)){
+                            break;
+                      }
+                      int currLoopDepth = loop.loopDepth;                      
+                      loop = loopStats.get(loop.parentHead);
+                      assert(loop != null);
+                      loop.loopCount +=1;
+                    }
+            }
+        } 
+
     }
 
     /**
@@ -2857,7 +2881,7 @@ public class TraceDB {
         return true;
     }
 
-    public boolean insertDistances(String table, int rank, long imgHash, int thread, Map<Long, List<Tuple.Tuple3<Integer, Integer, Long>>> blocks) {
+    public boolean insertDistances(String table, int rank, long imgHash, int thread, Map<Long, List<Tuple.Tuple3<Long, Long, Long>>> blocks) {
         if(!table.equals("ReuseStats") && !table.equals("SpatialStats")) {
             Logger.error("insertDistances called for inappropriate table " + table);
             assert(false);
@@ -2880,14 +2904,14 @@ public class TraceDB {
             for(Iterator<Long> it = blocks.keySet().iterator(); it.hasNext(); ) {
                 Long blockHash = it.next();
                 stmt.setLong(1, blockHash);
-                List<Tuple.Tuple3<Integer, Integer, Long>> bins = blocks.get(blockHash);
-                for(Iterator<Tuple.Tuple3<Integer, Integer, Long>> bit = bins.iterator(); bit.hasNext(); ) {
-                    Tuple.Tuple3<Integer, Integer, Long> bin = bit.next();
-                    Integer lowerBound = bin.get1();
-                    Integer upperBound = bin.get2();
+                List<Tuple.Tuple3<Long, Long, Long>> bins = blocks.get(blockHash);
+                for(Iterator<Tuple.Tuple3<Long, Long, Long>> bit = bins.iterator(); bit.hasNext(); ) {
+                    Tuple.Tuple3<Long, Long, Long> bin = bit.next();
+                    Long lowerBound = bin.get1();
+                    Long upperBound = bin.get2();
                     Long accesses = bin.get3();
-                    stmt.setInt(5, lowerBound);
-                    stmt.setInt(6, upperBound);
+                    stmt.setLong(5, lowerBound);
+                    stmt.setLong(6, upperBound);
                     stmt.setLong(7, accesses);
                     stmt.addBatch();
                 }
@@ -2949,8 +2973,8 @@ public class TraceDB {
                 Long imgHash = res.getLong(2);
                 BlockID bbid = new BlockID(imgHash, blockHash);
                 Integer r = res.getInt(3);
-                Integer lowerBound = res.getInt(4);
-                Integer upperBound = res.getInt(5);
+                Long lowerBound = res.getLong(4);
+                Long upperBound = res.getLong(5);
                 Long accesses = res.getLong(6);
                
                 Map<BlockID, List<BinnedCounter>> rankBins = allBins.get(r);

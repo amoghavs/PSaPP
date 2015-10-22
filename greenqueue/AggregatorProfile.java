@@ -17,7 +17,7 @@ public class AggregatorProfile extends EnergyProfile {
         "idu fdu idu2 fdu2 mdu2 fprat bytespermop " +
         "pvec512 pvec256 pvec128 pvec64 pvec32 pvecother pvecunknown pvecunknown32 pvecunknown64 vecintensity vecutilization " +
         "dvec512 dvec256 dvec128 dvec64 dvec32 dvecother dvecunknown dvecunknown32 dvecunknown64 velementsactive " +
-        "spatial spat0 spat2 spat4 spat8 spat16 spat32 spat64 spat128 spatOther";
+        "spatial spat0 spat2 spat4 spat8 spat16 spat32 spat64 spat128 spatOther loopCount loopDepth avgiterations avginstructions";
 
     private Map<String, Object> properties = Util.newHashMap();
     public Object getProperty(String id) {
@@ -30,9 +30,12 @@ public class AggregatorProfile extends EnergyProfile {
     }
 
     public AggregatorProfile(DynamicAggregator agg, Integer sysid) {
-
         setProperty("file", agg.file);
         setProperty("line", agg.line);
+        setProperty("loopCount",agg.loopCount);
+        setProperty("loopDepth",agg.loopDepth);
+        setProperty("avgiterations",agg.visitCount/agg.entryCount);
+        setProperty("avginstructions",agg.dInsns/agg.entryCount);
 
         Long l1hit, l2hit, l3hit;
         CacheStats cs = agg.perSysCaches.get(sysid);
@@ -381,7 +384,6 @@ public class AggregatorProfile extends EnergyProfile {
         setProperty("spat128", bin128);
         setProperty("spatOther", binRem);
 
-       
     }
 
     // -- Private -- //

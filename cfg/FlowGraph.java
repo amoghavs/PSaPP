@@ -373,6 +373,9 @@ public class FlowGraph {
             if( children != null ) {
                 loop.addLoops(children);
             }
+            else{
+                loop.setDepth(1);
+            }
             if( loop.loopInfo.parentHead.equals(loop.loopInfo.headBlock) ) {
                 loop.parent = null;
             } else {

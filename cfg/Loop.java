@@ -112,7 +112,27 @@ public class Loop implements FlowElement, Comparable<Loop> {
         }
         ret = ret.replaceAll("\n", "\n\t");
         return ret;
-        
+
+    }
+
+    void setDepth(int ipDepth){
+        cfgLoopDepth=ipDepth;
+    }
+
+    public int getDepth(){
+        if(cfgLoopDepth!=0)
+            return cfgLoopDepth;
+        else{
+
+            for(Iterator<Loop> it = this.loops.iterator(); it.hasNext(); ) {
+                Loop sub = it.next();
+                int currSubLoopDepth = sub.getDepth();
+                if(currSubLoopDepth>cfgLoopDepth)
+                    cfgLoopDepth=currSubLoopDepth;
+            }
+            cfgLoopDepth+=1;
+            return cfgLoopDepth;
+        }
     }
 
     public Long getEntryCount() {
@@ -184,6 +204,7 @@ public class Loop implements FlowElement, Comparable<Loop> {
     // -- Private -- //
     private Function owner = null;
     private Long entryCount;
+    private int cfgLoopDepth = 0;
 
     // direct sub-loops
     private final Set<Loop> loops = Util.newHashSet();

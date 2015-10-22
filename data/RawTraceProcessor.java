@@ -890,10 +890,10 @@ public class RawTraceProcessor extends TraceDB {
 
                 Long imgHash = null;
                 Integer thread = null;
-                Map<Long, List<Tuple.Tuple3<Integer, Integer, Long>>> blocks = null;
+                Map<Long, List<Tuple.Tuple3<Long, Long, Long>>> blocks = null;
 
                 Long blockHash = null;
-                List<Tuple.Tuple3<Integer, Integer, Long>> bins = null;
+                List<Tuple.Tuple3<Long, Long, Long>> bins = null;
 
                 for(String line = file.readLine(); line != null; line = file.readLine()) {
                     line = line.trim();
@@ -927,10 +927,10 @@ public class RawTraceProcessor extends TraceDB {
 
                     // lower_bound upper_bound accesses
                     } else {
-                        Integer lowerBound = Integer.parseInt(fields[0]);
-                        Integer upperBound = Integer.parseInt(fields[1]);
+                        Long lowerBound = Long.parseLong(fields[0]);
+                        Long upperBound = Long.parseLong(fields[1]);
                         Long accesses = Long.parseLong(fields[2]);
-                        Tuple.Tuple3<Integer, Integer, Long> bin = Tuple.newTuple3(lowerBound, upperBound, accesses);
+                        Tuple.Tuple3<Long, Long, Long> bin = Tuple.newTuple3(lowerBound, upperBound, accesses);
                         bins.add(bin);
                     }
                 }

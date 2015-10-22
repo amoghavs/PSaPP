@@ -26,8 +26,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 public class Loop extends DynamicAggregator {
     public BlockID parentHead = null;
-    public int depth = 0;
-    
+    public int depth = 0;   
     public static final String LOOP_UNAFFILIATED = "__not_loop_member__";
 
     public void setHead(BasicBlock bb){

@@ -32,7 +32,7 @@ public class LoopProfile extends AggregatorProfile {
     public LoopProfile(PSaPP.cfg.Loop cfgLoop, Integer sysid) {
         super(cfgLoop.getScaledAggregator(), sysid);
         this.cfgLoop = cfgLoop;
-				this.aggLoop = cfgLoop.getScaledAggregator();
+        this.aggLoop = cfgLoop.getScaledAggregator();
         this.loopHead = getEntryPoint();
     }
 

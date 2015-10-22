@@ -96,19 +96,16 @@ public class Phases {
                 for(rank = 0; rank < numRanks; rank++)
                 {
                     findPhases(rank, pruneUnsim, noInlining);
-                                
                     if(options.get("minPhaseSize") != null) {
                         Long minsize = Long.parseLong(options.get("minPhaseSize"));
                         eliminateShortPhases(minsize);
                     }
-
                     if(options.get("merge") != null) {
                         String[] mergeOpts = (options.get("merge")).split(" ");
                         String mergeItem = mergeOpts[0];
                         Double tolerance = Double.parseDouble(mergeOpts[1]);
                         mergePhases(mergeItem, tolerance);
                     }
-
                     if(options.get("select") != null) {
                         String[] selectOpts = options.get("select").split(" ");
                         boolean selectOuter = false;
@@ -132,7 +129,6 @@ public class Phases {
                     Double tolerance = Double.parseDouble(mergeOpts[1]);
                     mergePhases(mergeItem, tolerance);
                 }
-
                 if(options.get("select") != null) {
                     String[] selectOpts = options.get("select").split(" ");
                                     boolean selectOuter = false;
@@ -379,8 +375,6 @@ public class Phases {
     //   - control minimum inline
     //   - control minimum phase size
     private void findPhases(int rank, boolean prune, boolean noInlining) {
-        Logger.inform("finding phases!");
-        
         flowGraph = new PSaPP.cfg.FlowGraph(tracedb, sysid, rank);
         if(!noInlining)
         {
@@ -393,7 +387,6 @@ public class Phases {
         loops = Util.newLinkedList();
         for( Iterator<PSaPP.cfg.Function> fit = flowGraph.getFunctions().iterator(); fit.hasNext(); ) {
             PSaPP.cfg.Function f = fit.next();
-						//Logger.inform("Finding phases for function " + f.funcInfo.functionName);
             Collection<LoopProfile> loopPhases = findPhases(f.getLoops());
             loops.addAll(loopPhases);
         }
@@ -401,11 +394,9 @@ public class Phases {
     private Collection<LoopProfile> findPhases(Collection<PSaPP.cfg.Loop> loops) {
 
         Collection<LoopProfile> loopPhases = Util.newLinkedList();
-
         for( Iterator<PSaPP.cfg.Loop> it = loops.iterator(); it.hasNext(); ) {
             PSaPP.cfg.Loop l = it.next();
 						//Logger.inform("\t\t" + l.loopInfo.describe() + " - " + l.getEntryCount());
-
             Collection<LoopProfile> subphases;
             Collection<PSaPP.cfg.Loop> subloops = l.getLoops();
             if( subloops.size() == 0 ) {
@@ -472,7 +463,6 @@ public class Phases {
             //    continue;
             //}
             //profilesWritten.add(head);
-
             // Write this loops profile
 						String owner = l.getOwner();
 						String actualLocation = l.getFunction();
