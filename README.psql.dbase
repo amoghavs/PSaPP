@@ -1,0 +1,1693 @@
+--
+-- PostgreSQL database dump
+--
+
+SET client_encoding = 'SQL_ASCII';
+SET standard_conforming_strings = off;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET escape_string_warning = off;
+
+--
+-- Name: pmacdata; Type: DATABASE; Schema: -; Owner: pmacdata
+--
+
+CREATE DATABASE pmacdata WITH TEMPLATE = template0 ENCODING = 'SQL_ASCII';
+
+
+ALTER DATABASE pmacdata OWNER TO pmacdata;
+
+\connect pmacdata
+
+SET client_encoding = 'SQL_ASCII';
+SET standard_conforming_strings = off;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET escape_string_warning = off;
+
+--
+-- Name: plpgsql; Type: PROCEDURAL LANGUAGE; Schema: -; Owner: pmacdata
+--
+
+CREATE PROCEDURAL LANGUAGE plpgsql;
+
+
+ALTER PROCEDURAL LANGUAGE plpgsql OWNER TO pmacdata;
+
+SET search_path = public, pg_catalog;
+
+--
+-- Name: seq_primary_keys; Type: SEQUENCE; Schema: public; Owner: pmacdata
+--
+
+CREATE SEQUENCE seq_primary_keys
+    INCREMENT BY 1
+    NO MAXVALUE
+    NO MINVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.seq_primary_keys OWNER TO pmacdata;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: actual_runtimes; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE actual_runtimes (
+    dbid integer DEFAULT nextval('seq_primary_keys'::regclass) NOT NULL,
+    test_case_data integer,
+    base_resource integer,
+    runtime double precision,
+    owner character varying,
+    comments character varying
+);
+
+
+ALTER TABLE public.actual_runtimes OWNER TO pmacdata;
+
+--
+-- Name: advanced_mem_data; Type: TYPE; Schema: public; Owner: pmacdata
+--
+
+CREATE TYPE advanced_mem_data AS (
+	mem_label character varying,
+	shortname character varying,
+	project character varying,
+	application character varying,
+	dataset character varying,
+	cpu_count integer,
+	machine_profile integer,
+	base_resource integer,
+	official_name character varying,
+	date_run date,
+	memory_time double precision,
+	relative_error double precision,
+	real_mem_time double precision
+);
+
+
+ALTER TYPE public.advanced_mem_data OWNER TO pmacdata;
+
+--
+-- Name: bandwidth_calculation_methods; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE bandwidth_calculation_methods (
+    dbid integer DEFAULT nextval('seq_primary_keys'::regclass) NOT NULL,
+    name character varying NOT NULL,
+    code text NOT NULL,
+    version integer NOT NULL,
+    description text
+);
+
+
+ALTER TABLE public.bandwidth_calculation_methods OWNER TO pmacdata;
+
+--
+-- Name: seq_machine_keys; Type: SEQUENCE; Schema: public; Owner: pmacdata
+--
+
+CREATE SEQUENCE seq_machine_keys
+    INCREMENT BY 1
+    NO MAXVALUE
+    NO MINVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.seq_machine_keys OWNER TO pmacdata;
+
+--
+-- Name: base_resources; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE base_resources (
+    dbid integer DEFAULT nextval('seq_machine_keys'::regclass) NOT NULL,
+    center character varying,
+    official_name character varying,
+    nickname character varying,
+    processor_type character varying,
+    processor_speed_hz double precision,
+    processor_count integer,
+    processors_per_node integer,
+    classification character varying,
+    vendor character varying,
+    flop_per_cycle integer
+);
+
+
+ALTER TABLE public.base_resources OWNER TO pmacdata;
+
+--
+-- Name: basic_mem_data; Type: TYPE; Schema: public; Owner: pmacdata
+--
+
+CREATE TYPE basic_mem_data AS (
+	mem_label character varying,
+	shortname character varying,
+	project character varying,
+	application character varying,
+	dataset character varying,
+	cpu_count integer,
+	machine_profile integer,
+	base_resource integer,
+	official_name character varying,
+	date_run date,
+	memory_time double precision
+);
+
+
+ALTER TYPE public.basic_mem_data OWNER TO pmacdata;
+
+--
+-- Name: basic_prediction; Type: TYPE; Schema: public; Owner: pmacdata
+--
+
+CREATE TYPE basic_prediction AS (
+	shortname character varying,
+	project character varying,
+	application character varying,
+	dataset character varying,
+	cpu_count integer,
+	machine_profile integer,
+	base_resource integer,
+	official_name character varying,
+	date_run date,
+	memory_time double precision,
+	ratio double precision,
+	predicted_runtime double precision,
+	actual_runtime double precision,
+	relative_error double precision
+);
+
+
+ALTER TYPE public.basic_prediction OWNER TO pmacdata;
+
+--
+-- Name: basicpred; Type: TYPE; Schema: public; Owner: pmacdata
+--
+
+CREATE TYPE basicpred AS (
+	"timestamp" integer,
+	shortname character varying,
+	project character varying,
+	application character varying,
+	dataset character varying,
+	cpu_count integer,
+	base_resource integer,
+	official_name character varying,
+	date_run date,
+	memory_time double precision,
+	ratio double precision,
+	predicted_runtime double precision,
+	actual_runtime double precision,
+	relative_error double precision
+);
+
+
+ALTER TYPE public.basicpred OWNER TO pmacdata;
+
+--
+-- Name: bench_data; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE bench_data (
+    dbid integer DEFAULT nextval('seq_primary_keys'::regclass) NOT NULL,
+    category character varying,
+    base_resource integer,
+    submitted_by character varying,
+    date_submitted date,
+    primary_path character varying,
+    backup_path character varying,
+    backup_date date,
+    complete boolean,
+    comments character varying
+);
+
+
+ALTER TABLE public.bench_data OWNER TO pmacdata;
+
+--
+-- Name: seq_cache_keys; Type: SEQUENCE; Schema: public; Owner: pmacdata
+--
+
+CREATE SEQUENCE seq_cache_keys
+    INCREMENT BY 1
+    NO MAXVALUE
+    NO MINVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.seq_cache_keys OWNER TO pmacdata;
+
+--
+-- Name: cache_structures; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE cache_structures (
+    dbid integer DEFAULT nextval('seq_cache_keys'::regclass) NOT NULL,
+    l1_size integer,
+    l2_size integer,
+    l3_size integer,
+    l1_associativity integer,
+    l2_associativity integer,
+    l3_associativity integer,
+    l1_linesize integer,
+    l2_linesize integer,
+    l3_linesize integer,
+    l1_replacement_policy character varying,
+    l2_replacement_policy character varying,
+    l3_replacement_policy character varying,
+    comments character varying
+);
+
+
+ALTER TABLE public.cache_structures OWNER TO pmacdata;
+
+--
+-- Name: default_profiles; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE default_profiles (
+    dbid integer DEFAULT nextval('seq_primary_keys'::regclass) NOT NULL,
+    base_resource integer NOT NULL,
+    machine_profile integer NOT NULL
+);
+
+
+ALTER TABLE public.default_profiles OWNER TO pmacdata;
+
+--
+-- Name: events; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE events (
+    dbid integer DEFAULT nextval('seq_primary_keys'::regclass) NOT NULL,
+    category character varying,
+    startdate date,
+    city character varying,
+    state character varying,
+    comments character varying
+);
+
+
+ALTER TABLE public.events OWNER TO pmacdata;
+
+--
+-- Name: seq_machine_profile; Type: SEQUENCE; Schema: public; Owner: pmacdata
+--
+
+CREATE SEQUENCE seq_machine_profile
+    INCREMENT BY 1
+    NO MAXVALUE
+    NO MINVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.seq_machine_profile OWNER TO pmacdata;
+
+--
+-- Name: machine_profiles; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE machine_profiles (
+    dbid integer DEFAULT nextval('seq_machine_profile'::regclass) NOT NULL,
+    base_resource integer NOT NULL,
+    memory_benchmark_data integer NOT NULL,
+    network_benchmark_data integer NOT NULL,
+    nickname character varying,
+    cache_structure integer NOT NULL
+);
+
+
+ALTER TABLE public.machine_profiles OWNER TO pmacdata;
+
+--
+-- Name: memory_benchmark_data; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE memory_benchmark_data (
+    dbid integer DEFAULT nextval('seq_primary_keys'::regclass) NOT NULL,
+    parameter1 double precision,
+    parameter2 double precision,
+    parameter3 double precision,
+    parameter4 double precision,
+    parameter5 double precision,
+    parameter6 double precision,
+    parameter7 double precision,
+    parameter8 double precision,
+    parameter9 double precision,
+    parameter10 double precision,
+    parameter11 double precision,
+    parameter12 double precision,
+    label character varying,
+    comments text,
+    memory_parameter_names integer DEFAULT 136073 NOT NULL
+);
+
+
+ALTER TABLE public.memory_benchmark_data OWNER TO pmacdata;
+
+--
+-- Name: memory_parameter_names; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE memory_parameter_names (
+    dbid integer DEFAULT nextval('seq_primary_keys'::regclass) NOT NULL,
+    parameter1 text DEFAULT 'NOT DEFINED'::text NOT NULL,
+    parameter2 text DEFAULT 'NOT DEFINED'::text NOT NULL,
+    parameter3 text DEFAULT 'NOT DEFINED'::text NOT NULL,
+    parameter4 text DEFAULT 'NOT DEFINED'::text NOT NULL,
+    parameter5 text DEFAULT 'NOT DEFINED'::text NOT NULL,
+    parameter6 text DEFAULT 'NOT DEFINED'::text NOT NULL,
+    parameter7 text DEFAULT 'NOT DEFINED'::text NOT NULL,
+    parameter8 text DEFAULT 'NOT DEFINED'::text NOT NULL,
+    parameter9 text DEFAULT 'NOT DEFINED'::text NOT NULL,
+    parameter10 text DEFAULT 'NOT DEFINED'::text NOT NULL,
+    parameter11 text DEFAULT 'NOT DEFINED'::text NOT NULL,
+    parameter12 text DEFAULT 'NOT DEFINED'::text NOT NULL
+);
+
+
+ALTER TABLE public.memory_parameter_names OWNER TO pmacdata;
+
+--
+-- Name: metric_data; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE metric_data (
+    dbid integer DEFAULT nextval('seq_primary_keys'::regclass) NOT NULL,
+    base_resource integer,
+    test_case integer,
+    metric_name character varying,
+    metric_date_rcvd date,
+    metric_trace_time double precision,
+    metric_src_machine character varying,
+    metric_user character varying,
+    metric_location character varying,
+    comments text
+);
+
+
+ALTER TABLE public.metric_data OWNER TO pmacdata;
+
+--
+-- Name: network_benchmark_data; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE network_benchmark_data (
+    dbid integer DEFAULT nextval('seq_primary_keys'::regclass) NOT NULL,
+    architecture character varying,
+    on_node_network_bandwidth double precision,
+    on_node_network_latency double precision,
+    off_node_network_bandwidth double precision,
+    off_node_network_latency double precision,
+    network_bus_count integer,
+    collective_communication_model character varying,
+    processors_per_node integer,
+    input_link_count integer,
+    output_link_count integer,
+    fs_hit_ratio double precision,
+    concurrent_requests double precision,
+    block_size double precision,
+    disk_bandwidth double precision,
+    disk_latency double precision,
+    communication_configuration character varying
+);
+
+
+ALTER TABLE public.network_benchmark_data OWNER TO pmacdata;
+
+--
+-- Name: network_trace_type; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE network_trace_type (
+    dbid integer DEFAULT nextval('seq_primary_keys'::regclass) NOT NULL,
+    network_tracer text NOT NULL
+);
+
+
+ALTER TABLE public.network_trace_type OWNER TO pmacdata;
+
+--
+-- Name: phase_status; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE phase_status (
+    dbid integer DEFAULT nextval('seq_primary_keys'::regclass) NOT NULL,
+    test_case_data integer,
+    phase_num integer NOT NULL,
+    trace_time integer,
+    phase_user character varying,
+    src_machine character varying,
+    filename character varying,
+    date_rcvd date,
+    inst_date_rcvd date,
+    inst_location character varying,
+    location character varying
+);
+
+
+ALTER TABLE public.phase_status OWNER TO pmacdata;
+
+--
+-- Name: pmacinstcachestructures; Type: TYPE; Schema: public; Owner: pmacdata
+--
+
+CREATE TYPE pmacinstcachestructures AS (
+	dbid integer,
+	num integer,
+	l1_size integer,
+	l1_associativity integer,
+	l1_linesize integer,
+	l1_replacement_policy character varying,
+	l2_size integer,
+	l2_associativity integer,
+	l2_linesize integer,
+	l2_replacement_policy character varying,
+	l3_size integer,
+	l3_associativity integer,
+	l3_linesize integer,
+	l3_replacement_policy character varying,
+	comments character varying
+);
+
+
+ALTER TYPE public.pmacinstcachestructures OWNER TO pmacdata;
+
+--
+-- Name: prediction_data; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE prediction_data (
+    dbid integer DEFAULT nextval('seq_primary_keys'::regclass) NOT NULL,
+    prediction_run integer NOT NULL,
+    date_run date,
+    memory_time double precision,
+    ratio double precision,
+    predicted_runtime double precision,
+    comments character varying,
+    "timestamp" integer,
+    machine_profile integer,
+    simulated_cpu_time_max double precision
+);
+
+
+ALTER TABLE public.prediction_data OWNER TO pmacdata;
+
+--
+-- Name: prediction_groups; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE prediction_groups (
+    dbid integer DEFAULT nextval('seq_primary_keys'::regclass) NOT NULL,
+    name character varying,
+    comments character varying
+);
+
+
+ALTER TABLE public.prediction_groups OWNER TO pmacdata;
+
+--
+-- Name: prediction_groups_to_events; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE prediction_groups_to_events (
+    dbid integer DEFAULT nextval('seq_primary_keys'::regclass) NOT NULL,
+    prediction_group integer,
+    event integer
+);
+
+
+ALTER TABLE public.prediction_groups_to_events OWNER TO pmacdata;
+
+--
+-- Name: prediction_runs; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE prediction_runs (
+    dbid integer DEFAULT nextval('seq_primary_keys'::regclass) NOT NULL,
+    test_case_data integer NOT NULL,
+    prediction_group integer NOT NULL,
+    shortname character varying NOT NULL,
+    owner character varying,
+    status character varying,
+    description character varying,
+    version character varying,
+    run_convolver_start timestamp without time zone,
+    run_convolver_finish timestamp without time zone,
+    compute_ratios_start timestamp without time zone,
+    compute_ratios_finish timestamp without time zone,
+    create_config_start timestamp without time zone,
+    create_config_finish timestamp without time zone,
+    run_dimemas_start timestamp without time zone,
+    run_dimemas_finish timestamp without time zone,
+    get_results_start timestamp without time zone,
+    get_results_finish timestamp without time zone,
+    bandwidth_calculation_method integer,
+    machine_profile integer,
+    skip_simulation boolean DEFAULT false,
+    ratio double precision,
+    run_host character varying,
+    time_to_run integer,
+    use_sim_memtime boolean DEFAULT false
+);
+
+
+ALTER TABLE public.prediction_runs OWNER TO pmacdata;
+
+--
+-- Name: sensitivity_profiles; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE sensitivity_profiles (
+    dbid integer DEFAULT nextval('seq_primary_keys'::regclass) NOT NULL,
+    base_profile integer NOT NULL,
+    machine_profile integer NOT NULL,
+    name character varying NOT NULL
+);
+
+
+ALTER TABLE public.sensitivity_profiles OWNER TO pmacdata;
+
+--
+-- Name: sensitivity_study_data; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE sensitivity_study_data (
+    sensitivity_performance_factor double precision
+)
+INHERITS (prediction_data);
+
+
+ALTER TABLE public.sensitivity_study_data OWNER TO pmacdata;
+
+--
+-- Name: test_basicpred; Type: TYPE; Schema: public; Owner: pmacdata
+--
+
+CREATE TYPE test_basicpred AS (
+	pred_run integer,
+	shortname character varying,
+	project character varying,
+	application character varying,
+	dataset character varying,
+	cpu_count integer,
+	base_resource integer,
+	official_name character varying,
+	date_run date,
+	memory_time double precision,
+	ratio double precision,
+	predicted_runtime double precision,
+	actual_runtime double precision,
+	relative_error double precision
+);
+
+
+ALTER TYPE public.test_basicpred OWNER TO pmacdata;
+
+--
+-- Name: test_case_data; Type: TABLE; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+CREATE TABLE test_case_data (
+    dbid integer DEFAULT nextval('seq_primary_keys'::regclass) NOT NULL,
+    funding_agency character varying,
+    project character varying,
+    round integer,
+    dataset character varying,
+    cpu_count integer,
+    application character varying,
+    primary_base_directory character varying,
+    backup_path character varying,
+    backup_date date,
+    backup_status character varying,
+    network_trace_date_rcvd date,
+    network_trace_time double precision,
+    network_trace_user character varying,
+    network_trace_src_machine character varying,
+    network_trace_filename character varying,
+    network_trace_validity boolean,
+    network_trace_predicted_runtime double precision,
+    list_of_bbs_date_rcvd date,
+    list_of_bbs_src_machine character varying,
+    list_of_bbs_user character varying,
+    list_of_bbs_filename character varying,
+    executable_date_rcvd date,
+    executable_src_machine character varying,
+    executable_user character varying,
+    executable_filename character varying,
+    badbb_date_rcvd date,
+    badbb_src_machine character varying,
+    badbb_user character varying,
+    badbb_filename character varying,
+    jbb_date_rcvd date,
+    jbb_trace_time double precision,
+    jbb_src_machine character varying,
+    jbb_user character varying,
+    jbb_filename character varying,
+    jbb_prebb_date_processed date,
+    jbb_prebb_status character varying,
+    num_phases integer,
+    comments character varying,
+    network_trace_gz_size bigint,
+    network_trace_size bigint,
+    jbbinst_date_rcvd date,
+    jbbinst_src_machine character varying,
+    jbbinst_user character varying,
+    processed_trace_date_created date,
+    processed_trace_size integer,
+    processed_trace_gz_size integer,
+    processed_trace_location character varying,
+    jbb_location character varying,
+    jbbinst_location character varying,
+    network_trace_location character varying,
+    base_resource integer,
+    average_sls_score double precision,
+    average_tls_score double precision,
+    network_trace_type integer NOT NULL,
+    CONSTRAINT test_case_data_year_check CHECK (((project)::text > (1900)::text))
+);
+
+
+ALTER TABLE public.test_case_data OWNER TO pmacdata;
+
+--
+-- Name: ti08_status; Type: TYPE; Schema: public; Owner: pmacdata
+--
+
+CREATE TYPE ti08_status AS (
+	dbid integer,
+	application character varying,
+	dataset character varying,
+	cpu_count integer,
+	date_run date,
+	predicted_runtime double precision,
+	actual_runtime double precision,
+	relative_error double precision
+);
+
+
+ALTER TYPE public.ti08_status OWNER TO pmacdata;
+
+--
+-- Name: basic_mem_data(integer, integer, character varying, character varying, integer, double precision); Type: FUNCTION; Schema: public; Owner: pmacdata
+--
+
+CREATE FUNCTION basic_mem_data(groupid integer, machine integer, application character varying, dataset character varying, cpu_count integer, realtime double precision) RETURNS SETOF advanced_mem_data
+    AS $_$ 
+select bmd.* ,relativeError($6,bmd.memory_time),$6
+from
+basic_mem_data($1) bmd,
+machine_profiles mp
+where 
+bmd.machine_profile = mp.dbid and
+bmd.base_resource = $2 and
+bmd.application = $3 and
+bmd.dataset = $4 and
+bmd.cpu_count = $5;
+$_$
+    LANGUAGE sql;
+
+
+ALTER FUNCTION public.basic_mem_data(groupid integer, machine integer, application character varying, dataset character varying, cpu_count integer, realtime double precision) OWNER TO pmacdata;
+
+--
+-- Name: basic_mem_data(integer); Type: FUNCTION; Schema: public; Owner: pmacdata
+--
+
+CREATE FUNCTION basic_mem_data(groupid integer) RETURNS SETOF basic_mem_data
+    AS $_$ 
+select 
+mbd.label,bp.shortname,bp.project,bp.application,bp.dataset,
+bp.cpu_count,bp.machine_profile,bp.base_resource,bp.official_name,
+bp.date_run,bp.memory_time
+from
+basic_prediction($1) bp,
+memory_benchmark_data as mbd,
+machine_profiles as mp
+where bp.machine_profile = mp.dbid and 
+mp.memory_benchmark_data = mbd.dbid 
+$_$
+    LANGUAGE sql;
+
+
+ALTER FUNCTION public.basic_mem_data(groupid integer) OWNER TO pmacdata;
+
+--
+-- Name: basic_mem_data(integer, integer); Type: FUNCTION; Schema: public; Owner: pmacdata
+--
+
+CREATE FUNCTION basic_mem_data(groupid integer, machine integer) RETURNS SETOF basic_mem_data
+    AS $_$ 
+select bmd.* 
+from
+basic_mem_data($1) bmd,
+machine_profiles mp
+where 
+bmd.machine_profile = mp.dbid and
+mp.base_resource = $2;
+$_$
+    LANGUAGE sql;
+
+
+ALTER FUNCTION public.basic_mem_data(groupid integer, machine integer) OWNER TO pmacdata;
+
+--
+-- Name: basic_prediction(integer); Type: FUNCTION; Schema: public; Owner: pmacdata
+--
+
+CREATE FUNCTION basic_prediction(groupid integer) RETURNS SETOF basic_prediction
+    AS $_$ 
+select
+q2.shortname,q2.project,q2.application,q2.dataset,q2.cpu_count,
+q2.machine_profile,q2.base_resource,q2.get_official_name,q2.date_run,
+q2.memory_time,q2.ratio,q2.predicted_runtime,runtime,relativeError from (
+select
+pd.dbid,ar.runtime,relativeError(ar.runtime,pd.predicted_runtime)
+from
+prediction_data as pd,
+test_case_data as tcd,
+prediction_runs as pr,
+base_resources as br, 
+actual_runtimes as ar,
+machine_profiles as mp
+where 
+pr.test_case_data = tcd.dbid and
+pd.prediction_run = pr.dbid  and
+pd.machine_profile = mp.dbid and
+mp.base_resource  = br.dbid   and 
+ar.test_case_data = tcd.dbid and 
+ar.base_resource = br.dbid   and
+pr.prediction_group = $1 ) as q1 full outer join (
+
+select 
+pd.dbid,pr.shortname,tcd.project, tcd.application, tcd.dataset,
+tcd.cpu_count,pd.machine_profile, mp.base_resource, get_official_name(br.*),
+pd.date_run, pd.memory_time, pd.ratio, pd.predicted_runtime
+from
+prediction_data as pd,
+test_case_data as tcd,
+prediction_runs as pr,
+base_resources as br,
+machine_profiles as mp 
+where 
+pr.test_case_data = tcd.dbid and
+pd.prediction_run = pr.dbid  and
+pd.machine_profile = mp.dbid and 
+mp.base_resource = br.dbid   and
+pr.prediction_group = $1 ) as q2 using (dbid)
+
+order by q2.base_resource,q2.application,q2.dataset,q2.cpu_count 
+$_$
+    LANGUAGE sql;
+
+
+ALTER FUNCTION public.basic_prediction(groupid integer) OWNER TO pmacdata;
+
+--
+-- Name: basicprediction(integer); Type: FUNCTION; Schema: public; Owner: pmacdata
+--
+
+CREATE FUNCTION basicprediction(groupid integer) RETURNS SETOF basicpred
+    AS $_$ 
+select
+pd.timestamp, pr.shortname,tcd.project, tcd.application, tcd.dataset,
+tcd.cpu_count, pd.base_resource, get_official_name(br.*),
+ pd.date_run, pd.memory_time, pd.ratio, pd.predicted_runtime,
+ar.runtime,relativeError(ar.runtime,pd.predicted_runtime)
+from
+prediction_data as pd,
+test_case_data as tcd,
+prediction_runs as pr,
+base_resources as br, 
+actual_runtimes as ar
+where 
+pr.test_case_data = tcd.dbid and
+pd.base_resource = br.dbid   and 
+pd.prediction_run = pr.dbid  and
+ar.test_case_data = tcd.dbid and 
+ar.base_resource = br.dbid   and
+pr.prediction_group = $1
+
+order by pd.base_resource,tcd.application,tcd.dataset,tcd.cpu_count 
+$_$
+    LANGUAGE sql;
+
+
+ALTER FUNCTION public.basicprediction(groupid integer) OWNER TO pmacdata;
+
+--
+-- Name: basicpredictionall(integer); Type: FUNCTION; Schema: public; Owner: pmacdata
+--
+
+CREATE FUNCTION basicpredictionall(groupid integer) RETURNS SETOF basicpred
+    AS $_$ 
+select
+q2.timestamp,q2.shortname,q2.project,q2.application,q2.dataset,q2.cpu_count,q2.base_resource,q2.get_official_name,q2.date_run,
+q2.memory_time, q2.ratio, q2.predicted_runtime,runtime,relativeError from (
+select
+pd.dbid, pd.timestamp, pr.shortname,tcd.project, tcd.application, tcd.dataset,
+tcd.cpu_count, pd.base_resource, get_official_name(br.*),
+ pd.date_run, pd.memory_time, pd.ratio, pd.predicted_runtime,
+ar.runtime,relativeError(ar.runtime,pd.predicted_runtime)
+from
+prediction_data as pd,
+test_case_data as tcd,
+prediction_runs as pr,
+base_resources as br, 
+actual_runtimes as ar
+where 
+pr.test_case_data = tcd.dbid and
+pd.base_resource = br.dbid   and 
+pd.prediction_run = pr.dbid  and
+ar.test_case_data = tcd.dbid and 
+ar.base_resource = br.dbid   and
+pr.prediction_group = $1 ) as q1 full outer join (
+
+select 
+pd.dbid, pd.timestamp, pr.shortname,tcd.project, tcd.application, tcd.dataset,
+tcd.cpu_count, pd.base_resource, get_official_name(br.*),
+ pd.date_run, pd.memory_time, pd.ratio, pd.predicted_runtime
+from
+prediction_data as pd,
+test_case_data as tcd,
+prediction_runs as pr,
+base_resources as br 
+where 
+pr.test_case_data = tcd.dbid and
+pd.base_resource = br.dbid   and 
+pd.prediction_run = pr.dbid  and
+pr.prediction_group = $1 ) as q2 using (dbid)
+
+order by q2.base_resource,q2.application,q2.dataset,q2.cpu_count 
+$_$
+    LANGUAGE sql;
+
+
+ALTER FUNCTION public.basicpredictionall(groupid integer) OWNER TO pmacdata;
+
+--
+-- Name: complete(test_case_data); Type: FUNCTION; Schema: public; Owner: pmacdata
+--
+
+CREATE FUNCTION complete(tcd test_case_data) RETURNS boolean
+    AS $$
+begin
+  return (tcd.processed_trace_location is not NULL and tcd.mpidtrace_location is not NULL);
+end;
+$$
+    LANGUAGE plpgsql;
+
+
+ALTER FUNCTION public.complete(tcd test_case_data) OWNER TO pmacdata;
+
+--
+-- Name: formal_name(base_resources); Type: FUNCTION; Schema: public; Owner: pmacdata
+--
+
+CREATE FUNCTION formal_name(br base_resources) RETURNS text
+    AS $$ 
+begin
+	return upper(br.center || '_' || br.vendor || '_' ||  br.processor_type) ||
+'_' || br.processor_speed_hz/1000000000 || 'GHz_' || br.processor_count || 'p_' || br.classification;
+end;
+$$
+    LANGUAGE plpgsql;
+
+
+ALTER FUNCTION public.formal_name(br base_resources) OWNER TO pmacdata;
+
+--
+-- Name: get_official_name(base_resources); Type: FUNCTION; Schema: public; Owner: pmacdata
+--
+
+CREATE FUNCTION get_official_name(br base_resources) RETURNS text
+    AS $$ 
+begin
+	return upper(br.center || '_' || br.vendor || '_' ||  br.processor_type) ||
+'_' || br.processor_speed_hz/1000000000 || 'GHz_' || br.processor_count || 'p_' || br.classification;
+end;
+$$
+    LANGUAGE plpgsql;
+
+
+ALTER FUNCTION public.get_official_name(br base_resources) OWNER TO pmacdata;
+
+--
+-- Name: get_pmacinstcachestructures(); Type: FUNCTION; Schema: public; Owner: pmacdata
+--
+
+CREATE FUNCTION get_pmacinstcachestructures() RETURNS SETOF pmacinstcachestructures
+    AS $$
+select dbid,
+case when l3_size IS NOT null and  l2_size IS NOT null and l1_size IS NOT null then 3
+when l2_size IS NOT null and l1_size IS NOT null then 2
+when l1_size IS NOT null then 1
+end
+,l1_size,l1_associativity,l1_linesize,l1_replacement_policy,l2_size,l2_associativity,l2_linesize,l2_replacement_policy,l3_size,l3_associativity,l3_linesize,l3_replacement_policy,'#'|| comments
+from cache_structures order by dbid;
+$$
+    LANGUAGE sql;
+
+
+ALTER FUNCTION public.get_pmacinstcachestructures() OWNER TO pmacdata;
+
+--
+-- Name: get_ti08_status(); Type: FUNCTION; Schema: public; Owner: pmacdata
+--
+
+CREATE FUNCTION get_ti08_status() RETURNS SETOF ti08_status
+    AS $$ 
+select 
+q2.dbid,q2.application,q2.dataset,q2.cpu_count,q1.date_run,
+q1.predicted_runtime,q1.runtime,relativeerror(q1.runtime,q1.predicted_runtime)
+from 
+(select
+tcd.dbid,tcd.application,tcd.dataset,tcd.cpu_count,pr.skip_simulation,pd.date_run,
+pd.predicted_runtime,ar.runtime,relativeerror(ar.runtime,pd.predicted_runtime)
+from
+test_case_data tcd, prediction_runs pr,prediction_data pd,
+actual_runtimes ar
+where
+pr.prediction_group = 59134 and tcd.project = 'ti08' and tcd.round = 1 and
+pr.test_case_data = tcd.dbid and pd.prediction_run = pr.dbid and 
+ar.test_case_data = tcd.dbid and ar.base_resource = tcd.base_resource)
+as q1 
+full outer join 
+(select 
+tcd.dbid,tcd.application,tcd.dataset,tcd.cpu_count
+from
+test_case_data tcd
+where
+tcd.project = 'ti08'
+)
+as q2 using (dbid)
+order by
+q2.application,q2.dataset,q2.cpu_count;
+$$
+    LANGUAGE sql;
+
+
+ALTER FUNCTION public.get_ti08_status() OWNER TO pmacdata;
+
+--
+-- Name: relativeerror(double precision, double precision); Type: FUNCTION; Schema: public; Owner: pmacdata
+--
+
+CREATE FUNCTION relativeerror(ar double precision, pr double precision) RETURNS double precision
+    AS $$ 
+begin
+	return ((pr-ar)/ar) * 100;
+end;
+$$
+    LANGUAGE plpgsql;
+
+
+ALTER FUNCTION public.relativeerror(ar double precision, pr double precision) OWNER TO pmacdata;
+
+--
+-- Name: test_basicprediction(integer); Type: FUNCTION; Schema: public; Owner: pmacdata
+--
+
+CREATE FUNCTION test_basicprediction(groupid integer) RETURNS SETOF test_basicpred
+    AS $_$ 
+select  distinct
+pd.dbid, pr.shortname,tcd.project, tcd.application, tcd.dataset,
+tcd.cpu_count, pd.base_resource, get_official_name(br.*),
+ pd.date_run, pd.memory_time, pd.ratio, pd.predicted_runtime,
+ar.runtime,relativeError(ar.runtime,pd.predicted_runtime)
+from
+prediction_data as pd,
+test_case_data as tcd,
+prediction_runs as pr,
+base_resources as br, 
+actual_runtimes as ar
+where 
+pr.test_case_data = tcd.dbid and
+pd.base_resource = br.dbid   and 
+pd.prediction_run = pr.dbid  and
+ar.test_case_data = tcd.dbid and 
+ar.base_resource = br.dbid   and
+tcd.application = 'hycom' and
+pr.prediction_group = $1 
+order by pd.base_resource,tcd.application,tcd.dataset,tcd.cpu_count
+$_$
+    LANGUAGE sql;
+
+
+ALTER FUNCTION public.test_basicprediction(groupid integer) OWNER TO pmacdata;
+
+--
+-- Name: actual_runtimes_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY actual_runtimes
+    ADD CONSTRAINT actual_runtimes_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: actual_runtimes_unique; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY actual_runtimes
+    ADD CONSTRAINT actual_runtimes_unique UNIQUE (base_resource, test_case_data);
+
+
+--
+-- Name: bandwidth_calculation_methods_name_key; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY bandwidth_calculation_methods
+    ADD CONSTRAINT bandwidth_calculation_methods_name_key UNIQUE (name, version);
+
+
+--
+-- Name: bandwidth_calculation_methods_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY bandwidth_calculation_methods
+    ADD CONSTRAINT bandwidth_calculation_methods_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: base_resources_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY base_resources
+    ADD CONSTRAINT base_resources_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: bench_data_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY bench_data
+    ADD CONSTRAINT bench_data_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: cache_structures_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY cache_structures
+    ADD CONSTRAINT cache_structures_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: cs_uniq; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY cache_structures
+    ADD CONSTRAINT cs_uniq UNIQUE (l1_size, l2_size, l3_size, l1_associativity, l2_associativity, l3_associativity, l1_linesize, l2_linesize, l3_linesize, l1_replacement_policy, l2_replacement_policy, l3_replacement_policy);
+
+
+--
+-- Name: default_profiles_base_resource_key; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY default_profiles
+    ADD CONSTRAINT default_profiles_base_resource_key UNIQUE (base_resource, machine_profile);
+
+
+--
+-- Name: default_profiles_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY default_profiles
+    ADD CONSTRAINT default_profiles_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: events_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY events
+    ADD CONSTRAINT events_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: machine_profiles_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY machine_profiles
+    ADD CONSTRAINT machine_profiles_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: memory_benchmark_data_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY memory_benchmark_data
+    ADD CONSTRAINT memory_benchmark_data_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: memory_parameter_names_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY memory_parameter_names
+    ADD CONSTRAINT memory_parameter_names_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: metric_data_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY metric_data
+    ADD CONSTRAINT metric_data_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: network_benchmark_data_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY network_benchmark_data
+    ADD CONSTRAINT network_benchmark_data_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: network_trace_type_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY network_trace_type
+    ADD CONSTRAINT network_trace_type_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: phase_status_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY phase_status
+    ADD CONSTRAINT phase_status_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: prediction_data_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY prediction_data
+    ADD CONSTRAINT prediction_data_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: prediction_groups_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY prediction_groups
+    ADD CONSTRAINT prediction_groups_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: prediction_runs_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY prediction_runs
+    ADD CONSTRAINT prediction_runs_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: prediction_runs_to_groups_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY prediction_groups_to_events
+    ADD CONSTRAINT prediction_runs_to_groups_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: sensitivity_profiles_base_profile_key; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY sensitivity_profiles
+    ADD CONSTRAINT sensitivity_profiles_base_profile_key UNIQUE (base_profile, name);
+
+
+--
+-- Name: sensitivity_profiles_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY sensitivity_profiles
+    ADD CONSTRAINT sensitivity_profiles_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: test_case_data_pkey; Type: CONSTRAINT; Schema: public; Owner: pmacdata; Tablespace: 
+--
+
+ALTER TABLE ONLY test_case_data
+    ADD CONSTRAINT test_case_data_pkey PRIMARY KEY (dbid);
+
+
+--
+-- Name: actual_runtimes_base_resource_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY actual_runtimes
+    ADD CONSTRAINT actual_runtimes_base_resource_fkey FOREIGN KEY (base_resource) REFERENCES base_resources(dbid);
+
+
+--
+-- Name: actual_runtimes_test_case_data_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY actual_runtimes
+    ADD CONSTRAINT actual_runtimes_test_case_data_fkey FOREIGN KEY (test_case_data) REFERENCES test_case_data(dbid);
+
+
+--
+-- Name: bench_data_base_resource_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY bench_data
+    ADD CONSTRAINT bench_data_base_resource_fkey FOREIGN KEY (base_resource) REFERENCES base_resources(dbid);
+
+
+--
+-- Name: default_profiles_base_resource_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY default_profiles
+    ADD CONSTRAINT default_profiles_base_resource_fkey FOREIGN KEY (base_resource) REFERENCES base_resources(dbid);
+
+
+--
+-- Name: default_profiles_machine_profile_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY default_profiles
+    ADD CONSTRAINT default_profiles_machine_profile_fkey FOREIGN KEY (machine_profile) REFERENCES machine_profiles(dbid);
+
+
+--
+-- Name: machine_profiles_base_resource_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY machine_profiles
+    ADD CONSTRAINT machine_profiles_base_resource_fkey FOREIGN KEY (base_resource) REFERENCES base_resources(dbid);
+
+
+--
+-- Name: machine_profiles_memory_benchmark_data_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY machine_profiles
+    ADD CONSTRAINT machine_profiles_memory_benchmark_data_fkey FOREIGN KEY (memory_benchmark_data) REFERENCES memory_benchmark_data(dbid);
+
+
+--
+-- Name: machine_profiles_network_benchmark_data_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY machine_profiles
+    ADD CONSTRAINT machine_profiles_network_benchmark_data_fkey FOREIGN KEY (network_benchmark_data) REFERENCES network_benchmark_data(dbid);
+
+
+--
+-- Name: metric_data_base_resource_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY metric_data
+    ADD CONSTRAINT metric_data_base_resource_fkey FOREIGN KEY (base_resource) REFERENCES base_resources(dbid);
+
+
+--
+-- Name: metric_data_test_case_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY metric_data
+    ADD CONSTRAINT metric_data_test_case_fkey FOREIGN KEY (test_case) REFERENCES test_case_data(dbid);
+
+
+--
+-- Name: mp_fk; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY machine_profiles
+    ADD CONSTRAINT mp_fk FOREIGN KEY (cache_structure) REFERENCES cache_structures(dbid);
+
+
+--
+-- Name: phase_status_test_case_data_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY phase_status
+    ADD CONSTRAINT phase_status_test_case_data_fkey FOREIGN KEY (test_case_data) REFERENCES test_case_data(dbid);
+
+
+--
+-- Name: prediction_data_machine_profile_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY prediction_data
+    ADD CONSTRAINT prediction_data_machine_profile_fkey FOREIGN KEY (machine_profile) REFERENCES machine_profiles(dbid);
+
+
+--
+-- Name: prediction_data_prediction_run_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY prediction_data
+    ADD CONSTRAINT prediction_data_prediction_run_fkey FOREIGN KEY (prediction_run) REFERENCES prediction_runs(dbid);
+
+
+--
+-- Name: prediction_runs_bandwidth_calculation_method_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY prediction_runs
+    ADD CONSTRAINT prediction_runs_bandwidth_calculation_method_fkey FOREIGN KEY (bandwidth_calculation_method) REFERENCES bandwidth_calculation_methods(dbid);
+
+
+--
+-- Name: prediction_runs_machine_profile_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY prediction_runs
+    ADD CONSTRAINT prediction_runs_machine_profile_fkey FOREIGN KEY (machine_profile) REFERENCES machine_profiles(dbid);
+
+
+--
+-- Name: prediction_runs_prediction_group_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY prediction_runs
+    ADD CONSTRAINT prediction_runs_prediction_group_fkey FOREIGN KEY (prediction_group) REFERENCES prediction_groups(dbid);
+
+
+--
+-- Name: prediction_runs_test_case_data_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY prediction_runs
+    ADD CONSTRAINT prediction_runs_test_case_data_fkey FOREIGN KEY (test_case_data) REFERENCES test_case_data(dbid);
+
+
+--
+-- Name: prediction_runs_to_groups_event_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY prediction_groups_to_events
+    ADD CONSTRAINT prediction_runs_to_groups_event_fkey FOREIGN KEY (event) REFERENCES events(dbid);
+
+
+--
+-- Name: prediction_runs_to_groups_prediction_group_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY prediction_groups_to_events
+    ADD CONSTRAINT prediction_runs_to_groups_prediction_group_fkey FOREIGN KEY (prediction_group) REFERENCES prediction_groups(dbid);
+
+
+--
+-- Name: sensitivity_profiles_base_profile_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY sensitivity_profiles
+    ADD CONSTRAINT sensitivity_profiles_base_profile_fkey FOREIGN KEY (base_profile) REFERENCES machine_profiles(dbid);
+
+
+--
+-- Name: sensitivity_profiles_machine_profile_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY sensitivity_profiles
+    ADD CONSTRAINT sensitivity_profiles_machine_profile_fkey FOREIGN KEY (machine_profile) REFERENCES machine_profiles(dbid);
+
+
+--
+-- Name: test_case_data_base_resource_fkey; Type: FK CONSTRAINT; Schema: public; Owner: pmacdata
+--
+
+ALTER TABLE ONLY test_case_data
+    ADD CONSTRAINT test_case_data_base_resource_fkey FOREIGN KEY (base_resource) REFERENCES base_resources(dbid);
+
+
+--
+-- Name: public; Type: ACL; Schema: -; Owner: pmacdata
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM pmacdata;
+GRANT ALL ON SCHEMA public TO pmacdata;
+GRANT ALL ON SCHEMA public TO cmills;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+--
+-- Name: seq_primary_keys; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON SEQUENCE seq_primary_keys FROM PUBLIC;
+REVOKE ALL ON SEQUENCE seq_primary_keys FROM pmacdata;
+GRANT ALL ON SEQUENCE seq_primary_keys TO pmacdata;
+GRANT SELECT,USAGE ON SEQUENCE seq_primary_keys TO pmac;
+
+
+--
+-- Name: actual_runtimes; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE actual_runtimes FROM PUBLIC;
+REVOKE ALL ON TABLE actual_runtimes FROM pmacdata;
+GRANT ALL ON TABLE actual_runtimes TO pmacdata;
+GRANT SELECT,INSERT ON TABLE actual_runtimes TO pmac;
+
+
+--
+-- Name: bandwidth_calculation_methods; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE bandwidth_calculation_methods FROM PUBLIC;
+REVOKE ALL ON TABLE bandwidth_calculation_methods FROM pmacdata;
+GRANT ALL ON TABLE bandwidth_calculation_methods TO pmacdata;
+GRANT SELECT,INSERT ON TABLE bandwidth_calculation_methods TO pmac;
+
+
+--
+-- Name: seq_machine_keys; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON SEQUENCE seq_machine_keys FROM PUBLIC;
+REVOKE ALL ON SEQUENCE seq_machine_keys FROM pmacdata;
+GRANT ALL ON SEQUENCE seq_machine_keys TO pmacdata;
+GRANT SELECT,USAGE ON SEQUENCE seq_machine_keys TO pmac;
+
+
+--
+-- Name: base_resources; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE base_resources FROM PUBLIC;
+REVOKE ALL ON TABLE base_resources FROM pmacdata;
+GRANT ALL ON TABLE base_resources TO pmacdata;
+GRANT SELECT,INSERT ON TABLE base_resources TO pmac;
+
+
+--
+-- Name: bench_data; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE bench_data FROM PUBLIC;
+REVOKE ALL ON TABLE bench_data FROM pmacdata;
+GRANT ALL ON TABLE bench_data TO pmacdata;
+GRANT SELECT,INSERT ON TABLE bench_data TO pmac;
+
+
+--
+-- Name: seq_cache_keys; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON SEQUENCE seq_cache_keys FROM PUBLIC;
+REVOKE ALL ON SEQUENCE seq_cache_keys FROM pmacdata;
+GRANT ALL ON SEQUENCE seq_cache_keys TO pmacdata;
+GRANT SELECT,USAGE ON SEQUENCE seq_cache_keys TO pmac;
+
+
+--
+-- Name: cache_structures; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE cache_structures FROM PUBLIC;
+REVOKE ALL ON TABLE cache_structures FROM pmacdata;
+GRANT ALL ON TABLE cache_structures TO pmacdata;
+GRANT SELECT,INSERT ON TABLE cache_structures TO pmac;
+
+
+--
+-- Name: default_profiles; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE default_profiles FROM PUBLIC;
+REVOKE ALL ON TABLE default_profiles FROM pmacdata;
+GRANT ALL ON TABLE default_profiles TO pmacdata;
+GRANT SELECT,INSERT ON TABLE default_profiles TO pmac;
+
+
+--
+-- Name: events; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE events FROM PUBLIC;
+REVOKE ALL ON TABLE events FROM pmacdata;
+GRANT ALL ON TABLE events TO pmacdata;
+GRANT SELECT,INSERT ON TABLE events TO pmac;
+
+
+--
+-- Name: seq_machine_profile; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON SEQUENCE seq_machine_profile FROM PUBLIC;
+REVOKE ALL ON SEQUENCE seq_machine_profile FROM pmacdata;
+GRANT ALL ON SEQUENCE seq_machine_profile TO pmacdata;
+GRANT SELECT,USAGE ON SEQUENCE seq_machine_profile TO pmac;
+
+
+--
+-- Name: machine_profiles; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE machine_profiles FROM PUBLIC;
+REVOKE ALL ON TABLE machine_profiles FROM pmacdata;
+GRANT ALL ON TABLE machine_profiles TO pmacdata;
+GRANT SELECT,INSERT ON TABLE machine_profiles TO pmac;
+
+
+--
+-- Name: memory_benchmark_data; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE memory_benchmark_data FROM PUBLIC;
+REVOKE ALL ON TABLE memory_benchmark_data FROM pmacdata;
+GRANT ALL ON TABLE memory_benchmark_data TO pmacdata;
+GRANT SELECT,INSERT ON TABLE memory_benchmark_data TO pmac;
+
+
+--
+-- Name: memory_parameter_names; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE memory_parameter_names FROM PUBLIC;
+REVOKE ALL ON TABLE memory_parameter_names FROM pmacdata;
+GRANT ALL ON TABLE memory_parameter_names TO pmacdata;
+GRANT SELECT,INSERT ON TABLE memory_parameter_names TO pmac;
+
+
+--
+-- Name: metric_data; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE metric_data FROM PUBLIC;
+REVOKE ALL ON TABLE metric_data FROM pmacdata;
+GRANT ALL ON TABLE metric_data TO pmacdata;
+GRANT SELECT,INSERT ON TABLE metric_data TO pmac;
+
+
+--
+-- Name: network_benchmark_data; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE network_benchmark_data FROM PUBLIC;
+REVOKE ALL ON TABLE network_benchmark_data FROM pmacdata;
+GRANT ALL ON TABLE network_benchmark_data TO pmacdata;
+GRANT SELECT,INSERT ON TABLE network_benchmark_data TO pmac;
+
+
+--
+-- Name: network_trace_type; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE network_trace_type FROM PUBLIC;
+REVOKE ALL ON TABLE network_trace_type FROM pmacdata;
+GRANT ALL ON TABLE network_trace_type TO pmacdata;
+GRANT SELECT,INSERT ON TABLE network_trace_type TO pmac;
+
+
+--
+-- Name: phase_status; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE phase_status FROM PUBLIC;
+REVOKE ALL ON TABLE phase_status FROM pmacdata;
+GRANT ALL ON TABLE phase_status TO pmacdata;
+GRANT SELECT,INSERT ON TABLE phase_status TO pmac;
+
+
+--
+-- Name: prediction_data; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE prediction_data FROM PUBLIC;
+REVOKE ALL ON TABLE prediction_data FROM pmacdata;
+GRANT ALL ON TABLE prediction_data TO pmacdata;
+GRANT SELECT,INSERT ON TABLE prediction_data TO pmac;
+
+
+--
+-- Name: prediction_groups; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE prediction_groups FROM PUBLIC;
+REVOKE ALL ON TABLE prediction_groups FROM pmacdata;
+GRANT ALL ON TABLE prediction_groups TO pmacdata;
+GRANT SELECT,INSERT ON TABLE prediction_groups TO pmac;
+
+
+--
+-- Name: prediction_groups_to_events; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE prediction_groups_to_events FROM PUBLIC;
+REVOKE ALL ON TABLE prediction_groups_to_events FROM pmacdata;
+GRANT ALL ON TABLE prediction_groups_to_events TO pmacdata;
+GRANT SELECT,INSERT ON TABLE prediction_groups_to_events TO pmac;
+
+
+--
+-- Name: prediction_runs; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE prediction_runs FROM PUBLIC;
+REVOKE ALL ON TABLE prediction_runs FROM pmacdata;
+GRANT ALL ON TABLE prediction_runs TO pmacdata;
+GRANT SELECT,INSERT,UPDATE ON TABLE prediction_runs TO pmac;
+
+
+--
+-- Name: sensitivity_profiles; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE sensitivity_profiles FROM PUBLIC;
+REVOKE ALL ON TABLE sensitivity_profiles FROM pmacdata;
+GRANT ALL ON TABLE sensitivity_profiles TO pmacdata;
+GRANT SELECT,INSERT ON TABLE sensitivity_profiles TO pmac;
+
+
+--
+-- Name: sensitivity_study_data; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE sensitivity_study_data FROM PUBLIC;
+REVOKE ALL ON TABLE sensitivity_study_data FROM pmacdata;
+GRANT ALL ON TABLE sensitivity_study_data TO pmacdata;
+GRANT SELECT,INSERT ON TABLE sensitivity_study_data TO pmac;
+
+
+--
+-- Name: test_case_data; Type: ACL; Schema: public; Owner: pmacdata
+--
+
+REVOKE ALL ON TABLE test_case_data FROM PUBLIC;
+REVOKE ALL ON TABLE test_case_data FROM pmacdata;
+GRANT ALL ON TABLE test_case_data TO pmacdata;
+GRANT SELECT,INSERT ON TABLE test_case_data TO pmac;
+
+
+--
+-- PostgreSQL database dump complete
+--
+

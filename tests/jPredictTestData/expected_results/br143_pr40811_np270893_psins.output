@@ -1,0 +1,2096 @@
+Information : Simulation for trace at tests/jPredictTestData/ti10_round1_icepic_standard_0064/ti10_round1_icepic_standard_0064.psins
+Information : Opening tests/jPredictTestData/ti10_round1_icepic_standard_0064/ti10_round1_icepic_standard_0064.psins
+Information : Trace file format flags are 0x25
+Information : Trace file format is extended
+Information : Trace file tests/jPredictTestData/ti10_round1_icepic_standard_0064/ti10_round1_icepic_standard_0064.psins is in little endian format.
+Information : The communicator information in trace is at the end of the file
+Information : The floating point numbers in trace are FLOAT (single precision)
+Information : The message sizes are in 4 byte integers
+Information : The base system times to take each MPI is included
+Information : PSiNS Comtor OffsetxEvent : 593185912 
+Information : Trying to read passing the end of tests/jPredictTestData/ti10_round1_icepic_standard_0064/ti10_round1_icepic_standard_0064.psins
+Information : Input configuration count is 1 and model count is 1
+Information : Reading the configuration file tests/jPredictTestData/270606/icepic_standard_0064/br143_pr40811_np270893_psins.config
+Information : Number of nodes is 8 for 64 tasks from line 4
+Information : Initializing the model multipliers
+Information : Overriding the multipliers from the config file entries (0)
+Information : Initializing the model resources if any
+Information : LAURA The bus count is updated to 2599 (2599)
+Information : Simulator
+Information : 	traceType: psins
+Information : 	tracePath: tests/jPredictTestData/ti10_round1_icepic_standard_0064/ti10_round1_icepic_standard_0064.psins
+Information : 	appName  : icepic
+Information : 	dataSize : standard
+Information : 	taskCount: 64
+Information : PSiNS Parser
+Information : 	path: tests/jPredictTestData/ti10_round1_icepic_standard_0064/ti10_round1_icepic_standard_0064.psins
+Information : 	app : icepic
+Information : 	siz : standard
+Information : 	tsk : 64
+Information : 	form: 0x25 -- 
+Information : Comtor 0 : 64
+Information : Comtor 1 : 6
+Information : Comtor 2 : 11
+Information : Comtor 3 : 14
+Information : Comtor 4 : 16
+Information : Comtor 5 : 14
+Information : Comtor 6 : 14
+Information : Comtor 7 : 10
+Information : Comtor 8 : 10
+Information : Comtor 9 : 10
+Information : Comtor 10 : 8
+Information : Comtor 11 : 10
+Information : Comtor 12 : 10
+Information : Comtor 13 : 11
+Information : Comtor 14 : 10
+Information : Comtor 15 : 11
+Information : Comtor 16 : 10
+Information : Comtor 17 : 10
+Information : Comtor 18 : 2
+Information : Comtor 19 : 10
+Information : Comtor 20 : 12
+Information : Comtor 21 : 10
+Information : Comtor 22 : 11
+Information : Comtor 23 : 10
+Information : Comtor 24 : 10
+Information : Comtor 25 : 10
+Information : Comtor 26 : 10
+Information : Comtor 27 : 10
+Information : Comtor 28 : 8
+Information : Comtor 29 : 10
+Information : Comtor 30 : 10
+Information : Comtor 31 : 11
+Information : Comtor 32 : 12
+Information : Comtor 33 : 11
+Information : Comtor 34 : 10
+Information : Comtor 35 : 11
+Information : Comtor 36 : 10
+Information : Comtor 37 : 20
+Information : Comtor 38 : 8
+Information : Comtor 39 : 6
+Information : Comtor 40 : 22
+Information : Comtor 41 : 6
+Information : Comtor 42 : 6
+Information : Comtor 43 : 9
+Information : Comtor 44 : 27
+Information : Comtor 45 : 26
+Information : Comtor 46 : 32
+Information : Comtor 47 : 27
+Information : Comtor 48 : 16
+Information : Comtor 49 : 2
+Information : Comtor 50 : 2
+Information : Comtor 51 : 1
+Information : Comtor 52 : 2
+Information : Comtor 53 : 1
+Information : Comtor 54 : 6
+Information : Comtor 55 : 2
+Information : Comtor 56 : 2
+Information : Comtor 57 : 2
+Information : Comtor 58 : 2
+Information : Comtor 59 : 6
+Information : Comtor 60 : 2
+Information : Comtor 61 : 2
+Information : Comtor 62 : 1
+Information : Comtor 63 : 2
+Information : Comtor 64 : 2
+Information : Comtor 65 : 6
+Information : Comtor 66 : 6
+Information : Comtor 67 : 6
+Information : Comtor 68 : 6
+Information : Comtor 69 : 6
+Information : Comtor 70 : 32
+Information : Comtor 71 : 22
+Information : Comtor 72 : 10
+Information : Comtor 73 : 2
+Information : Comtor 74 : 8
+Information : Comtor 75 : 7
+Information : Comtor 76 : 6
+Information : Comtor 77 : 2
+Information : Comtor 78 : 1
+Information : Comtor 79 : 8
+Information : Comtor 80 : 7
+Information : Comtor 81 : 4
+Information : Comtor 82 : 2
+Information : Comtor 83 : 1
+Information : Comtor 84 : 2
+Information : Comtor 85 : 2
+Information : Comtor 86 : 1
+Information : Comtor 87 : 2
+Information : Comtor 88 : 1
+Information : Comtor 89 : 18
+Information : Comtor 90 : 20
+Information : Comtor 91 : 16
+Information : Comtor 92 : 2
+Information : Comtor 93 : 1
+Information : Comtor 94 : 17
+Information : Comtor 95 : 14
+Information : Comtor 96 : 5
+Information : Comtor 97 : 6
+Information : Comtor 98 : 1
+Information : Comtor 99 : 2
+Information : Comtor 100 : 2
+Information : Comtor 101 : 17
+Information : Comtor 102 : 1
+Information : Comtor 103 : 2
+Information : Comtor 104 : 12
+Information : Comtor 105 : 2
+Information : Comtor 106 : 1
+Information : Comtor 107 : 2
+Information : Comtor 108 : 10
+Information : Comtor 109 : 2
+Information : Comtor 110 : 2
+Information : Comtor 111 : 2
+Information : Comtor 112 : 2
+Information : Comtor 113 : 1
+Information : Comtor 114 : 2
+Information : Comtor 115 : 2
+Information : Comtor 116 : 3
+Information : Comtor 117 : 1
+Information : Comtor 118 : 2
+Information : Comtor 119 : 1
+Information : Comtor 120 : 2
+Information : Comtor 121 : 1
+Information : Comtor 122 : 2
+Information : Comtor 123 : 2
+Information : Comtor 124 : 1
+Information : Comtor 125 : 2
+Information : Comtor 126 : 9
+Information : Comtor 127 : 1
+Information : Comtor 128 : 2
+Information : Comtor 129 : 2
+Information : Comtor 130 : 8
+Information : Comtor 131 : 7
+Information : Comtor 132 : 1
+Information : Comtor 133 : 2
+Information : Comtor 134 : 1
+Information : Comtor 135 : 2
+Information : Comtor 136 : 6
+Information : Comtor 137 : 11
+Information : Comtor 138 : 2
+Information : Comtor 139 : 1
+Information : Comtor 140 : 1
+Information : Comtor 141 : 1
+Information : Comtor 142 : 1
+Information : Machine
+Information : 	nod : 8
+Information : 	cor : 8
+Information : 	bus : 2599
+Information : 	nbw : 1803500000.0000
+Information : 	lat : 0.00000171
+Information : Nodes are uniform so only 1 printed
+Information : Node
+Information : 	nid : 0
+Information : 	cor : 8
+Information : 	inp : 1
+Information : 	out : 1
+Information : 	cpu : 4.558861
+Information : 	lbw : 5054200000.000000
+Information : 	lat : 0.000000
+Information : 	uni : cpus uniform with ratio 4.558861
+Information : Model : ContModel
+Information : 	MPI_Allgather uses multiplier_linear
+Information : 	MPI_Allgatherv uses multiplier_linear
+Information : 	MPI_Allreduce uses multiplier_linear
+Information : 	MPI_Alltoall uses multiplier_linear
+Information : 	MPI_Alltoallv uses multiplier_linear
+Information : 	MPI_Barrier uses multiplier_linear
+Information : 	MPI_Gather uses multiplier_linear
+Information : 	MPI_Reduce_scatter uses multiplier_linear
+Information : 	MPI_Scan uses multiplier_linear
+Information : 	MPI_Scatter uses multiplier_linear
+Information : Simulation Parameters
+Information : 	Max size for blocking is __MAX_SIZE_FOR_BLOCKING=1342177295
+Information : 	JustMPI time is __JUST_MPI_CALL_TIME=0.000005
+Information : 	Increment for queue insertion is __MIN_WAIT_FOR_NEXTTRY=0.001000
+Information : 	Max query entry count is __MAX_REENTRY_INTO_EVENT_QUEUE=4096
+Information : 	Using the strict blocking mode -DSTRICT_BLOCKING_MODE
+Information : 	Using the event priority update mode -DUPDATE_PRIO_4_DEADLOCK
+Information : Total number of events is 60848426
+Information : Simulation time ranges from 1112.5919 to 1113.6479
+Information : Triggering cleanup.
+Information : Filtered 1112506 and final entry count 28445
+Information : Simulation time ranges from 1943.1882 to 1943.5496
+Information : Triggering cleanup.
+Information : Filtered 1160301 and final entry count 43442
+Information : Simulation time ranges from 2647.7207 to 2648.1918
+Information : Triggering cleanup.
+Information : Filtered 1141634 and final entry count 35980
+Information : **********************************************************************************
+Information : --> Final processed     60848426 events already (iterations     61404550)
+Information : **********************************************************************************
+Information : Printing Clocks for System Indexed at 0
+Information : Global clock: 0.000000
+Information : Task Clock [0]: 3152.854880
+Information : Task Clock [1]: 3152.854880
+Information : Task Clock [2]: 3152.854880
+Information : Task Clock [3]: 3152.854880
+Information : Task Clock [4]: 3152.854880
+Information : Task Clock [5]: 3152.854880
+Information : Task Clock [6]: 3152.854880
+Information : Task Clock [7]: 3152.854880
+Information : Task Clock [8]: 3152.854880
+Information : Task Clock [9]: 3152.854880
+Information : Task Clock [10]: 3152.854880
+Information : Task Clock [11]: 3152.854880
+Information : Task Clock [12]: 3152.854880
+Information : Task Clock [13]: 3152.854880
+Information : Task Clock [14]: 3152.854880
+Information : Task Clock [15]: 3152.854880
+Information : Task Clock [16]: 3152.854880
+Information : Task Clock [17]: 3152.854880
+Information : Task Clock [18]: 3152.854880
+Information : Task Clock [19]: 3152.854880
+Information : Task Clock [20]: 3152.854880
+Information : Task Clock [21]: 3152.854880
+Information : Task Clock [22]: 3152.854880
+Information : Task Clock [23]: 3152.854880
+Information : Task Clock [24]: 3152.854880
+Information : Task Clock [25]: 3152.854880
+Information : Task Clock [26]: 3152.854880
+Information : Task Clock [27]: 3152.854880
+Information : Task Clock [28]: 3152.854880
+Information : Task Clock [29]: 3152.854880
+Information : Task Clock [30]: 3152.854880
+Information : Task Clock [31]: 3152.854880
+Information : Task Clock [32]: 3152.854880
+Information : Task Clock [33]: 3152.854880
+Information : Task Clock [34]: 3152.854880
+Information : Task Clock [35]: 3152.854880
+Information : Task Clock [36]: 3152.854880
+Information : Task Clock [37]: 3152.854880
+Information : Task Clock [38]: 3152.854880
+Information : Task Clock [39]: 3152.854880
+Information : Task Clock [40]: 3152.854880
+Information : Task Clock [41]: 3152.854880
+Information : Task Clock [42]: 3152.854880
+Information : Task Clock [43]: 3152.854880
+Information : Task Clock [44]: 3152.854880
+Information : Task Clock [45]: 3152.854880
+Information : Task Clock [46]: 3152.854880
+Information : Task Clock [47]: 3152.854880
+Information : Task Clock [48]: 3152.854880
+Information : Task Clock [49]: 3152.854880
+Information : Task Clock [50]: 3152.854880
+Information : Task Clock [51]: 3152.854880
+Information : Task Clock [52]: 3152.854880
+Information : Task Clock [53]: 3152.854880
+Information : Task Clock [54]: 3152.854880
+Information : Task Clock [55]: 3152.854880
+Information : Task Clock [56]: 3152.854880
+Information : Task Clock [57]: 3152.854880
+Information : Task Clock [58]: 3152.854880
+Information : Task Clock [59]: 3152.854880
+Information : Task Clock [60]: 3152.854880
+Information : Task Clock [61]: 3152.854880
+Information : Task Clock [62]: 3152.854880
+Information : Task Clock [63]: 3152.854880
+Information : Printing Statistics for System Indexed at 0
+Information : Printing Tracker Information
+-----------------------------------------------------------------
+Task 0000 ---CcW---         3.8013 (  0.12)     1435.4260 ( 45.53)     1713.6275 ( 54.35) ---    3152.8549 ---     331489
+Task 0001 ---CcW---         6.0847 (  0.19)     1402.9139 ( 44.50)     1743.8563 ( 55.31) ---    3152.8549 ---     494733
+Task 0002 ---CcW---         6.0963 (  0.19)     1401.9154 ( 44.46)     1744.8431 ( 55.34) ---    3152.8549 ---     499869
+Task 0003 ---CcW---         6.1125 (  0.19)     1410.5302 ( 44.74)     1736.2122 ( 55.07) ---    3152.8549 ---     499827
+Task 0004 ---CcW---         6.0548 (  0.19)     1419.8370 ( 45.03)     1726.9631 ( 54.77) ---    3152.8549 ---     487941
+Task 0005 ---CcW---         3.8777 (  0.12)     1484.6294 ( 47.09)     1664.3478 ( 52.79) ---    3152.8549 ---     324509
+Task 0006 ---CcW---         7.9657 (  0.25)     1491.2962 ( 47.30)     1653.5930 ( 52.45) ---    3152.8549 ---     773391
+Task 0007 ---CcW---         9.1728 (  0.29)     1445.0496 ( 45.83)     1698.6325 ( 53.88) ---    3152.8549 ---     719135
+Task 0008 ---CcW---         8.9326 (  0.28)     1429.2372 ( 45.33)     1714.6851 ( 54.39) ---    3152.8549 ---     613857
+Task 0009 ---CcW---         9.2300 (  0.29)     1435.2755 ( 45.52)     1708.3494 ( 54.18) ---    3152.8549 ---     737011
+Task 0010 ---CcW---         8.2697 (  0.26)     1521.7810 ( 48.27)     1622.8041 ( 51.47) ---    3152.8549 ---     848931
+Task 0011 ---CcW---         9.9917 (  0.32)     1548.6500 ( 49.12)     1594.2132 ( 50.56) ---    3152.8549 ---     662037
+Task 0012 ---CcW---        10.7922 (  0.34)     1606.0081 ( 50.94)     1536.0546 ( 48.72) ---    3152.8549 ---    1058909
+Task 0013 ---CcW---        10.8428 (  0.34)     1731.7486 ( 54.93)     1410.2636 ( 44.73) ---    3152.8549 ---    1373877
+Task 0014 ---CcW---        10.4231 (  0.33)     1658.1704 ( 52.59)     1484.2613 ( 47.08) ---    3152.8549 ---    1137671
+Task 0015 ---CcW---         9.8704 (  0.31)     1533.7458 ( 48.65)     1609.2386 ( 51.04) ---    3152.8549 ---     786165
+Task 0016 ---CcW---        11.1284 (  0.35)     1724.1363 ( 54.68)     1417.5902 ( 44.96) ---    3152.8549 ---     875067
+Task 0017 ---CcW---         5.7363 (  0.18)     2136.3640 ( 67.76)     1010.7546 ( 32.06) ---    3152.8549 ---    1344037
+Task 0018 ---CcW---         4.2938 (  0.14)     2356.9323 ( 74.76)      791.6289 ( 25.11) ---    3152.8549 ---    1323949
+Task 0019 ---CcW---         5.2511 (  0.17)     2318.2670 ( 73.53)      829.3368 ( 26.30) ---    3152.8549 ---    1330383
+Task 0020 ---CcW---         8.4659 (  0.27)     1915.2849 ( 60.75)     1229.1040 ( 38.98) ---    3152.8549 ---    1211945
+Task 0021 ---CcW---         9.3489 (  0.30)     1767.0925 ( 56.05)     1376.4134 ( 43.66) ---    3152.8549 ---     734819
+Task 0022 ---CcW---        11.1937 (  0.36)     1937.5350 ( 61.45)     1204.1262 ( 38.19) ---    3152.8549 ---    1409179
+Task 0023 ---CcW---         5.0915 (  0.16)     2285.2308 ( 72.48)      862.5325 ( 27.36) ---    3152.8549 ---    1721627
+Task 0024 ---CcW---         5.2371 (  0.17)     2360.0240 ( 74.85)      787.5938 ( 24.98) ---    3152.8549 ---    1833745
+Task 0025 ---CcW---         7.0955 (  0.23)     2014.1553 ( 63.88)     1131.6040 ( 35.89) ---    3152.8549 ---    1363411
+Task 0026 ---CcW---         9.6705 (  0.31)     1882.9609 ( 59.72)     1260.2235 ( 39.97) ---    3152.8549 ---    1032007
+Task 0027 ---CcW---        10.4707 (  0.33)     1562.5772 ( 49.56)     1579.8070 ( 50.11) ---    3152.8549 ---     851167
+Task 0028 ---CcW---         8.3968 (  0.27)     1511.1766 ( 47.93)     1633.2815 ( 51.80) ---    3152.8549 ---     974611
+Task 0029 ---CcW---         8.0912 (  0.26)     1509.3364 ( 47.87)     1635.4273 ( 51.87) ---    3152.8549 ---     983221
+Task 0030 ---CcW---         8.1091 (  0.26)     1553.3566 ( 49.27)     1591.3892 ( 50.47) ---    3152.8549 ---     995095
+Task 0031 ---CcW---        10.7377 (  0.34)     1615.5170 ( 51.24)     1526.6002 ( 48.42) ---    3152.8549 ---    1031869
+Task 0032 ---CcW---        11.1916 (  0.35)     1690.6922 ( 53.62)     1450.9711 ( 46.02) ---    3152.8549 ---     934065
+Task 0033 ---CcW---         5.6528 (  0.18)     2153.0248 ( 68.29)      994.1774 ( 31.53) ---    3152.8549 ---    1294451
+Task 0034 ---CcW---         4.3333 (  0.14)     2431.1293 ( 77.11)      717.3922 ( 22.75) ---    3152.8549 ---    1341025
+Task 0035 ---CcW---         5.3823 (  0.17)     2324.5694 ( 73.73)      822.9032 ( 26.10) ---    3152.8549 ---    1349725
+Task 0036 ---CcW---         8.4848 (  0.27)     1898.9451 ( 60.23)     1245.4251 ( 39.50) ---    3152.8549 ---    1197405
+Task 0037 ---CcW---         9.4140 (  0.30)     1726.6249 ( 54.76)     1416.8159 ( 44.94) ---    3152.8549 ---     771053
+Task 0038 ---CcW---        11.0530 (  0.35)     1929.4465 ( 61.20)     1212.3554 ( 38.45) ---    3152.8549 ---    1376971
+Task 0039 ---CcW---         5.0711 (  0.16)     2316.5402 ( 73.47)      831.2436 ( 26.36) ---    3152.8549 ---    1644641
+Task 0040 ---CcW---         5.3456 (  0.17)     2435.3095 ( 77.24)      712.1998 ( 22.59) ---    3152.8549 ---    1867409
+Task 0041 ---CcW---         7.1315 (  0.23)     2029.8965 ( 64.38)     1115.8269 ( 35.39) ---    3152.8549 ---    1345933
+Task 0042 ---CcW---         9.4281 (  0.30)     1838.8899 ( 58.32)     1304.5368 ( 41.38) ---    3152.8549 ---    1002469
+Task 0043 ---CcW---        10.6103 (  0.34)     1541.3286 ( 48.89)     1600.9160 ( 50.78) ---    3152.8549 ---     842379
+Task 0044 ---CcW---         8.5354 (  0.27)     1507.1858 ( 47.80)     1637.1336 ( 51.93) ---    3152.8549 ---    1012415
+Task 0045 ---CcW---         8.2181 (  0.26)     1534.4993 ( 48.67)     1610.1375 ( 51.07) ---    3152.8549 ---    1034087
+Task 0046 ---CcW---         8.1950 (  0.26)     1569.5119 ( 49.78)     1575.1481 ( 49.96) ---    3152.8549 ---    1045871
+Task 0047 ---CcW---        10.8307 (  0.34)     1573.2621 ( 49.90)     1568.7621 ( 49.76) ---    3152.8549 ---    1049729
+Task 0048 ---CcW---         3.8694 (  0.12)     1464.5498 ( 46.45)     1684.4356 ( 53.43) ---    3152.8549 ---     313955
+Task 0049 ---CcW---         6.1710 (  0.20)     1577.4679 ( 50.03)     1569.2161 ( 49.77) ---    3152.8549 ---     491889
+Task 0050 ---CcW---         6.1967 (  0.20)     1414.1583 ( 44.85)     1732.5000 ( 54.95) ---    3152.8549 ---     499755
+Task 0051 ---CcW---         6.2072 (  0.20)     1421.9516 ( 45.10)     1724.6961 ( 54.70) ---    3152.8549 ---     499809
+Task 0052 ---CcW---         6.1717 (  0.20)     1426.6262 ( 45.25)     1720.0570 ( 54.56) ---    3152.8549 ---     486767
+Task 0053 ---CcW---         3.9213 (  0.12)     1485.2051 ( 47.11)     1663.7285 ( 52.77) ---    3152.8549 ---     324509
+Task 0054 ---CcW---         8.2025 (  0.26)     1508.2220 ( 47.84)     1636.4304 ( 51.90) ---    3152.8549 ---     771763
+Task 0055 ---CcW---         9.3212 (  0.30)     1451.5602 ( 46.04)     1691.9735 ( 53.66) ---    3152.8549 ---     719097
+Task 0056 ---CcW---         9.0908 (  0.29)     1452.5771 ( 46.07)     1691.1869 ( 53.64) ---    3152.8549 ---     617459
+Task 0057 ---CcW---         9.3517 (  0.30)     1467.5132 ( 46.55)     1675.9899 ( 53.16) ---    3152.8549 ---     736941
+Task 0058 ---CcW---         8.5307 (  0.27)     1536.4038 ( 48.73)     1607.9203 ( 51.00) ---    3152.8549 ---     856751
+Task 0059 ---CcW---        10.1125 (  0.32)     1569.4795 ( 49.78)     1573.2629 ( 49.90) ---    3152.8549 ---     679561
+Task 0060 ---CcW---        10.8270 (  0.34)     1625.5741 ( 51.56)     1516.4538 ( 48.10) ---    3152.8549 ---    1064799
+Task 0061 ---CcW---        10.7585 (  0.34)     1749.5984 ( 55.49)     1392.4980 ( 44.17) ---    3152.8549 ---    1373397
+Task 0062 ---CcW---        10.4802 (  0.33)     1703.0368 ( 54.02)     1439.3380 ( 45.65) ---    3152.8549 ---    1146635
+Task 0063 ---CcW---         9.9804 (  0.32)     1546.0429 ( 49.04)     1596.8315 ( 50.65) ---    3152.8549 ---     790227
+
+Task ++++ --- MinCompTime=   1401.9154 --- MaxCompTime=   2435.3095
+
+Task ++++ ---CcW---       513.9068 (  0.25)   109306.9840 ( 54.17)    91961.8216 ( 45.57) ---  201782.7123
+Task ++++ ---MmA---      3152.8549 (     0)     3152.8549 (    23)     3152.8549
+-----------------------------------------------------------------
+TaskTimes      0    1435.4260    1717.4288
+TaskTimes      1    1402.9139    1749.9410
+TaskTimes      2    1401.9154    1750.9394
+TaskTimes      3    1410.5302    1742.3247
+TaskTimes      4    1419.8370    1733.0179
+TaskTimes      5    1484.6294    1668.2255
+TaskTimes      6    1491.2962    1661.5586
+TaskTimes      7    1445.0496    1707.8053
+TaskTimes      8    1429.2372    1723.6177
+TaskTimes      9    1435.2755    1717.5794
+TaskTimes     10    1521.7810    1631.0738
+TaskTimes     11    1548.6500    1604.2049
+TaskTimes     12    1606.0081    1546.8468
+TaskTimes     13    1731.7486    1421.1063
+TaskTimes     14    1658.1704    1494.6844
+TaskTimes     15    1533.7458    1619.1091
+TaskTimes     16    1724.1363    1428.7186
+TaskTimes     17    2136.3640    1016.4909
+TaskTimes     18    2356.9323     795.9226
+TaskTimes     19    2318.2670     834.5879
+TaskTimes     20    1915.2849    1237.5699
+TaskTimes     21    1767.0925    1385.7624
+TaskTimes     22    1937.5350    1215.3199
+TaskTimes     23    2285.2308     867.6240
+TaskTimes     24    2360.0240     792.8309
+TaskTimes     25    2014.1553    1138.6995
+TaskTimes     26    1882.9609    1269.8940
+TaskTimes     27    1562.5772    1590.2777
+TaskTimes     28    1511.1766    1641.6783
+TaskTimes     29    1509.3364    1643.5185
+TaskTimes     30    1553.3566    1599.4983
+TaskTimes     31    1615.5170    1537.3379
+TaskTimes     32    1690.6922    1462.1627
+TaskTimes     33    2153.0248     999.8301
+TaskTimes     34    2431.1293     721.7255
+TaskTimes     35    2324.5694     828.2855
+TaskTimes     36    1898.9451    1253.9098
+TaskTimes     37    1726.6249    1426.2299
+TaskTimes     38    1929.4465    1223.4084
+TaskTimes     39    2316.5402     836.3147
+TaskTimes     40    2435.3095     717.5454
+TaskTimes     41    2029.8965    1122.9583
+TaskTimes     42    1838.8899    1313.9650
+TaskTimes     43    1541.3286    1611.5263
+TaskTimes     44    1507.1858    1645.6690
+TaskTimes     45    1534.4993    1618.3556
+TaskTimes     46    1569.5119    1583.3430
+TaskTimes     47    1573.2621    1579.5928
+TaskTimes     48    1464.5498    1688.3050
+TaskTimes     49    1577.4679    1575.3870
+TaskTimes     50    1414.1583    1738.6966
+TaskTimes     51    1421.9516    1730.9033
+TaskTimes     52    1426.6262    1726.2287
+TaskTimes     53    1485.2051    1667.6498
+TaskTimes     54    1508.2220    1644.6329
+TaskTimes     55    1451.5602    1701.2947
+TaskTimes     56    1452.5771    1700.2777
+TaskTimes     57    1467.5132    1685.3416
+TaskTimes     58    1536.4038    1616.4510
+TaskTimes     59    1569.4795    1583.3754
+TaskTimes     60    1625.5741    1527.2808
+TaskTimes     61    1749.5984    1403.2565
+TaskTimes     62    1703.0368    1449.8181
+TaskTimes     63    1546.0429    1606.8119
+TotalPredictionTime         3152.8549
+MinimumComputationTime      1401.9154
+MaximumComputationTime      2435.3095
+MinimumCommunicationTime     717.5454
+MaximumCommunicationTime    1750.9394
+TotalComputationTime      109306.9840
+TotalCommunicationTime     92475.7283
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+Event                   CPUTime    30424181 ( 50.00)
+Event                  MPI_Send        4294 (  0.01)
+Event                 MPI_Bsend        8022 (  0.01)
+Event                 MPI_Ssend        1124 (  0.00)
+Event                MPI_Issend     7726343 ( 12.70)
+Event                  MPI_Recv       15209 (  0.02)
+Event                 MPI_Irecv     7724574 ( 12.69)
+Event               MPI_Waitall     7722883 ( 12.69)
+Event               MPI_Waitany     3563508 (  5.86)
+Event             MPI_Allreduce       56808 (  0.09)
+Event               MPI_Barrier       84794 (  0.14)
+Event                 MPI_Bcast      379896 (  0.62)
+Event                MPI_Reduce     3136662 (  5.15)
+Event              MPI_Finalize          64 (  0.00)
+Event                  MPI_Init          64 (  0.00)
+Event                ++++++++++    60848426
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+ETime                   CPUTime   109306.9840 ( 54.17) ---       0.0000 (  0.00)
+ETime                  MPI_Send        0.0009 (  0.00) ---       0.0000 (  0.00)
+ETime                 MPI_Bsend        0.0017 (  0.00) ---       0.0000 (  0.00)
+ETime                 MPI_Ssend        9.4935 (  0.00) ---       9.4397 ( 99.43)
+ETime                MPI_Issend      482.2839 (  0.24) ---       0.0000 (  0.00)
+ETime                  MPI_Recv       40.4982 (  0.02) ---      40.4414 ( 99.86)
+ETime                 MPI_Irecv        8.4720 (  0.00) ---       0.0000 (  0.00)
+ETime               MPI_Waitall        8.5315 (  0.00) ---       0.0613 (  0.72)
+ETime               MPI_Waitany    74631.3427 ( 36.99) ---   74627.4344 ( 99.99)
+ETime             MPI_Allreduce     3781.9571 (  1.87) ---    3778.5050 ( 99.91)
+ETime               MPI_Barrier     1010.7588 (  0.50) ---    1005.0020 ( 99.43)
+ETime                 MPI_Bcast    12500.4184 (  6.19) ---   12500.2470 (100.00)
+ETime                MPI_Reduce        1.2786 (  0.00) ---       0.0000 (  0.00)
+ETime              MPI_Finalize        0.6909 (  0.00) ---       0.6908 ( 99.99)
+ETime                  MPI_Init        0.0001 (  0.00) ---       0.0000 (  0.00)
+ETime                ++++++++++   201782.7123
+
+ETaskTime 0000
+                      CPUTime =    1435.4260 ( 45.53)
+                     MPI_Send =       0.0002 (  0.00)
+                   MPI_Issend =       3.5516 (  0.11)
+                     MPI_Recv =       1.9679 (  0.06)
+                    MPI_Irecv =       0.0353 (  0.00)
+                  MPI_Waitall =       0.0965 (  0.00)
+                  MPI_Waitany =    1471.6248 ( 46.68)
+                MPI_Allreduce =      65.3944 (  2.07)
+                  MPI_Barrier =      23.1116 (  0.73)
+                    MPI_Bcast =     151.6316 (  4.81)
+                   MPI_Reduce =       0.0149 (  0.00)
+                 MPI_Finalize =       0.0000 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0001
+                      CPUTime =    1402.9139 ( 44.50)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                   MPI_Issend =       5.7657 (  0.18)
+                     MPI_Recv =       0.1110 (  0.00)
+                    MPI_Irecv =       0.0636 (  0.00)
+                  MPI_Waitall =       0.0635 (  0.00)
+                  MPI_Waitany =    1406.4872 ( 44.61)
+                MPI_Allreduce =      63.5110 (  2.01)
+                  MPI_Barrier =      23.3985 (  0.74)
+                    MPI_Bcast =     250.5142 (  7.95)
+                   MPI_Reduce =       0.0149 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0002
+                      CPUTime =    1401.9154 ( 44.46)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                   MPI_Issend =       5.7741 (  0.18)
+                     MPI_Recv =       0.4884 (  0.02)
+                    MPI_Irecv =       0.0642 (  0.00)
+                  MPI_Waitall =       0.0642 (  0.00)
+                  MPI_Waitany =    1402.8797 ( 44.50)
+                MPI_Allreduce =      62.8645 (  1.99)
+                  MPI_Barrier =      23.5696 (  0.75)
+                    MPI_Bcast =     255.2084 (  8.09)
+                   MPI_Reduce =       0.0149 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0003
+                      CPUTime =    1410.5302 ( 44.74)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0842 (  0.00)
+                   MPI_Issend =       5.7908 (  0.18)
+                     MPI_Recv =       0.1233 (  0.00)
+                    MPI_Irecv =       0.0642 (  0.00)
+                  MPI_Waitall =       0.0642 (  0.00)
+                  MPI_Waitany =    1395.9539 ( 44.28)
+                MPI_Allreduce =      62.3019 (  1.98)
+                  MPI_Barrier =      23.4972 (  0.75)
+                    MPI_Bcast =     254.4186 (  8.07)
+                   MPI_Reduce =       0.0149 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0004
+                      CPUTime =    1419.8370 ( 45.03)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                   MPI_Issend =       5.7383 (  0.18)
+                     MPI_Recv =       0.1055 (  0.00)
+                    MPI_Irecv =       0.0625 (  0.00)
+                  MPI_Waitall =       0.0624 (  0.00)
+                  MPI_Waitany =    1394.1198 ( 44.22)
+                MPI_Allreduce =      63.4103 (  2.01)
+                  MPI_Barrier =      22.7099 (  0.72)
+                    MPI_Bcast =     246.7827 (  7.83)
+                   MPI_Reduce =       0.0149 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0005
+                      CPUTime =    1484.6294 ( 47.09)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                   MPI_Issend =       3.6253 (  0.11)
+                     MPI_Recv =       0.1055 (  0.00)
+                    MPI_Irecv =       0.0368 (  0.00)
+                  MPI_Waitall =       0.0368 (  0.00)
+                  MPI_Waitany =    1430.3585 ( 45.37)
+                MPI_Allreduce =      63.5087 (  2.01)
+                  MPI_Barrier =      22.8114 (  0.72)
+                    MPI_Bcast =     147.7160 (  4.69)
+                   MPI_Reduce =       0.0149 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0006
+                      CPUTime =    1491.2962 ( 47.30)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                   MPI_Issend =       7.5428 (  0.24)
+                     MPI_Recv =       0.3505 (  0.01)
+                    MPI_Irecv =       0.1014 (  0.00)
+                  MPI_Waitall =       0.1013 (  0.00)
+                  MPI_Waitany =    1402.2366 ( 44.48)
+                MPI_Allreduce =      49.7981 (  1.58)
+                  MPI_Barrier =      18.6062 (  0.59)
+                    MPI_Bcast =     182.7881 (  5.80)
+                   MPI_Reduce =       0.0222 (  0.00)
+                 MPI_Finalize =       0.0114 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0007
+                      CPUTime =    1445.0496 ( 45.83)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0000 (  0.00)
+                   MPI_Issend =       8.7659 (  0.28)
+                     MPI_Recv =       0.4190 (  0.01)
+                    MPI_Irecv =       0.0989 (  0.00)
+                  MPI_Waitall =       0.0988 (  0.00)
+                  MPI_Waitany =    1381.8871 ( 43.83)
+                MPI_Allreduce =      59.0742 (  1.87)
+                  MPI_Barrier =      19.7217 (  0.63)
+                    MPI_Bcast =     237.7133 (  7.54)
+                   MPI_Reduce =       0.0149 (  0.00)
+                 MPI_Finalize =       0.0114 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0008
+                      CPUTime =    1429.2372 ( 45.33)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0024 (  0.00)
+                   MPI_Issend =       8.5668 (  0.27)
+                     MPI_Recv =       0.4567 (  0.01)
+                    MPI_Irecv =       0.0815 (  0.00)
+                  MPI_Waitall =       0.0814 (  0.00)
+                  MPI_Waitany =    1395.3890 ( 44.26)
+                MPI_Allreduce =      58.7101 (  1.86)
+                  MPI_Barrier =      19.4114 (  0.62)
+                    MPI_Bcast =     240.8911 (  7.64)
+                   MPI_Reduce =       0.0158 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0009
+                      CPUTime =    1435.2755 ( 45.52)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0000 (  0.00)
+                   MPI_Issend =       8.8160 (  0.28)
+                     MPI_Recv =       0.4192 (  0.01)
+                    MPI_Irecv =       0.1015 (  0.00)
+                  MPI_Waitall =       0.1013 (  0.00)
+                  MPI_Waitany =    1392.5436 ( 44.17)
+                MPI_Allreduce =      59.5146 (  1.89)
+                  MPI_Barrier =      19.4361 (  0.62)
+                    MPI_Bcast =     236.6209 (  7.50)
+                   MPI_Reduce =       0.0149 (  0.00)
+                 MPI_Finalize =       0.0114 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0010
+                      CPUTime =    1521.7810 ( 48.27)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                   MPI_Issend =       7.8158 (  0.25)
+                     MPI_Recv =       0.4604 (  0.01)
+                    MPI_Irecv =       0.1147 (  0.00)
+                  MPI_Waitall =       0.1147 (  0.00)
+                  MPI_Waitany =    1373.1757 ( 43.55)
+                MPI_Allreduce =      49.9268 (  1.58)
+                  MPI_Barrier =      18.7101 (  0.59)
+                    MPI_Bcast =     180.7242 (  5.73)
+                   MPI_Reduce =       0.0201 (  0.00)
+                 MPI_Finalize =       0.0114 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0011
+                      CPUTime =    1548.6500 ( 49.12)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.1668 (  0.01)
+                   MPI_Issend =       9.6086 (  0.30)
+                     MPI_Recv =       0.3652 (  0.01)
+                    MPI_Irecv =       0.0850 (  0.00)
+                  MPI_Waitall =       0.0849 (  0.00)
+                  MPI_Waitany =    1419.5260 ( 45.02)
+                MPI_Allreduce =      47.3373 (  1.50)
+                  MPI_Barrier =      16.0142 (  0.51)
+                    MPI_Bcast =     110.9844 (  3.52)
+                   MPI_Reduce =       0.0211 (  0.00)
+                 MPI_Finalize =       0.0114 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0012
+                      CPUTime =    1606.0081 ( 50.94)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.2486 (  0.01)
+                   MPI_Issend =      10.2566 (  0.33)
+                     MPI_Recv =       0.7613 (  0.02)
+                    MPI_Irecv =       0.1463 (  0.00)
+                  MPI_Waitall =       0.1461 (  0.00)
+                  MPI_Waitany =    1392.9239 ( 44.18)
+                MPI_Allreduce =      41.8617 (  1.33)
+                  MPI_Barrier =      14.8851 (  0.47)
+                    MPI_Bcast =      85.5868 (  2.71)
+                   MPI_Reduce =       0.0221 (  0.00)
+                 MPI_Finalize =       0.0083 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0013
+                      CPUTime =    1731.7486 ( 54.93)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.1515 (  0.00)
+                   MPI_Issend =      10.1823 (  0.32)
+                     MPI_Recv =       1.1725 (  0.04)
+                    MPI_Irecv =       0.1970 (  0.01)
+                  MPI_Waitall =       0.1969 (  0.01)
+                  MPI_Waitany =    1317.2588 ( 41.78)
+                MPI_Allreduce =      47.8846 (  1.52)
+                  MPI_Barrier =      14.3657 (  0.46)
+                    MPI_Bcast =      29.6749 (  0.94)
+                   MPI_Reduce =       0.0204 (  0.00)
+                 MPI_Finalize =       0.0016 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0014
+                      CPUTime =    1658.1704 ( 52.59)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.2561 (  0.01)
+                   MPI_Issend =       9.8566 (  0.31)
+                     MPI_Recv =       0.8822 (  0.03)
+                    MPI_Irecv =       0.1586 (  0.01)
+                  MPI_Waitall =       0.1585 (  0.01)
+                  MPI_Waitany =    1310.2101 ( 41.56)
+                MPI_Allreduce =      42.6007 (  1.35)
+                  MPI_Barrier =      14.9329 (  0.47)
+                    MPI_Bcast =     115.6065 (  3.67)
+                   MPI_Reduce =       0.0222 (  0.00)
+                 MPI_Finalize =       0.0000 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0015
+                      CPUTime =    1533.7458 ( 48.65)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.2573 (  0.01)
+                   MPI_Issend =       9.4367 (  0.30)
+                     MPI_Recv =       0.6814 (  0.02)
+                    MPI_Irecv =       0.1068 (  0.00)
+                  MPI_Waitall =       0.1067 (  0.00)
+                  MPI_Waitany =    1421.2616 ( 45.08)
+                MPI_Allreduce =      48.4028 (  1.54)
+                  MPI_Barrier =      16.0972 (  0.51)
+                    MPI_Bcast =     122.7292 (  3.89)
+                   MPI_Reduce =       0.0179 (  0.00)
+                 MPI_Finalize =       0.0114 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0016
+                      CPUTime =    1724.1363 ( 54.68)
+                     MPI_Send =       0.0001 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0098 (  0.00)
+                   MPI_Issend =      10.6590 (  0.34)
+                     MPI_Recv =       0.8807 (  0.03)
+                    MPI_Irecv =       0.1184 (  0.00)
+                  MPI_Waitall =       0.1167 (  0.00)
+                  MPI_Waitany =    1132.6227 ( 35.92)
+                MPI_Allreduce =      53.1306 (  1.69)
+                  MPI_Barrier =      13.3104 (  0.42)
+                    MPI_Bcast =     217.8350 (  6.91)
+                   MPI_Reduce =       0.0236 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0017
+                      CPUTime =    2136.3640 ( 67.76)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.1133 (  0.00)
+                   MPI_Issend =       5.0945 (  0.16)
+                     MPI_Recv =       1.2446 (  0.04)
+                    MPI_Irecv =       0.1939 (  0.01)
+                  MPI_Waitall =       0.1949 (  0.01)
+                  MPI_Waitany =     730.5110 ( 23.17)
+                MPI_Allreduce =      59.7504 (  1.90)
+                  MPI_Barrier =       9.3516 (  0.30)
+                    MPI_Bcast =     210.0021 (  6.66)
+                   MPI_Reduce =       0.0231 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0018
+                      CPUTime =    2356.9323 ( 74.76)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.1524 (  0.00)
+                   MPI_Issend =       3.6600 (  0.12)
+                     MPI_Recv =       1.5009 (  0.05)
+                    MPI_Irecv =       0.1950 (  0.01)
+                  MPI_Waitall =       0.1947 (  0.01)
+                  MPI_Waitany =     530.7962 ( 16.84)
+                MPI_Allreduce =      61.3458 (  1.95)
+                  MPI_Barrier =       7.6450 (  0.24)
+                    MPI_Bcast =     190.3996 (  6.04)
+                   MPI_Reduce =       0.0215 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0019
+                      CPUTime =    2318.2670 ( 73.53)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0319 (  0.00)
+                   MPI_Issend =       4.6145 (  0.15)
+                     MPI_Recv =       1.2446 (  0.04)
+                    MPI_Irecv =       0.1929 (  0.01)
+                  MPI_Waitall =       0.1923 (  0.01)
+                  MPI_Waitany =     561.2228 ( 17.80)
+                MPI_Allreduce =      60.0411 (  1.90)
+                  MPI_Barrier =       9.3279 (  0.30)
+                    MPI_Bcast =     197.6851 (  6.27)
+                   MPI_Reduce =       0.0232 (  0.00)
+                 MPI_Finalize =       0.0116 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0020
+                      CPUTime =    1915.2849 ( 60.75)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0199 (  0.00)
+                   MPI_Issend =       7.8670 (  0.25)
+                     MPI_Recv =       1.1935 (  0.04)
+                    MPI_Irecv =       0.1758 (  0.01)
+                  MPI_Waitall =       0.1758 (  0.01)
+                  MPI_Waitany =     942.4309 ( 29.89)
+                MPI_Allreduce =      57.3039 (  1.82)
+                  MPI_Barrier =      12.1193 (  0.38)
+                    MPI_Bcast =     216.2557 (  6.86)
+                   MPI_Reduce =       0.0165 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0021
+                      CPUTime =    1767.0925 ( 56.05)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0193 (  0.00)
+                   MPI_Issend =       8.9368 (  0.28)
+                     MPI_Recv =       1.1250 (  0.04)
+                    MPI_Irecv =       0.0995 (  0.00)
+                  MPI_Waitall =       0.0995 (  0.00)
+                  MPI_Waitany =    1080.8811 ( 34.28)
+                MPI_Allreduce =      52.5175 (  1.67)
+                  MPI_Barrier =      14.8096 (  0.47)
+                    MPI_Bcast =     227.2450 (  7.21)
+                   MPI_Reduce =       0.0174 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0022
+                      CPUTime =    1937.5350 ( 61.45)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.4074 (  0.01)
+                   MPI_Issend =      10.5256 (  0.33)
+                     MPI_Recv =       0.5815 (  0.02)
+                    MPI_Irecv =       0.2009 (  0.01)
+                  MPI_Waitall =       0.2012 (  0.01)
+                  MPI_Waitany =     911.1016 ( 28.90)
+                MPI_Allreduce =      55.5398 (  1.76)
+                  MPI_Barrier =      11.9860 (  0.38)
+                    MPI_Bcast =     224.7382 (  7.13)
+                   MPI_Reduce =       0.0261 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0023
+                      CPUTime =    2285.2308 ( 72.48)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.7699 (  0.02)
+                   MPI_Issend =       4.3014 (  0.14)
+                     MPI_Recv =       1.0129 (  0.03)
+                    MPI_Irecv =       0.2573 (  0.01)
+                  MPI_Waitall =       0.2567 (  0.01)
+                  MPI_Waitany =     572.1653 ( 18.15)
+                MPI_Allreduce =      63.0141 (  2.00)
+                  MPI_Barrier =       7.6925 (  0.24)
+                    MPI_Bcast =     218.1206 (  6.92)
+                   MPI_Reduce =       0.0217 (  0.00)
+                 MPI_Finalize =       0.0116 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0024
+                      CPUTime =    2360.0240 ( 74.85)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.4531 (  0.01)
+                   MPI_Issend =       4.4069 (  0.14)
+                     MPI_Recv =       1.0214 (  0.03)
+                    MPI_Irecv =       0.2723 (  0.01)
+                  MPI_Waitall =       0.2756 (  0.01)
+                  MPI_Waitany =     508.2865 ( 16.12)
+                MPI_Allreduce =      61.6671 (  1.96)
+                  MPI_Barrier =       7.5663 (  0.24)
+                    MPI_Bcast =     208.8471 (  6.62)
+                   MPI_Reduce =       0.0232 (  0.00)
+                 MPI_Finalize =       0.0116 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0025
+                      CPUTime =    2014.1553 ( 63.88)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.3852 (  0.01)
+                   MPI_Issend =       6.4393 (  0.20)
+                     MPI_Recv =       0.9510 (  0.03)
+                    MPI_Irecv =       0.1987 (  0.01)
+                  MPI_Waitall =       0.1987 (  0.01)
+                  MPI_Waitany =     834.7251 ( 26.48)
+                MPI_Allreduce =      60.9583 (  1.93)
+                  MPI_Barrier =      10.3268 (  0.33)
+                    MPI_Bcast =     224.4858 (  7.12)
+                   MPI_Reduce =       0.0190 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0026
+                      CPUTime =    1882.9609 ( 59.72)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.3826 (  0.01)
+                   MPI_Issend =       9.1413 (  0.29)
+                     MPI_Recv =       0.8566 (  0.03)
+                    MPI_Irecv =       0.1465 (  0.00)
+                  MPI_Waitall =       0.1465 (  0.00)
+                  MPI_Waitany =     952.6451 ( 30.22)
+                MPI_Allreduce =      60.5311 (  1.92)
+                  MPI_Barrier =      13.0630 (  0.41)
+                    MPI_Bcast =     232.9520 (  7.39)
+                   MPI_Reduce =       0.0178 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0027
+                      CPUTime =    1562.5772 ( 49.56)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0502 (  0.00)
+                   MPI_Issend =      10.0219 (  0.32)
+                     MPI_Recv =       0.4419 (  0.01)
+                    MPI_Irecv =       0.1105 (  0.00)
+                  MPI_Waitall =       0.1105 (  0.00)
+                  MPI_Waitany =    1312.5939 ( 41.63)
+                MPI_Allreduce =      55.4359 (  1.76)
+                  MPI_Barrier =      16.0536 (  0.51)
+                    MPI_Bcast =     195.4203 (  6.20)
+                   MPI_Reduce =       0.0275 (  0.00)
+                 MPI_Finalize =       0.0114 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0028
+                      CPUTime =    1511.1766 ( 47.93)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0426 (  0.00)
+                   MPI_Issend =       7.8954 (  0.25)
+                     MPI_Recv =       0.2308 (  0.01)
+                    MPI_Irecv =       0.1354 (  0.00)
+                  MPI_Waitall =       0.1354 (  0.00)
+                  MPI_Waitany =    1320.8740 ( 41.89)
+                MPI_Allreduce =      63.7358 (  2.02)
+                  MPI_Barrier =      16.2318 (  0.51)
+                    MPI_Bcast =     232.3646 (  7.37)
+                   MPI_Reduce =       0.0210 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0029
+                      CPUTime =    1509.3364 ( 47.87)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.1533 (  0.00)
+                   MPI_Issend =       7.5881 (  0.24)
+                     MPI_Recv =       0.2925 (  0.01)
+                    MPI_Irecv =       0.1347 (  0.00)
+                  MPI_Waitall =       0.1348 (  0.00)
+                  MPI_Waitany =    1323.8985 ( 41.99)
+                MPI_Allreduce =      64.5746 (  2.05)
+                  MPI_Barrier =      16.0325 (  0.51)
+                    MPI_Bcast =     230.6744 (  7.32)
+                   MPI_Reduce =       0.0235 (  0.00)
+                 MPI_Finalize =       0.0114 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0030
+                      CPUTime =    1553.3566 ( 49.27)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0251 (  0.00)
+                   MPI_Issend =       7.5997 (  0.24)
+                     MPI_Recv =       0.2790 (  0.01)
+                    MPI_Irecv =       0.1386 (  0.00)
+                  MPI_Waitall =       0.1386 (  0.00)
+                  MPI_Waitany =    1284.4346 ( 40.74)
+                MPI_Allreduce =      64.1523 (  2.03)
+                  MPI_Barrier =      15.8581 (  0.50)
+                    MPI_Bcast =     226.8397 (  7.19)
+                   MPI_Reduce =       0.0210 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0031
+                      CPUTime =    1615.5170 ( 51.24)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0142 (  0.00)
+                   MPI_Issend =      10.2173 (  0.32)
+                     MPI_Recv =       0.5434 (  0.02)
+                    MPI_Irecv =       0.1414 (  0.00)
+                  MPI_Waitall =       0.1414 (  0.00)
+                  MPI_Waitany =    1266.0946 ( 40.16)
+                MPI_Allreduce =      55.2626 (  1.75)
+                  MPI_Barrier =      15.4126 (  0.49)
+                    MPI_Bcast =     189.4739 (  6.01)
+                   MPI_Reduce =       0.0251 (  0.00)
+                 MPI_Finalize =       0.0114 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0032
+                      CPUTime =    1690.6922 ( 53.62)
+                     MPI_Send =       0.0001 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.2166 (  0.01)
+                   MPI_Issend =      10.6868 (  0.34)
+                     MPI_Recv =       0.4294 (  0.01)
+                    MPI_Irecv =       0.1278 (  0.00)
+                  MPI_Waitall =       0.1248 (  0.00)
+                  MPI_Waitany =    1158.9544 ( 36.76)
+                MPI_Allreduce =      59.3924 (  1.88)
+                  MPI_Barrier =      14.1952 (  0.45)
+                    MPI_Bcast =     217.9987 (  6.91)
+                   MPI_Reduce =       0.0251 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0033
+                      CPUTime =    2153.0248 ( 68.29)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.5809 (  0.02)
+                   MPI_Issend =       5.0290 (  0.16)
+                     MPI_Recv =       0.8764 (  0.03)
+                    MPI_Irecv =       0.1862 (  0.01)
+                  MPI_Waitall =       0.1862 (  0.01)
+                  MPI_Waitany =     708.1065 ( 22.46)
+                MPI_Allreduce =      66.5416 (  2.11)
+                  MPI_Barrier =       8.6365 (  0.27)
+                    MPI_Bcast =     209.6515 (  6.65)
+                   MPI_Reduce =       0.0238 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0034
+                      CPUTime =    2431.1293 ( 77.11)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.9370 (  0.03)
+                   MPI_Issend =       3.6913 (  0.12)
+                     MPI_Recv =       0.9363 (  0.03)
+                    MPI_Irecv =       0.1968 (  0.01)
+                  MPI_Waitall =       0.1968 (  0.01)
+                  MPI_Waitany =     453.0545 ( 14.37)
+                MPI_Allreduce =      67.7413 (  2.15)
+                  MPI_Barrier =       6.9554 (  0.22)
+                    MPI_Bcast =     187.9825 (  5.96)
+                   MPI_Reduce =       0.0221 (  0.00)
+                 MPI_Finalize =       0.0116 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0035
+                      CPUTime =    2324.5694 ( 73.73)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.6180 (  0.02)
+                   MPI_Issend =       4.7385 (  0.15)
+                     MPI_Recv =       0.8620 (  0.03)
+                    MPI_Irecv =       0.1953 (  0.01)
+                  MPI_Waitall =       0.1955 (  0.01)
+                  MPI_Waitany =     548.6007 ( 17.40)
+                MPI_Allreduce =      66.5918 (  2.11)
+                  MPI_Barrier =       8.6630 (  0.27)
+                    MPI_Bcast =     197.7851 (  6.27)
+                   MPI_Reduce =       0.0239 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0036
+                      CPUTime =    1898.9451 ( 60.23)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.5985 (  0.02)
+                   MPI_Issend =       7.8908 (  0.25)
+                     MPI_Recv =       0.8203 (  0.03)
+                    MPI_Irecv =       0.1737 (  0.01)
+                  MPI_Waitall =       0.1737 (  0.01)
+                  MPI_Waitany =     952.9468 ( 30.22)
+                MPI_Allreduce =      63.0413 (  2.00)
+                  MPI_Barrier =      11.7038 (  0.37)
+                    MPI_Bcast =     216.5329 (  6.87)
+                   MPI_Reduce =       0.0165 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0037
+                      CPUTime =    1726.6249 ( 54.76)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.2455 (  0.01)
+                   MPI_Issend =       8.9870 (  0.29)
+                     MPI_Recv =       0.7757 (  0.02)
+                    MPI_Irecv =       0.1053 (  0.00)
+                  MPI_Waitall =       0.1053 (  0.00)
+                  MPI_Waitany =    1110.1033 ( 35.21)
+                MPI_Allreduce =      62.8932 (  1.99)
+                  MPI_Barrier =      14.5799 (  0.46)
+                    MPI_Bcast =     228.4059 (  7.24)
+                   MPI_Reduce =       0.0174 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0038
+                      CPUTime =    1929.4465 ( 61.20)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.1367 (  0.00)
+                   MPI_Issend =      10.3930 (  0.33)
+                     MPI_Recv =       0.6134 (  0.02)
+                    MPI_Irecv =       0.1949 (  0.01)
+                  MPI_Waitall =       0.1957 (  0.01)
+                  MPI_Waitany =     914.6741 ( 29.01)
+                MPI_Allreduce =      61.3493 (  1.95)
+                  MPI_Barrier =      11.9979 (  0.38)
+                    MPI_Bcast =     223.8141 (  7.10)
+                   MPI_Reduce =       0.0277 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0039
+                      CPUTime =    2316.5402 ( 73.47)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.4571 (  0.01)
+                   MPI_Issend =       4.3116 (  0.14)
+                     MPI_Recv =       1.0942 (  0.03)
+                    MPI_Irecv =       0.2455 (  0.01)
+                  MPI_Waitall =       0.2438 (  0.01)
+                  MPI_Waitany =     538.9722 ( 17.09)
+                MPI_Allreduce =      65.9150 (  2.09)
+                  MPI_Barrier =       7.3310 (  0.23)
+                    MPI_Bcast =     217.7101 (  6.91)
+                   MPI_Reduce =       0.0227 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0040
+                      CPUTime =    2435.3095 ( 77.24)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.1835 (  0.01)
+                   MPI_Issend =       4.5024 (  0.14)
+                     MPI_Recv =       1.1745 (  0.04)
+                    MPI_Irecv =       0.2779 (  0.01)
+                  MPI_Waitall =       0.2797 (  0.01)
+                  MPI_Waitany =     437.2122 ( 13.87)
+                MPI_Allreduce =      58.1373 (  1.84)
+                  MPI_Barrier =       7.2141 (  0.23)
+                    MPI_Bcast =     208.5281 (  6.61)
+                   MPI_Reduce =       0.0241 (  0.00)
+                 MPI_Finalize =       0.0116 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0041
+                      CPUTime =    2029.8965 ( 64.38)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.1531 (  0.00)
+                   MPI_Issend =       6.4825 (  0.21)
+                     MPI_Recv =       1.1461 (  0.04)
+                    MPI_Irecv =       0.1958 (  0.01)
+                  MPI_Waitall =       0.1959 (  0.01)
+                  MPI_Waitany =     820.9643 ( 26.04)
+                MPI_Allreduce =      59.1756 (  1.88)
+                  MPI_Barrier =      10.1438 (  0.32)
+                    MPI_Bcast =     224.4705 (  7.12)
+                   MPI_Reduce =       0.0191 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0042
+                      CPUTime =    1838.8899 ( 58.32)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.1203 (  0.00)
+                   MPI_Issend =       8.9112 (  0.28)
+                     MPI_Recv =       1.1101 (  0.04)
+                    MPI_Irecv =       0.1419 (  0.00)
+                  MPI_Waitall =       0.1419 (  0.00)
+                  MPI_Waitany =     996.0635 ( 31.59)
+                MPI_Allreduce =      60.2179 (  1.91)
+                  MPI_Barrier =      12.8321 (  0.41)
+                    MPI_Bcast =     234.3965 (  7.43)
+                   MPI_Reduce =       0.0178 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0043
+                      CPUTime =    1541.3286 ( 48.89)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0505 (  0.00)
+                   MPI_Issend =      10.1653 (  0.32)
+                     MPI_Recv =       0.4461 (  0.01)
+                    MPI_Irecv =       0.1089 (  0.00)
+                  MPI_Waitall =       0.1089 (  0.00)
+                  MPI_Waitany =    1332.9320 ( 42.28)
+                MPI_Allreduce =      56.1409 (  1.78)
+                  MPI_Barrier =      16.3259 (  0.52)
+                    MPI_Bcast =     195.2085 (  6.19)
+                   MPI_Reduce =       0.0279 (  0.00)
+                 MPI_Finalize =       0.0114 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0044
+                      CPUTime =    1507.1858 ( 47.80)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0414 (  0.00)
+                   MPI_Issend =       8.0192 (  0.25)
+                     MPI_Recv =       0.2485 (  0.01)
+                    MPI_Irecv =       0.1408 (  0.00)
+                  MPI_Waitall =       0.1409 (  0.00)
+                  MPI_Waitany =    1323.8633 ( 41.99)
+                MPI_Allreduce =      64.3914 (  2.04)
+                  MPI_Barrier =      16.0024 (  0.51)
+                    MPI_Bcast =     232.7882 (  7.38)
+                   MPI_Reduce =       0.0214 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0045
+                      CPUTime =    1534.4993 ( 48.67)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.1368 (  0.00)
+                   MPI_Issend =       7.6950 (  0.24)
+                     MPI_Recv =       0.3406 (  0.01)
+                    MPI_Irecv =       0.1421 (  0.00)
+                  MPI_Waitall =       0.1422 (  0.00)
+                  MPI_Waitany =    1298.6908 ( 41.19)
+                MPI_Allreduce =      64.2183 (  2.04)
+                  MPI_Barrier =      15.9588 (  0.51)
+                    MPI_Bcast =     230.9957 (  7.33)
+                   MPI_Reduce =       0.0239 (  0.00)
+                 MPI_Finalize =       0.0114 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0046
+                      CPUTime =    1569.5119 ( 49.78)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0080 (  0.00)
+                   MPI_Issend =       7.6655 (  0.24)
+                     MPI_Recv =       0.2561 (  0.01)
+                    MPI_Irecv =       0.1458 (  0.00)
+                  MPI_Waitall =       0.1459 (  0.00)
+                  MPI_Waitany =    1269.0210 ( 40.25)
+                MPI_Allreduce =      63.9223 (  2.03)
+                  MPI_Barrier =      15.6743 (  0.50)
+                    MPI_Bcast =     226.4712 (  7.18)
+                   MPI_Reduce =       0.0214 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0047
+                      CPUTime =    1573.2621 ( 49.90)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0128 (  0.00)
+                   MPI_Issend =      10.3031 (  0.33)
+                     MPI_Recv =       0.5931 (  0.02)
+                    MPI_Irecv =       0.1434 (  0.00)
+                  MPI_Waitall =       0.1435 (  0.00)
+                  MPI_Waitany =    1306.3582 ( 41.43)
+                MPI_Allreduce =      56.3801 (  1.79)
+                  MPI_Barrier =      15.4363 (  0.49)
+                    MPI_Bcast =     190.1854 (  6.03)
+                   MPI_Reduce =       0.0255 (  0.00)
+                 MPI_Finalize =       0.0114 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0048
+                      CPUTime =    1464.5498 ( 46.45)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                   MPI_Issend =       3.6213 (  0.11)
+                     MPI_Recv =       0.1351 (  0.00)
+                    MPI_Irecv =       0.0354 (  0.00)
+                  MPI_Waitall =       0.0353 (  0.00)
+                  MPI_Waitany =    1449.7915 ( 45.98)
+                MPI_Allreduce =      68.2933 (  2.17)
+                  MPI_Barrier =      23.9270 (  0.76)
+                    MPI_Bcast =     142.4397 (  4.52)
+                   MPI_Reduce =       0.0149 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0049
+                      CPUTime =    1577.4679 ( 50.03)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                   MPI_Issend =       5.8530 (  0.19)
+                     MPI_Recv =       0.1258 (  0.00)
+                    MPI_Irecv =       0.0631 (  0.00)
+                  MPI_Waitall =       0.0631 (  0.00)
+                  MPI_Waitany =    1235.7888 ( 39.20)
+                MPI_Allreduce =      67.6307 (  2.15)
+                  MPI_Barrier =      23.5161 (  0.75)
+                    MPI_Bcast =     242.3199 (  7.69)
+                   MPI_Reduce =       0.0149 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0050
+                      CPUTime =    1414.1583 ( 44.85)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                   MPI_Issend =       5.8754 (  0.19)
+                     MPI_Recv =       0.3857 (  0.01)
+                    MPI_Irecv =       0.0642 (  0.00)
+                  MPI_Waitall =       0.0642 (  0.00)
+                  MPI_Waitany =    1393.1371 ( 44.19)
+                MPI_Allreduce =      66.7809 (  2.12)
+                  MPI_Barrier =      23.7423 (  0.75)
+                    MPI_Bcast =     248.6203 (  7.89)
+                   MPI_Reduce =       0.0149 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0051
+                      CPUTime =    1421.9516 ( 45.10)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0758 (  0.00)
+                   MPI_Issend =       5.8855 (  0.19)
+                     MPI_Recv =       0.1322 (  0.00)
+                    MPI_Irecv =       0.0642 (  0.00)
+                  MPI_Waitall =       0.0642 (  0.00)
+                  MPI_Waitany =    1384.9751 ( 43.93)
+                MPI_Allreduce =      66.5056 (  2.11)
+                  MPI_Barrier =      23.4847 (  0.74)
+                    MPI_Bcast =     249.6895 (  7.92)
+                   MPI_Reduce =       0.0149 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0052
+                      CPUTime =    1426.6262 ( 45.25)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                   MPI_Issend =       5.8557 (  0.19)
+                     MPI_Recv =       0.1182 (  0.00)
+                    MPI_Irecv =       0.0622 (  0.00)
+                  MPI_Waitall =       0.0622 (  0.00)
+                  MPI_Waitany =    1387.3905 ( 44.00)
+                MPI_Allreduce =      67.0455 (  2.13)
+                  MPI_Barrier =      22.4423 (  0.71)
+                    MPI_Bcast =     243.2256 (  7.71)
+                   MPI_Reduce =       0.0149 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0053
+                      CPUTime =    1485.2051 ( 47.11)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                   MPI_Issend =       3.6689 (  0.12)
+                     MPI_Recv =       0.0839 (  0.00)
+                    MPI_Irecv =       0.0368 (  0.00)
+                  MPI_Waitall =       0.0368 (  0.00)
+                  MPI_Waitany =    1429.6980 ( 45.35)
+                MPI_Allreduce =      67.7222 (  2.15)
+                  MPI_Barrier =      22.7612 (  0.72)
+                    MPI_Bcast =     143.6155 (  4.56)
+                   MPI_Reduce =       0.0149 (  0.00)
+                 MPI_Finalize =       0.0114 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0054
+                      CPUTime =    1508.2220 ( 47.84)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                   MPI_Issend =       7.7803 (  0.25)
+                     MPI_Recv =       0.3265 (  0.01)
+                    MPI_Irecv =       0.1009 (  0.00)
+                  MPI_Waitall =       0.1009 (  0.00)
+                  MPI_Waitany =    1387.1575 ( 44.00)
+                MPI_Allreduce =      53.2957 (  1.69)
+                  MPI_Barrier =      18.6280 (  0.59)
+                    MPI_Bcast =     177.2092 (  5.62)
+                   MPI_Reduce =       0.0224 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0055
+                      CPUTime =    1451.5602 ( 46.04)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0000 (  0.00)
+                   MPI_Issend =       8.9144 (  0.28)
+                     MPI_Recv =       0.3957 (  0.01)
+                    MPI_Irecv =       0.0989 (  0.00)
+                  MPI_Waitall =       0.0988 (  0.00)
+                  MPI_Waitany =    1375.7926 ( 43.64)
+                MPI_Allreduce =      63.2039 (  2.00)
+                  MPI_Barrier =      19.3870 (  0.61)
+                    MPI_Bcast =     233.3771 (  7.40)
+                   MPI_Reduce =       0.0149 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0056
+                      CPUTime =    1452.5771 ( 46.07)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0025 (  0.00)
+                   MPI_Issend =       8.7211 (  0.28)
+                     MPI_Recv =       0.4006 (  0.01)
+                    MPI_Irecv =       0.0819 (  0.00)
+                  MPI_Waitall =       0.0818 (  0.00)
+                  MPI_Waitany =    1372.4458 ( 43.53)
+                MPI_Allreduce =      62.3184 (  1.98)
+                  MPI_Barrier =      18.9612 (  0.60)
+                    MPI_Bcast =     237.2371 (  7.52)
+                   MPI_Reduce =       0.0158 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0057
+                      CPUTime =    1467.5132 ( 46.55)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.0000 (  0.00)
+                   MPI_Issend =       8.9377 (  0.28)
+                     MPI_Recv =       0.3893 (  0.01)
+                    MPI_Irecv =       0.1015 (  0.00)
+                  MPI_Waitall =       0.1013 (  0.00)
+                  MPI_Waitany =    1359.3331 ( 43.11)
+                MPI_Allreduce =      63.2247 (  2.01)
+                  MPI_Barrier =      18.9595 (  0.60)
+                    MPI_Bcast =     234.2682 (  7.43)
+                   MPI_Reduce =       0.0149 (  0.00)
+                 MPI_Finalize =       0.0114 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0058
+                      CPUTime =    1536.4038 ( 48.73)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                   MPI_Issend =       8.0739 (  0.26)
+                     MPI_Recv =       0.4369 (  0.01)
+                    MPI_Irecv =       0.1159 (  0.00)
+                  MPI_Waitall =       0.1160 (  0.00)
+                  MPI_Waitany =    1360.1465 ( 43.14)
+                MPI_Allreduce =      53.5871 (  1.70)
+                  MPI_Barrier =      17.9312 (  0.57)
+                    MPI_Bcast =     176.0119 (  5.58)
+                   MPI_Reduce =       0.0201 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0059
+                      CPUTime =    1569.4795 ( 49.78)
+                     MPI_Send =       0.0001 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.1592 (  0.01)
+                   MPI_Issend =       9.7177 (  0.31)
+                     MPI_Recv =       0.3544 (  0.01)
+                    MPI_Irecv =       0.0852 (  0.00)
+                  MPI_Waitall =       0.0851 (  0.00)
+                  MPI_Waitany =    1402.2848 ( 44.48)
+                MPI_Allreduce =      50.8209 (  1.61)
+                  MPI_Barrier =      15.2655 (  0.48)
+                    MPI_Bcast =     104.5671 (  3.32)
+                   MPI_Reduce =       0.0238 (  0.00)
+                 MPI_Finalize =       0.0114 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0060
+                      CPUTime =    1625.5741 ( 51.56)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.1565 (  0.00)
+                   MPI_Issend =      10.2898 (  0.33)
+                     MPI_Recv =       0.8210 (  0.03)
+                    MPI_Irecv =       0.1467 (  0.00)
+                  MPI_Waitall =       0.1466 (  0.00)
+                  MPI_Waitany =    1375.6947 ( 43.63)
+                MPI_Allreduce =      45.9979 (  1.46)
+                  MPI_Barrier =      15.2159 (  0.48)
+                    MPI_Bcast =      78.7772 (  2.50)
+                   MPI_Reduce =       0.0228 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0061
+                      CPUTime =    1749.5984 ( 55.49)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.1768 (  0.01)
+                   MPI_Issend =      10.0987 (  0.32)
+                     MPI_Recv =       1.0767 (  0.03)
+                    MPI_Irecv =       0.1963 (  0.01)
+                  MPI_Waitall =       0.1963 (  0.01)
+                  MPI_Waitany =    1300.5335 ( 41.25)
+                MPI_Allreduce =      52.7491 (  1.67)
+                  MPI_Barrier =      14.2085 (  0.45)
+                    MPI_Bcast =      23.9880 (  0.76)
+                   MPI_Reduce =       0.0211 (  0.00)
+                 MPI_Finalize =       0.0115 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0062
+                      CPUTime =    1703.0368 ( 54.02)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.1147 (  0.00)
+                   MPI_Issend =       9.9108 (  0.31)
+                     MPI_Recv =       0.6931 (  0.02)
+                    MPI_Irecv =       0.1594 (  0.01)
+                  MPI_Waitall =       0.1594 (  0.01)
+                  MPI_Waitany =    1266.9180 ( 40.18)
+                MPI_Allreduce =      47.0776 (  1.49)
+                  MPI_Barrier =      14.5653 (  0.46)
+                    MPI_Bcast =     110.1933 (  3.50)
+                   MPI_Reduce =       0.0229 (  0.00)
+                 MPI_Finalize =       0.0034 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+ETaskTime 0063
+                      CPUTime =    1546.0429 ( 49.04)
+                     MPI_Send =       0.0000 (  0.00)
+                    MPI_Bsend =       0.0000 (  0.00)
+                    MPI_Ssend =       0.1143 (  0.00)
+                   MPI_Issend =       9.5449 (  0.30)
+                     MPI_Recv =       0.6301 (  0.02)
+                    MPI_Irecv =       0.1074 (  0.00)
+                  MPI_Waitall =       0.1074 (  0.00)
+                  MPI_Waitany =    1406.6169 ( 44.61)
+                MPI_Allreduce =      54.5914 (  1.73)
+                  MPI_Barrier =      16.0464 (  0.51)
+                    MPI_Bcast =     119.0237 (  3.78)
+                   MPI_Reduce =       0.0179 (  0.00)
+                 MPI_Finalize =       0.0114 (  0.00)
+                     MPI_Init =       0.0000 (  0.00)
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+Event Queuing Totals:
+Simulation: 60848426 events were queued 61404550 times (  1.01 inserts/event)
+Task 0: 331489 events were queued 339015 times (  1.02 inserts/event)
+Task 1: 494733 events were queued 501897 times (  1.01 inserts/event)
+Task 2: 499869 events were queued 507182 times (  1.01 inserts/event)
+Task 3: 499827 events were queued 506990 times (  1.01 inserts/event)
+Task 4: 487941 events were queued 495348 times (  1.02 inserts/event)
+Task 5: 324509 events were queued 332051 times (  1.02 inserts/event)
+Task 6: 773391 events were queued 781654 times (  1.01 inserts/event)
+Task 7: 719135 events were queued 727212 times (  1.01 inserts/event)
+Task 8: 613857 events were queued 622033 times (  1.01 inserts/event)
+Task 9: 737011 events were queued 745501 times (  1.01 inserts/event)
+Task 10: 848931 events were queued 858622 times (  1.01 inserts/event)
+Task 11: 662037 events were queued 670942 times (  1.01 inserts/event)
+Task 12: 1058909 events were queued 1069683 times (  1.01 inserts/event)
+Task 13: 1373877 events were queued 1384680 times (  1.01 inserts/event)
+Task 14: 1137671 events were queued 1148301 times (  1.01 inserts/event)
+Task 15: 786165 events were queued 796339 times (  1.01 inserts/event)
+Task 16: 875067 events were queued 883764 times (  1.01 inserts/event)
+Task 17: 1344037 events were queued 1352614 times (  1.01 inserts/event)
+Task 18: 1323949 events were queued 1331668 times (  1.01 inserts/event)
+Task 19: 1330383 events were queued 1337751 times (  1.01 inserts/event)
+Task 20: 1211945 events were queued 1220970 times (  1.01 inserts/event)
+Task 21: 734819 events were queued 743072 times (  1.01 inserts/event)
+Task 22: 1409179 events were queued 1417139 times (  1.01 inserts/event)
+Task 23: 1721627 events were queued 1728882 times (  1.00 inserts/event)
+Task 24: 1833745 events were queued 1841138 times (  1.00 inserts/event)
+Task 25: 1363411 events were queued 1372305 times (  1.01 inserts/event)
+Task 26: 1032007 events were queued 1040397 times (  1.01 inserts/event)
+Task 27: 851167 events were queued 859849 times (  1.01 inserts/event)
+Task 28: 974611 events were queued 984900 times (  1.01 inserts/event)
+Task 29: 983221 events were queued 994198 times (  1.01 inserts/event)
+Task 30: 995095 events were queued 1005760 times (  1.01 inserts/event)
+Task 31: 1031869 events were queued 1041420 times (  1.01 inserts/event)
+Task 32: 934065 events were queued 942838 times (  1.01 inserts/event)
+Task 33: 1294451 events were queued 1302775 times (  1.01 inserts/event)
+Task 34: 1341025 events were queued 1347899 times (  1.01 inserts/event)
+Task 35: 1349725 events were queued 1357335 times (  1.01 inserts/event)
+Task 36: 1197405 events were queued 1206640 times (  1.01 inserts/event)
+Task 37: 771053 events were queued 779153 times (  1.01 inserts/event)
+Task 38: 1376971 events were queued 1385222 times (  1.01 inserts/event)
+Task 39: 1644641 events were queued 1652078 times (  1.00 inserts/event)
+Task 40: 1867409 events were queued 1873808 times (  1.00 inserts/event)
+Task 41: 1345933 events were queued 1354184 times (  1.01 inserts/event)
+Task 42: 1002469 events were queued 1011055 times (  1.01 inserts/event)
+Task 43: 842379 events were queued 851411 times (  1.01 inserts/event)
+Task 44: 1012415 events were queued 1022712 times (  1.01 inserts/event)
+Task 45: 1034087 events were queued 1044551 times (  1.01 inserts/event)
+Task 46: 1045871 events were queued 1056031 times (  1.01 inserts/event)
+Task 47: 1049729 events were queued 1059576 times (  1.01 inserts/event)
+Task 48: 313955 events were queued 322623 times (  1.03 inserts/event)
+Task 49: 491889 events were queued 498591 times (  1.01 inserts/event)
+Task 50: 499755 events were queued 508004 times (  1.02 inserts/event)
+Task 51: 499809 events were queued 507005 times (  1.01 inserts/event)
+Task 52: 486767 events were queued 494208 times (  1.02 inserts/event)
+Task 53: 324509 events were queued 332027 times (  1.02 inserts/event)
+Task 54: 771763 events were queued 780362 times (  1.01 inserts/event)
+Task 55: 719097 events were queued 728124 times (  1.01 inserts/event)
+Task 56: 617459 events were queued 625605 times (  1.01 inserts/event)
+Task 57: 736941 events were queued 745335 times (  1.01 inserts/event)
+Task 58: 856751 events were queued 866912 times (  1.01 inserts/event)
+Task 59: 679561 events were queued 688420 times (  1.01 inserts/event)
+Task 60: 1064799 events were queued 1075488 times (  1.01 inserts/event)
+Task 61: 1373397 events were queued 1384056 times (  1.01 inserts/event)
+Task 62: 1146635 events were queued 1156541 times (  1.01 inserts/event)
+Task 63: 790227 events were queued 800704 times (  1.01 inserts/event)
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+NTraffic     0     491.97 GB     487.06 GB
+NTraffic     1     775.90 GB     780.60 GB
+NTraffic     2     592.19 GB     591.15 GB
+NTraffic     3     670.05 GB     667.00 GB
+NTraffic     4     592.04 GB     591.28 GB
+NTraffic     5     670.30 GB     671.51 GB
+NTraffic     6     499.82 GB     496.21 GB
+NTraffic     7     779.22 GB     786.68 GB
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+Total Bytes in Communication        5112.58 GB
+
+-----------------------------------------------------------------
+ETypeToCommSize           event_name     total_bytes  event_cnt    avg_bytes
+ETypeToCommSize             MPI_Send           48066       4294        11.19
+ETypeToCommSize            MPI_Bsend          722035       8022        90.01
+ETypeToCommSize            MPI_Rsend               0          0         0.00
+ETypeToCommSize            MPI_Ssend       270922254       1124    241034.03
+ETypeToCommSize            MPI_Isend               0          0         0.00
+ETypeToCommSize           MPI_Ibsend               0          0         0.00
+ETypeToCommSize           MPI_Irsend               0          0         0.00
+ETypeToCommSize           MPI_Issend   2429749304693    7726343    314475.98
+ETypeToCommSize            MPI_Start               0          0         0.00
+ETypeToCommSize         MPI_Startall               0          0         0.00
+ETypeToCommSize             MPI_Recv       271696407      15209     17864.19
+ETypeToCommSize            MPI_Irecv   3015063936750    7724574    390321.06
+ETypeToCommSize             MPI_Wait               0          0         0.00
+ETypeToCommSize          MPI_Waitall            3528    7722883         0.00
+ETypeToCommSize          MPI_Waitany     44004281888    3563508     12348.59
+ETypeToCommSize         MPI_Waitsome               0          0         0.00
+ETypeToCommSize         MPI_Sendrecv               0          0         0.00
+ETypeToCommSize       MPI_Sendrecv_r               0          0         0.00
+ETypeToCommSize            MPI_Probe               0          0         0.00
+ETypeToCommSize           MPI_Cancel               0          0         0.00
+ETypeToCommSize        MPI_Allgather               0          0         0.00
+ETypeToCommSize       MPI_Allgatherv               0          0         0.00
+ETypeToCommSize        MPI_Allreduce       185760304      56808      3269.97
+ETypeToCommSize         MPI_Alltoall               0          0         0.00
+ETypeToCommSize        MPI_Alltoallv               0          0         0.00
+ETypeToCommSize          MPI_Barrier               0      84794         0.00
+ETypeToCommSize            MPI_Bcast        20843978     379896        54.87
+ETypeToCommSize           MPI_Gather               0          0         0.00
+ETypeToCommSize          MPI_Gatherv               0          0         0.00
+ETypeToCommSize           MPI_Reduce        26722444    3136662         8.52
+ETypeToCommSize   MPI_Reduce_scatter               0          0         0.00
+ETypeToCommSize             MPI_Scan               0          0         0.00
+ETypeToCommSize          MPI_Scatter               0          0         0.00
+ETypeToCommSize         MPI_Scatterv               0          0         0.00
+ETypeToCommSize            MPI_Abort               0          0         0.00
+ETypeToCommSize         MPI_Finalize               0         64         0.00
+ETypeToCommSize             MPI_Init               0         64         0.00
+ETypeToCommSize      MPI_Comm_create               0          0         0.00
+ETypeToCommSize         MPI_Comm_dup               0          0         0.00
+ETypeToCommSize       MPI_Comm_split               0          0         0.00
+ETypeToCommSize      MPI_Cart_create               0          0         0.00
+ETypeToCommSize         MPI_Cart_sub               0          0         0.00
+ETypeToCommSize     MPI_Graph_create               0          0         0.00
+ETypeToCommSize MPI_Intercomm_create               0          0         0.00
+ETypeToCommSize  MPI_Intercomm_merge               0          0         0.00
+-----------------------------------------------------------------
+CommSizeToECount    mesg_size     event_count
+CommSizeToECount            1         7970323
+CommSizeToECount            2               0
+CommSizeToECount            4           88366
+CommSizeToECount            8         2953461
+CommSizeToECount           16          206349
+CommSizeToECount           32          569898
+CommSizeToECount           64          199395
+CommSizeToECount          128          159431
+CommSizeToECount          256          196906
+CommSizeToECount          512          247680
+CommSizeToECount         1024          260193
+CommSizeToECount         2048          346505
+CommSizeToECount         4096          554780
+CommSizeToECount         8192          550844
+CommSizeToECount        16384          594082
+CommSizeToECount        32768          508401
+CommSizeToECount        65536         1721172
+CommSizeToECount       131072          804689
+CommSizeToECount       262144         1088150
+CommSizeToECount       524288         1443068
+CommSizeToECount      1048576         1781889
+CommSizeToECount      2097152          344822
+CommSizeToECount      4194304           12961
+CommSizeToECount      8388608            6881
+CommSizeToECount     16777216               0
+CommSizeToECount     33554432               0
+CommSizeToECount     67108864               0
+CommSizeToECount    134217728               0
+CommSizeToECount    268435456               0
+CommSizeToECount    536870912               0
+CommSizeToP2PECount    mesg_size     event_count
+-----------------------------------------------------------------
+CommSizeToP2PECount            1         7970323
+CommSizeToP2PECount            2               0
+CommSizeToP2PECount            4           76958
+CommSizeToP2PECount            8            6816
+CommSizeToP2PECount           16             710
+CommSizeToP2PECount           32          197920
+CommSizeToP2PECount           64          193571
+CommSizeToP2PECount          128          159431
+CommSizeToP2PECount          256          196906
+CommSizeToP2PECount          512          247680
+CommSizeToP2PECount         1024          259941
+CommSizeToP2PECount         2048          346501
+CommSizeToP2PECount         4096          523228
+CommSizeToP2PECount         8192          550844
+CommSizeToP2PECount        16384          594082
+CommSizeToP2PECount        32768          508338
+CommSizeToP2PECount        65536         1721171
+CommSizeToP2PECount       131072          804689
+CommSizeToP2PECount       262144         1088150
+CommSizeToP2PECount       524288         1443068
+CommSizeToP2PECount      1048576         1781889
+CommSizeToP2PECount      2097152          344822
+CommSizeToP2PECount      4194304           12961
+CommSizeToP2PECount      8388608            6881
+CommSizeToP2PECount     16777216               0
+CommSizeToP2PECount     33554432               0
+CommSizeToP2PECount     67108864               0
+CommSizeToP2PECount    134217728               0
+CommSizeToP2PECount    268435456               0
+CommSizeToP2PECount    536870912               0
+-----------------------------------------------------------------
+CommSizeToP2POnNodeECount    mesg_size     event_count
+CommSizeToP2POnNodeECount            1         2765040
+CommSizeToP2POnNodeECount            2               0
+CommSizeToP2POnNodeECount            4           22669
+CommSizeToP2POnNodeECount            8             636
+CommSizeToP2POnNodeECount           16               6
+CommSizeToP2POnNodeECount           32           54519
+CommSizeToP2POnNodeECount           64           49156
+CommSizeToP2POnNodeECount          128           40447
+CommSizeToP2POnNodeECount          256           49085
+CommSizeToP2POnNodeECount          512           51754
+CommSizeToP2POnNodeECount         1024           62739
+CommSizeToP2POnNodeECount         2048          122212
+CommSizeToP2POnNodeECount         4096          176564
+CommSizeToP2POnNodeECount         8192          190682
+CommSizeToP2POnNodeECount        16384          197150
+CommSizeToP2POnNodeECount        32768          111907
+CommSizeToP2POnNodeECount        65536          362453
+CommSizeToP2POnNodeECount       131072          200011
+CommSizeToP2POnNodeECount       262144          413577
+CommSizeToP2POnNodeECount       524288          533410
+CommSizeToP2POnNodeECount      1048576         1028680
+CommSizeToP2POnNodeECount      2097152           75674
+CommSizeToP2POnNodeECount      4194304            3357
+CommSizeToP2POnNodeECount      8388608            3935
+CommSizeToP2POnNodeECount     16777216               0
+CommSizeToP2POnNodeECount     33554432               0
+CommSizeToP2POnNodeECount     67108864               0
+CommSizeToP2POnNodeECount    134217728               0
+CommSizeToP2POnNodeECount    268435456               0
+CommSizeToP2POnNodeECount    536870912               0
+-----------------------------------------------------------------
+CommSizeToP2POffNodeECount    mesg_size     event_count
+CommSizeToP2POffNodeECount            1         5205283
+CommSizeToP2POffNodeECount            2               0
+CommSizeToP2POffNodeECount            4           54289
+CommSizeToP2POffNodeECount            8            6180
+CommSizeToP2POffNodeECount           16             704
+CommSizeToP2POffNodeECount           32          143401
+CommSizeToP2POffNodeECount           64          144415
+CommSizeToP2POffNodeECount          128          118984
+CommSizeToP2POffNodeECount          256          147821
+CommSizeToP2POffNodeECount          512          195926
+CommSizeToP2POffNodeECount         1024          197202
+CommSizeToP2POffNodeECount         2048          224289
+CommSizeToP2POffNodeECount         4096          346664
+CommSizeToP2POffNodeECount         8192          360162
+CommSizeToP2POffNodeECount        16384          396932
+CommSizeToP2POffNodeECount        32768          396431
+CommSizeToP2POffNodeECount        65536         1358718
+CommSizeToP2POffNodeECount       131072          604678
+CommSizeToP2POffNodeECount       262144          674573
+CommSizeToP2POffNodeECount       524288          909658
+CommSizeToP2POffNodeECount      1048576          753209
+CommSizeToP2POffNodeECount      2097152          269148
+CommSizeToP2POffNodeECount      4194304            9604
+CommSizeToP2POffNodeECount      8388608            2946
+CommSizeToP2POffNodeECount     16777216               0
+CommSizeToP2POffNodeECount     33554432               0
+CommSizeToP2POffNodeECount     67108864               0
+CommSizeToP2POffNodeECount    134217728               0
+CommSizeToP2POffNodeECount    268435456               0
+CommSizeToP2POffNodeECount    536870912               0
+CommSizeToCollectiveECount    mesg_size     event_count
+-----------------------------------------------------------------
+CommSizeToCollectivePECount            1               0
+CommSizeToCollectivePECount            1               0
+CommSizeToCollectivePECount            2               0
+CommSizeToCollectivePECount            2               0
+CommSizeToCollectivePECount            4           11408
+CommSizeToCollectivePECount            4           11408
+CommSizeToCollectivePECount            8         2946645
+CommSizeToCollectivePECount            8         2946645
+CommSizeToCollectivePECount           16          205639
+CommSizeToCollectivePECount           16          205639
+CommSizeToCollectivePECount           32          371978
+CommSizeToCollectivePECount           32          371978
+CommSizeToCollectivePECount           64            5824
+CommSizeToCollectivePECount           64            5824
+CommSizeToCollectivePECount          128               0
+CommSizeToCollectivePECount          128               0
+CommSizeToCollectivePECount          256               0
+CommSizeToCollectivePECount          256               0
+CommSizeToCollectivePECount          512               0
+CommSizeToCollectivePECount          512               0
+CommSizeToCollectivePECount         1024             252
+CommSizeToCollectivePECount         1024             252
+CommSizeToCollectivePECount         2048               4
+CommSizeToCollectivePECount         2048               4
+CommSizeToCollectivePECount         4096           31552
+CommSizeToCollectivePECount         4096           31552
+CommSizeToCollectivePECount         8192               0
+CommSizeToCollectivePECount         8192               0
+CommSizeToCollectivePECount        16384               0
+CommSizeToCollectivePECount        16384               0
+CommSizeToCollectivePECount        32768              63
+CommSizeToCollectivePECount        32768              63
+CommSizeToCollectivePECount        65536               1
+CommSizeToCollectivePECount        65536               1
+CommSizeToCollectivePECount       131072               0
+CommSizeToCollectivePECount       131072               0
+CommSizeToCollectivePECount       262144               0
+CommSizeToCollectivePECount       262144               0
+CommSizeToCollectivePECount       524288               0
+CommSizeToCollectivePECount       524288               0
+CommSizeToCollectivePECount      1048576               0
+CommSizeToCollectivePECount      1048576               0
+CommSizeToCollectivePECount      2097152               0
+CommSizeToCollectivePECount      2097152               0
+CommSizeToCollectivePECount      4194304               0
+CommSizeToCollectivePECount      4194304               0
+CommSizeToCollectivePECount      8388608               0
+CommSizeToCollectivePECount      8388608               0
+CommSizeToCollectivePECount     16777216               0
+CommSizeToCollectivePECount     16777216               0
+CommSizeToCollectivePECount     33554432               0
+CommSizeToCollectivePECount     33554432               0
+CommSizeToCollectivePECount     67108864               0
+CommSizeToCollectivePECount     67108864               0
+CommSizeToCollectivePECount    134217728               0
+CommSizeToCollectivePECount    134217728               0
+CommSizeToCollectivePECount    268435456               0
+CommSizeToCollectivePECount    268435456               0
+CommSizeToCollectivePECount    536870912               0
+CommSizeToCollectivePECount    536870912               0
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+BaseSystemClock [0] = 14942.169773
+BaseSystemClock [1] = 14940.158249
+BaseSystemClock [2] = 14940.130331
+BaseSystemClock [3] = 14941.009308
+BaseSystemClock [4] = 14940.935529
+BaseSystemClock [5] = 14941.568067
+BaseSystemClock [6] = 14939.371224
+BaseSystemClock [7] = 14939.283483
+BaseSystemClock [8] = 14939.332107
+BaseSystemClock [9] = 14939.175267
+BaseSystemClock [10] = 14939.287699
+BaseSystemClock [11] = 14939.788151
+BaseSystemClock [12] = 14938.087316
+BaseSystemClock [13] = 14936.392181
+BaseSystemClock [14] = 14937.827594
+BaseSystemClock [15] = 14939.037062
+BaseSystemClock [16] = 14937.180936
+BaseSystemClock [17] = 14937.711743
+BaseSystemClock [18] = 14937.930444
+BaseSystemClock [19] = 14937.675913
+BaseSystemClock [20] = 14938.118613
+BaseSystemClock [21] = 14938.840540
+BaseSystemClock [22] = 14936.424322
+BaseSystemClock [23] = 14936.274362
+BaseSystemClock [24] = 14936.158307
+BaseSystemClock [25] = 14937.116798
+BaseSystemClock [26] = 14938.438487
+BaseSystemClock [27] = 14938.467445
+BaseSystemClock [28] = 14938.810954
+BaseSystemClock [29] = 14938.782483
+BaseSystemClock [30] = 14938.869569
+BaseSystemClock [31] = 14937.593959
+BaseSystemClock [32] = 14938.931715
+BaseSystemClock [33] = 14938.003265
+BaseSystemClock [34] = 14938.273616
+BaseSystemClock [35] = 14937.185653
+BaseSystemClock [36] = 14937.386943
+BaseSystemClock [37] = 14939.855698
+BaseSystemClock [38] = 14936.511956
+BaseSystemClock [39] = 14936.804218
+BaseSystemClock [40] = 14936.095860
+BaseSystemClock [41] = 14937.316886
+BaseSystemClock [42] = 14937.762552
+BaseSystemClock [43] = 14938.263601
+BaseSystemClock [44] = 14938.379219
+BaseSystemClock [45] = 14937.609801
+BaseSystemClock [46] = 14938.282501
+BaseSystemClock [47] = 14938.284731
+BaseSystemClock [48] = 14942.008726
+BaseSystemClock [49] = 14940.292382
+BaseSystemClock [50] = 14939.008747
+BaseSystemClock [51] = 14940.222872
+BaseSystemClock [52] = 14940.602005
+BaseSystemClock [53] = 14941.569484
+BaseSystemClock [54] = 14937.758873
+BaseSystemClock [55] = 14939.643256
+BaseSystemClock [56] = 14938.880472
+BaseSystemClock [57] = 14939.294694
+BaseSystemClock [58] = 14938.751579
+BaseSystemClock [59] = 14939.246845
+BaseSystemClock [60] = 14937.510304
+BaseSystemClock [61] = 14936.270329
+BaseSystemClock [62] = 14938.186848
+BaseSystemClock [63] = 14938.991828
+-----------------------------------------------------------------
+BW histograms are in 2^n scale(MB) for bw
+   BaseSystemBW        MPI_Send        0        95                                                   
+   BaseSystemBW        MPI_Send        1      2979                                                   
+   BaseSystemBW        MPI_Send        2      1029                                                   
+   BaseSystemBW        MPI_Send        4         8                                                   
+   BaseSystemBW        MPI_Send        8        58                                                   
+   BaseSystemBW        MPI_Send       16        65  TargetSystemBW        MPI_Send       16      2210
+   BaseSystemBW        MPI_Send       32        60  TargetSystemBW        MPI_Send       32      1895
+                                                    TargetSystemBW        MPI_Send      128        63
+                                                    TargetSystemBW        MPI_Send      256        63
+                                                    TargetSystemBW        MPI_Send      512        63
+-----------------------------------------------------------------
+   BaseSystemBW       MPI_Bsend        1        83                                                   
+   BaseSystemBW       MPI_Bsend        2       347                                                   
+   BaseSystemBW       MPI_Bsend        4      2045                                                   
+   BaseSystemBW       MPI_Bsend        8      2056                                                   
+   BaseSystemBW       MPI_Bsend       16      3491                                                   
+                                                    TargetSystemBW       MPI_Bsend      128         7
+                                                    TargetSystemBW       MPI_Bsend      256      7952
+                                                    TargetSystemBW       MPI_Bsend      512        63
+-----------------------------------------------------------------
+   BaseSystemBW       MPI_Ssend        0        28  TargetSystemBW       MPI_Ssend        0        18
+   BaseSystemBW       MPI_Ssend        1        72  TargetSystemBW       MPI_Ssend        1        38
+   BaseSystemBW       MPI_Ssend        2        59  TargetSystemBW       MPI_Ssend        2        35
+   BaseSystemBW       MPI_Ssend        4        54  TargetSystemBW       MPI_Ssend        4        61
+   BaseSystemBW       MPI_Ssend        8        47  TargetSystemBW       MPI_Ssend        8        60
+   BaseSystemBW       MPI_Ssend       16        52  TargetSystemBW       MPI_Ssend       16        45
+   BaseSystemBW       MPI_Ssend       32        58  TargetSystemBW       MPI_Ssend       32        52
+   BaseSystemBW       MPI_Ssend       64        45  TargetSystemBW       MPI_Ssend       64        61
+   BaseSystemBW       MPI_Ssend      128        42  TargetSystemBW       MPI_Ssend      128        67
+   BaseSystemBW       MPI_Ssend      256        81  TargetSystemBW       MPI_Ssend      256        63
+   BaseSystemBW       MPI_Ssend      512       258  TargetSystemBW       MPI_Ssend      512       624
+   BaseSystemBW       MPI_Ssend     1024       328                                                   
+-----------------------------------------------------------------
+   BaseSystemBW      MPI_Issend        0   2666130                                                   
+   BaseSystemBW      MPI_Issend        1     36331                                                   
+   BaseSystemBW      MPI_Issend        2     16834                                                   
+   BaseSystemBW      MPI_Issend        4     26784  TargetSystemBW      MPI_Issend        4   2657041
+   BaseSystemBW      MPI_Issend        8     68249                                                   
+   BaseSystemBW      MPI_Issend       16     74864  TargetSystemBW      MPI_Issend       16     24790
+   BaseSystemBW      MPI_Issend       32    105759  TargetSystemBW      MPI_Issend       32      3010
+   BaseSystemBW      MPI_Issend       64    160605  TargetSystemBW      MPI_Issend       64       678
+   BaseSystemBW      MPI_Issend      128    231744  TargetSystemBW      MPI_Issend      128     65169
+   BaseSystemBW      MPI_Issend      256    342487  TargetSystemBW      MPI_Issend      256     62732
+   BaseSystemBW      MPI_Issend      512    551185  TargetSystemBW      MPI_Issend      512     64180
+   BaseSystemBW      MPI_Issend     1024    685999  TargetSystemBW      MPI_Issend     1024    153402
+   BaseSystemBW      MPI_Issend     2048    745174  TargetSystemBW      MPI_Issend     2048    474174
+   BaseSystemBW      MPI_Issend     4096    701592  TargetSystemBW      MPI_Issend     4096   4221167
+   BaseSystemBW      MPI_Issend     8192    532536                                                   
+   BaseSystemBW      MPI_Issend    16384    360371                                                   
+   BaseSystemBW      MPI_Issend    32768    215880                                                   
+   BaseSystemBW      MPI_Issend    65536    176951                                                   
+   BaseSystemBW      MPI_Issend   131072     20810                                                   
+   BaseSystemBW      MPI_Issend   262144      2863                                                   
+   BaseSystemBW      MPI_Issend   524288      2421                                                   
+   BaseSystemBW      MPI_Issend  1048576       774                                                   
+-----------------------------------------------------------------
+   BaseSystemBW        MPI_Recv        0      3948  TargetSystemBW        MPI_Recv        0      2022
+   BaseSystemBW        MPI_Recv        1       114  TargetSystemBW        MPI_Recv        1       220
+   BaseSystemBW        MPI_Recv        2        71  TargetSystemBW        MPI_Recv        2       720
+   BaseSystemBW        MPI_Recv        4      1832  TargetSystemBW        MPI_Recv        4       177
+   BaseSystemBW        MPI_Recv        8        82  TargetSystemBW        MPI_Recv        8       108
+   BaseSystemBW        MPI_Recv       16       962  TargetSystemBW        MPI_Recv       16      1970
+   BaseSystemBW        MPI_Recv       32      7014  TargetSystemBW        MPI_Recv       32       841
+   BaseSystemBW        MPI_Recv       64       116  TargetSystemBW        MPI_Recv       64         9
+   BaseSystemBW        MPI_Recv      128        45  TargetSystemBW        MPI_Recv      128        13
+   BaseSystemBW        MPI_Recv      256        60  TargetSystemBW        MPI_Recv      256      7951
+   BaseSystemBW        MPI_Recv      512       220  TargetSystemBW        MPI_Recv      512       178
+   BaseSystemBW        MPI_Recv     1024       745  TargetSystemBW        MPI_Recv     1024       118
+                                                    TargetSystemBW        MPI_Recv     2048       208
+                                                    TargetSystemBW        MPI_Recv     4096       674
+-----------------------------------------------------------------
+   BaseSystemBW       MPI_Irecv        0   2670847                                                   
+   BaseSystemBW       MPI_Irecv        1     42741  TargetSystemBW       MPI_Irecv        1   2656686
+   BaseSystemBW       MPI_Irecv        2     19521  TargetSystemBW       MPI_Irecv        2     22958
+   BaseSystemBW       MPI_Irecv        4     34101                                                   
+   BaseSystemBW       MPI_Irecv        8     59733  TargetSystemBW       MPI_Irecv        8        16
+   BaseSystemBW       MPI_Irecv       16     59060  TargetSystemBW       MPI_Irecv       16        20
+   BaseSystemBW       MPI_Irecv       32     68157  TargetSystemBW       MPI_Irecv       32     64999
+   BaseSystemBW       MPI_Irecv       64     74425  TargetSystemBW       MPI_Irecv       64     59352
+   BaseSystemBW       MPI_Irecv      128     90011  TargetSystemBW       MPI_Irecv      128     59529
+   BaseSystemBW       MPI_Irecv      256    118624  TargetSystemBW       MPI_Irecv      256     57081
+   BaseSystemBW       MPI_Irecv      512    184882  TargetSystemBW       MPI_Irecv      512     67425
+   BaseSystemBW       MPI_Irecv     1024    206716  TargetSystemBW       MPI_Irecv     1024     78710
+   BaseSystemBW       MPI_Irecv     2048    361609  TargetSystemBW       MPI_Irecv     2048     95525
+   BaseSystemBW       MPI_Irecv     4096    409504  TargetSystemBW       MPI_Irecv     4096    115029
+   BaseSystemBW       MPI_Irecv     8192    455383  TargetSystemBW       MPI_Irecv     8192    135678
+   BaseSystemBW       MPI_Irecv    16384    621888  TargetSystemBW       MPI_Irecv    16384    141071
+   BaseSystemBW       MPI_Irecv    32768    603888  TargetSystemBW       MPI_Irecv    32768   1067140
+   BaseSystemBW       MPI_Irecv    65536    531234  TargetSystemBW       MPI_Irecv    65536    393993
+   BaseSystemBW       MPI_Irecv   131072    454525  TargetSystemBW       MPI_Irecv   131072    396123
+   BaseSystemBW       MPI_Irecv   262144    544550  TargetSystemBW       MPI_Irecv   262144    549073
+   BaseSystemBW       MPI_Irecv   524288    105979  TargetSystemBW       MPI_Irecv   524288    714724
+   BaseSystemBW       MPI_Irecv  1048576       876  TargetSystemBW       MPI_Irecv  1048576    891235
+                                                    TargetSystemBW       MPI_Irecv  2097152    148131
+                                                    TargetSystemBW       MPI_Irecv  4194304      3749
+                                                    TargetSystemBW       MPI_Irecv  8388608         7
+-----------------------------------------------------------------
+   BaseSystemBW     MPI_Waitall        0         6  TargetSystemBW     MPI_Waitall        0         6
+   BaseSystemBW     MPI_Waitall        1         5                                                   
+   BaseSystemBW     MPI_Waitall        2        54  TargetSystemBW     MPI_Waitall        2        59
+   BaseSystemBW     MPI_Waitall        8         4                                                   
+   BaseSystemBW     MPI_Waitall       16        57                                                   
+                                                    TargetSystemBW     MPI_Waitall       32        61
+-----------------------------------------------------------------
+   BaseSystemBW     MPI_Waitany        0   2856303  TargetSystemBW     MPI_Waitany        0   1037605
+   BaseSystemBW     MPI_Waitany        1    222529  TargetSystemBW     MPI_Waitany        1   1883158
+   BaseSystemBW     MPI_Waitany        2     21486  TargetSystemBW     MPI_Waitany        2     34565
+   BaseSystemBW     MPI_Waitany        4     28797  TargetSystemBW     MPI_Waitany        4      8874
+   BaseSystemBW     MPI_Waitany        8     25817  TargetSystemBW     MPI_Waitany        8      5027
+   BaseSystemBW     MPI_Waitany       16     37554  TargetSystemBW     MPI_Waitany       16      2764
+   BaseSystemBW     MPI_Waitany       32     34972  TargetSystemBW     MPI_Waitany       32     45584
+   BaseSystemBW     MPI_Waitany       64     36037  TargetSystemBW     MPI_Waitany       64     40922
+   BaseSystemBW     MPI_Waitany      128     46082  TargetSystemBW     MPI_Waitany      128     40125
+   BaseSystemBW     MPI_Waitany      256     54131  TargetSystemBW     MPI_Waitany      256     37648
+   BaseSystemBW     MPI_Waitany      512     76945  TargetSystemBW     MPI_Waitany      512     44705
+   BaseSystemBW     MPI_Waitany     1024     67664  TargetSystemBW     MPI_Waitany     1024     52010
+   BaseSystemBW     MPI_Waitany     2048     23935  TargetSystemBW     MPI_Waitany     2048     59981
+   BaseSystemBW     MPI_Waitany     4096     15511  TargetSystemBW     MPI_Waitany     4096     68805
+   BaseSystemBW     MPI_Waitany     8192     10474  TargetSystemBW     MPI_Waitany     8192     71076
+   BaseSystemBW     MPI_Waitany    16384      4130  TargetSystemBW     MPI_Waitany    16384     73282
+   BaseSystemBW     MPI_Waitany    32768      1060  TargetSystemBW     MPI_Waitany    32768     43274
+   BaseSystemBW     MPI_Waitany    65536        30  TargetSystemBW     MPI_Waitany    65536      7554
+   BaseSystemBW     MPI_Waitany   131072        28  TargetSystemBW     MPI_Waitany   131072       510
+   BaseSystemBW     MPI_Waitany   262144        14  TargetSystemBW     MPI_Waitany   262144       545
+   BaseSystemBW     MPI_Waitany   524288         5  TargetSystemBW     MPI_Waitany   524288       822
+   BaseSystemBW     MPI_Waitany  1048576         4  TargetSystemBW     MPI_Waitany  1048576      1219
+                                                    TargetSystemBW     MPI_Waitany  2097152      1143
+                                                    TargetSystemBW     MPI_Waitany  4194304      2310
+-----------------------------------------------------------------
+   BaseSystemBW   MPI_Allreduce        0     54513  TargetSystemBW   MPI_Allreduce        0     42740
+   BaseSystemBW   MPI_Allreduce        1       976  TargetSystemBW   MPI_Allreduce        1      4602
+   BaseSystemBW   MPI_Allreduce        2       293  TargetSystemBW   MPI_Allreduce        2      3583
+   BaseSystemBW   MPI_Allreduce        4       169  TargetSystemBW   MPI_Allreduce        4      4158
+   BaseSystemBW   MPI_Allreduce        8       178  TargetSystemBW   MPI_Allreduce        8       725
+   BaseSystemBW   MPI_Allreduce       16       214  TargetSystemBW   MPI_Allreduce       16       265
+   BaseSystemBW   MPI_Allreduce       32       465  TargetSystemBW   MPI_Allreduce       32       735
+-----------------------------------------------------------------
+   BaseSystemBW       MPI_Bcast        0     20504  TargetSystemBW       MPI_Bcast        0      8758
+   BaseSystemBW       MPI_Bcast        1    105446  TargetSystemBW       MPI_Bcast        1       129
+   BaseSystemBW       MPI_Bcast        2    138137  TargetSystemBW       MPI_Bcast        2       367
+   BaseSystemBW       MPI_Bcast        4     75185  TargetSystemBW       MPI_Bcast        4      1275
+   BaseSystemBW       MPI_Bcast        8     40366  TargetSystemBW       MPI_Bcast        8       822
+   BaseSystemBW       MPI_Bcast       16         8  TargetSystemBW       MPI_Bcast       16      5750
+   BaseSystemBW       MPI_Bcast       32       224  TargetSystemBW       MPI_Bcast       32     21522
+   BaseSystemBW       MPI_Bcast       64        23  TargetSystemBW       MPI_Bcast       64    335659
+   BaseSystemBW       MPI_Bcast      128         1  TargetSystemBW       MPI_Bcast      128      5409
+   BaseSystemBW       MPI_Bcast      256         2  TargetSystemBW       MPI_Bcast      256         9
+                                                    TargetSystemBW       MPI_Bcast      512       193
+                                                    TargetSystemBW       MPI_Bcast     1024         3
+-----------------------------------------------------------------
+   BaseSystemBW      MPI_Reduce        0   1373060                                                   
+   BaseSystemBW      MPI_Reduce        1   1734300                                                   
+   BaseSystemBW      MPI_Reduce        2     29280                                                   
+   BaseSystemBW      MPI_Reduce        4        22                                                   
+                                                    TargetSystemBW      MPI_Reduce        8      4725
+                                                    TargetSystemBW      MPI_Reduce       16   2933294
+                                                    TargetSystemBW      MPI_Reduce       32    198569
+                                                    TargetSystemBW      MPI_Reduce       64        74
+-----------------------------------------------------------------
+System Collect histograms are synched/non-synched,before last arrival, after last arrival
+BaseSystemCollect   MPI_Allreduce         0      1080 TargetSystemCollect   MPI_Allreduce         0      1080
+BaseSystemCollect   MPI_Allreduce before   0.0       794 TargetSystemCollect   MPI_Allreduce before   0.0      1067
+BaseSystemCollect   MPI_Allreduce before  10.0       145 TargetSystemCollect   MPI_Allreduce before  10.0        13
+BaseSystemCollect   MPI_Allreduce before  20.0        56                                                   
+BaseSystemCollect   MPI_Allreduce before  30.0        27                                                   
+BaseSystemCollect   MPI_Allreduce before  40.0        29                                                   
+BaseSystemCollect   MPI_Allreduce before  50.0        15                                                   
+BaseSystemCollect   MPI_Allreduce before  60.0        11                                                   
+BaseSystemCollect   MPI_Allreduce before  70.0         1                                                   
+BaseSystemCollect   MPI_Allreduce before  80.0         2                                                   
+BaseSystemCollect   MPI_Allreduce after    0.0       745 TargetSystemCollect   MPI_Allreduce after    0.0       852
+BaseSystemCollect   MPI_Allreduce after   10.0       297 TargetSystemCollect   MPI_Allreduce after   10.0       228
+BaseSystemCollect   MPI_Allreduce after   20.0        23                                                   
+BaseSystemCollect   MPI_Allreduce after   30.0         5                                                   
+BaseSystemCollect   MPI_Allreduce after   40.0        10                                                   
+-----------------------------------------------------------------
+BaseSystemCollect     MPI_Barrier       396      2019 TargetSystemCollect     MPI_Barrier       564      1851
+BaseSystemCollect     MPI_Barrier before   0.0      2296 TargetSystemCollect     MPI_Barrier before   0.0      2170
+BaseSystemCollect     MPI_Barrier before  10.0        64 TargetSystemCollect     MPI_Barrier before  10.0        76
+BaseSystemCollect     MPI_Barrier before  20.0        18                                                   
+BaseSystemCollect     MPI_Barrier before  30.0        12                                                   
+BaseSystemCollect     MPI_Barrier before  40.0         4                                                   
+BaseSystemCollect     MPI_Barrier before  50.0         4 TargetSystemCollect     MPI_Barrier before  50.0       169
+BaseSystemCollect     MPI_Barrier before  60.0         2                                                   
+BaseSystemCollect     MPI_Barrier before  70.0         4                                                   
+BaseSystemCollect     MPI_Barrier before  80.0        10                                                   
+BaseSystemCollect     MPI_Barrier before  90.0         1                                                   
+BaseSystemCollect     MPI_Barrier after    0.0      1346 TargetSystemCollect     MPI_Barrier after    0.0      1402
+BaseSystemCollect     MPI_Barrier after   10.0       246 TargetSystemCollect     MPI_Barrier after   10.0       221
+BaseSystemCollect     MPI_Barrier after   20.0        18 TargetSystemCollect     MPI_Barrier after   20.0         6
+BaseSystemCollect     MPI_Barrier after   30.0        11 TargetSystemCollect     MPI_Barrier after   30.0         2
+BaseSystemCollect     MPI_Barrier after   40.0         8                                                   
+BaseSystemCollect     MPI_Barrier after   50.0       391 TargetSystemCollect     MPI_Barrier after   50.0       389
+BaseSystemCollect     MPI_Barrier after  100.0       395 TargetSystemCollect     MPI_Barrier after  100.0       395
+-----------------------------------------------------------------
+BaseSystemCollect       MPI_Bcast         2      5984 TargetSystemCollect       MPI_Bcast         0      5986
+BaseSystemCollect       MPI_Bcast before   0.0      5856 TargetSystemCollect       MPI_Bcast before   0.0      5983
+BaseSystemCollect       MPI_Bcast before  10.0        85 TargetSystemCollect       MPI_Bcast before  10.0         3
+BaseSystemCollect       MPI_Bcast before  20.0        18                                                   
+BaseSystemCollect       MPI_Bcast before  30.0        13                                                   
+BaseSystemCollect       MPI_Bcast before  40.0         4                                                   
+BaseSystemCollect       MPI_Bcast before  60.0         1                                                   
+BaseSystemCollect       MPI_Bcast before  70.0         5                                                   
+BaseSystemCollect       MPI_Bcast before  80.0         4                                                   
+BaseSystemCollect       MPI_Bcast after    0.0      5948 TargetSystemCollect       MPI_Bcast after    0.0      5972
+BaseSystemCollect       MPI_Bcast after   10.0        22 TargetSystemCollect       MPI_Bcast after   10.0        14
+BaseSystemCollect       MPI_Bcast after   20.0         7                                                   
+BaseSystemCollect       MPI_Bcast after   30.0         4                                                   
+BaseSystemCollect       MPI_Bcast after   40.0         1                                                   
+BaseSystemCollect       MPI_Bcast after   50.0         4                                                   
+-----------------------------------------------------------------
+BaseSystemCollect      MPI_Reduce      6666    187390 TargetSystemCollect      MPI_Reduce         4    194052
+BaseSystemCollect      MPI_Reduce before   0.0    153255 TargetSystemCollect      MPI_Reduce before   0.0    194038
+BaseSystemCollect      MPI_Reduce before  10.0     21060 TargetSystemCollect      MPI_Reduce before  10.0         5
+BaseSystemCollect      MPI_Reduce before  20.0      8163 TargetSystemCollect      MPI_Reduce before  20.0         8
+BaseSystemCollect      MPI_Reduce before  30.0      2878                                                   
+BaseSystemCollect      MPI_Reduce before  40.0      2034 TargetSystemCollect      MPI_Reduce before  40.0         1
+BaseSystemCollect      MPI_Reduce before  50.0      6666 TargetSystemCollect      MPI_Reduce before  50.0         4
+BaseSystemCollect      MPI_Reduce after    0.0     44504 TargetSystemCollect      MPI_Reduce after    0.0    144579
+BaseSystemCollect      MPI_Reduce after   10.0     46652 TargetSystemCollect      MPI_Reduce after   10.0      2165
+BaseSystemCollect      MPI_Reduce after   20.0      2428 TargetSystemCollect      MPI_Reduce after   20.0        98
+BaseSystemCollect      MPI_Reduce after   30.0      1111 TargetSystemCollect      MPI_Reduce after   30.0         5
+BaseSystemCollect      MPI_Reduce after   40.0        10                                                   
+BaseSystemCollect      MPI_Reduce after   50.0     99350 TargetSystemCollect      MPI_Reduce after   50.0     47209
+BaseSystemCollect      MPI_Reduce after   60.0         1                                                   
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+Information : Actual : N/A Predicted :    3152.8549 (tsk 0)
+Information : 
+
+*** LAURA DONE *** SUCCESS *** SUCCESS *** SUCCESS *****************
+

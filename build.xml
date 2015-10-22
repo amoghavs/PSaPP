@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<project name="PSaPP" default="dist" basedir=".">
+
+  <target name="init">
+    <mkdir dir="build"/>
+  </target>
+
+  <path id="classpath">	  
+    <fileset dir="external_libs" includes="*.jar" />
+  </path>
+
+  <target name="compile" depends="init">
+    <javac debug="true" source="1.4" destdir="build" classpathref="classpath">
+      <src path="util"/>
+      <src path="stats"/>
+      <src path="dbase"/>
+      <src path="data"/>
+      <src path="recv"/>
+      <src path="send"/>
+      <src path="pred"/>
+      <src path="gui"/>
+      <src path="tests"/>
+    </javac>
+  </target>
+
+  <target name="compile_tests">
+    <javac debug="true" source="1.4" destdir="build" classpathref="classpath">
+      <src path="tests"/>
+    </javac>
+  </target>
+
+  <target name="dist" depends="clean,compile">
+    <jar jarfile="lib/${ant.project.name}.jar" basedir="build"/>
+  </target>
+
+  <path id="test.classpath">
+    <pathelement location="external_libs/junit.jar" />    
+    <pathelement location="external_libs/mail.jar" />    
+    <pathelement location="external_libs/activation.jar" /> 
+    <pathelement location="build"/>
+  </path>
+
+  <target name="check" depends="compile_tests">        
+    <mkdir dir="tests/output"/>
+    <junit printsummary="yes" failureProperty="test.failure">
+      <classpath refid="test.classpath"/>
+      <formatter type="brief" usefile="true"/>
+      <test name="PSaPP.tests.jPredictTest" todir="tests/output"/>
+      <test name="PSaPP.tests.jReporterTest" todir="tests/output"/>
+    </junit>
+    <fail message="test failed" if="test.failure"/>
+  </target>
+
+  <target name="junitreport">
+    <junitreport todir="tests/output">
+      <fileset dir="tests/output" includes="TEST-*.xml"/>
+      <report todir="tests/output"/>
+    </junitreport>
+  </target>
+
+  <target name="clean">
+    <delete dir="build"/>
+    <delete file="lib/${ant.project.name}.jar"/>
+  </target>
+</project>

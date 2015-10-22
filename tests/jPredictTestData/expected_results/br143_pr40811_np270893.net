@@ -1,0 +1,13 @@
+profile    = 40811
+nprofile   = 270893
+mprofile   = 271303
+testcase   = HPCMO_ti10_round1.icepic_standard_64
+resource   = ERDC_SGI_Intel Nehalem_15360_8_2800000000_4
+type       = psins
+model      = cont
+ratio      = 4.558861413297091
+comp(tot)  = 109306.98399999998
+comm(tot)  = 92475.72790000003
+comp(repM) = 2435.3095
+comp(repA) = 1707.9216249999997
+overall    = 3152.8549

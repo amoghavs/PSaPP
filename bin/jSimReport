@@ -1,0 +1,3 @@
+#!/bin/sh
+psapp_cmd="PSaPP.web.SimReport"
+. `dirname $0`/jCommon

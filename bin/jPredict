@@ -1,0 +1,4 @@
+#!/bin/sh
+optional="-server -Xms2000m -Xmx2000m"
+psapp_cmd="PSaPP.pred.Predict"
+. `dirname $0`/jCommon

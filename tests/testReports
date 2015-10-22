@@ -1,0 +1,24 @@
+#!/bin/bash
+
+set -e
+set -u
+
+testcase=$1
+
+export PATH=$PSAPP_ROOT/tests/utils:$PATH
+OUTPUT=output
+export SCRATCH=$OUTPUT/scratch
+export PROCESSED=$OUTPUT/processed
+
+source setTestcase $testcase
+
+rm -rf $OUTPUT
+mkdir -p $OUTPUT
+    
+doProcess
+doReports
+    
+# compare outputs
+doCompare $REFERENCE $OUTPUT/processed
+
+echo Success

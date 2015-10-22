@@ -1,0 +1,1909 @@
+# appname         = cg.A
+# extension       = jbbinst
+# rank            = 0
+# ntasks          = 1
+# perinsn         = no
+# countimage      = 1
+# countthread     = 4
+# masterthread    = 0
+# blockcount      = 537
+# loopcount       = 57
+
+# IMG	ImageHash	ImageSequence	ImageType	Name	BlockCount	LoopCount
+IMG	0x6461333961336565	0	Executable	cg.A	537	57
+
+# BLK	Sequence	Hashcode	ImageSequence	AllCounter	# File:Line	Function	Address
+#	ThreadId	ThreadCounter
+
+# LPP	Hashcode	ImageSequence	AllCounter	# File:Line	Function	Address
+#	ThreadId	ThreadCounter
+
+BLK	0	0xf000100010000	0	1	# __pebil_no_string__:0	_start	0x400eb0
+	0	1
+BLK	2	0xf000200010000	0	1	# __pebil_no_string__:0	call_gmon_start	0x400edc
+	0	1
+BLK	4	0xf000200030000	0	1	# __pebil_no_string__:0	call_gmon_start	0x400eee
+	0	1
+BLK	5	0xf000500010000	0	450723	# cg.f:1111	icnvrt_	0x400fa0
+	3	180347
+	2	135259
+	1	90110
+	0	45007
+BLK	6	0xf000600010000	0	14000	# cg.f:1134	vecset_	0x400fad
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	7	0xf000600020000	0	14000	# cg.f:1135	vecset_	0x400fb7
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	8	0xf000600030000	0	154000	# cg.f:1135	vecset_	0x400fc9
+	3	38500
+	2	38500
+	1	38500
+	0	38500
+BLK	9	0xf000600040000	0	13	# cg.f:1136	vecset_	0x400fd6
+	3	5
+	2	2
+	1	4
+	0	2
+BLK	10	0xf000600050000	0	154000	# cg.f:1134	vecset_	0x400fdf
+	3	38500
+	2	38500
+	1	38500
+	0	38500
+BLK	11	0xf000600060000	0	140000	# cg.f:1134	vecset_	0x400fe4
+	3	35000
+	2	35000
+	1	35000
+	0	35000
+BLK	12	0xf000600070000	0	14000	# cg.f:1140	vecset_	0x400fe9
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	13	0xf000600080000	0	13987	# cg.f:1141	vecset_	0x400fed
+	3	3495
+	2	3498
+	1	3496
+	0	3498
+BLK	14	0xf000600090000	0	14000	# cg.f:1037	vecset_	0x401009
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	15	0xf000700010000	0	35000	# cg.f:1037	sprnvc_	0x40100c
+	3	14000
+	2	10500
+	1	7000
+	0	3500
+BLK	16	0xf000700020000	0	485723	# cg.f:1068	sprnvc_	0x401046
+	3	194347
+	2	145759
+	1	97110
+	0	48507
+BLK	17	0xf000700030000	0	450723	# cg.f:1070	sprnvc_	0x401050
+	3	180347
+	2	135259
+	1	90110
+	0	45007
+BLK	18	0xf000700040000	0	450723	# cg.f:1070	sprnvc_	0x401060
+	3	180347
+	2	135259
+	1	90110
+	0	45007
+BLK	19	0xf000700050000	0	450723	# cg.f:1075	sprnvc_	0x401076
+	3	180347
+	2	135259
+	1	90110
+	0	45007
+BLK	20	0xf000700060000	0	450723	# cg.f:1076	sprnvc_	0x40108e
+	3	180347
+	2	135259
+	1	90110
+	0	45007
+BLK	21	0xf000700070000	0	385159	# cg.f:1082	sprnvc_	0x401096
+	3	154057
+	2	115548
+	1	77034
+	0	38520
+BLK	22	0xf000700080000	0	350159	# cg.f:1082	sprnvc_	0x40109a
+	3	140057
+	2	105048
+	1	70034
+	0	35020
+BLK	23	0xf000700090000	0	1925667	# cg.f:1083	sprnvc_	0x40109f
+	3	770243
+	2	577692
+	1	385145
+	0	192587
+BLK	24	0xf0007000a0000	0	1925508	# cg.f:1082	sprnvc_	0x4010ad
+	3	770186
+	2	577644
+	1	385111
+	0	192567
+BLK	25	0xf0007000b0000	0	1575508	# cg.f:1082	sprnvc_	0x4010b1
+	3	630186
+	2	472644
+	1	315111
+	0	157567
+BLK	26	0xf0007000c0000	0	385000	# cg.f:1085	sprnvc_	0x4010b6
+	3	154000
+	2	115500
+	1	77000
+	0	38500
+BLK	27	0xf0007000d0000	0	35000	# cg.f:704	sprnvc_	0x4010dd
+	3	14000
+	2	10500
+	1	7000
+	0	3500
+BLK	28	0xf000800010000	0	4	# cg.f:772	makea_	0x4010ec
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	29	0xf000800020000	0	56	# cg.f:771	makea_	0x401136
+	3	14
+	2	14
+	1	14
+	0	14
+BLK	30	0xf000800030000	0	4	# cg.f:772	makea_	0x40113c
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	31	0xf000800040000	0	4	# cg.f:778	makea_	0x40115d
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	32	0xf000800050000	0	4	# cg.f:780	makea_	0x40117b
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	34	0xf000800070000	0	4	# cg.f:782	makea_	0x401196
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	35	0xf000800080000	0	4	# cg.f:789	makea_	0x4011e8
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	36	0xf000800090000	0	35000	# cg.f:788	makea_	0x4011f7
+	3	14000
+	2	10500
+	1	7000
+	0	3500
+BLK	37	0xf0008000a0000	0	35000	# cg.f:790	makea_	0x40122a
+	3	14000
+	2	10500
+	1	7000
+	0	3500
+BLK	38	0xf0008000b0000	0	14000	# cg.f:791	makea_	0x40123b
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	39	0xf0008000c0000	0	14000	# cg.f:792	makea_	0x401269
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	40	0xf0008000d0000	0	14000	# cg.f:794	makea_	0x401288
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	41	0xf0008000e0000	0	167987	# cg.f:794	makea_	0x401299
+	3	41995
+	2	41998
+	1	41996
+	0	41998
+BLK	42	0xf0008000f0000	0	35000	# cg.f:799	makea_	0x4012c6
+	3	14000
+	2	10500
+	1	7000
+	0	3500
+BLK	43	0xf000800100000	0	4	# cg.f:799	makea_	0x4012e0
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	44	0xf000800110000	0	4	# cg.f:807	makea_	0x4012e5
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	45	0xf000800120000	0	4	# cg.f:808	makea_	0x401385
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	46	0xf000900010000	0	4	# cg.f:815	sparse_	0x401397
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	47	0xf000900020000	0	4	# cg.f:855	sparse_	0x40143e
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	48	0xf000900030000	0	14000	# cg.f:856	sparse_	0x401446
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	49	0xf000900040000	0	4	# cg.f:859	sparse_	0x40145c
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	50	0xf000900050000	0	4	# cg.f:862	sparse_	0x401475
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	51	0xf000900060000	0	56000	# cg.f:860	sparse_	0x40148f
+	3	14000
+	2	14000
+	1	14000
+	0	14000
+BLK	52	0xf000900070000	0	671948	# cg.f:861	sparse_	0x4014a5
+	3	167987
+	2	167987
+	1	167987
+	0	167987
+BLK	53	0xf000900080000	0	419476	# cg.f:862	sparse_	0x4014c8
+	3	41836
+	2	83989
+	1	125664
+	0	167987
+BLK	54	0xf000900090000	0	167987	# cg.f:864	sparse_	0x4014ce
+	3	41836
+	2	42153
+	1	41675
+	0	42323
+BLK	55	0xf0009000a0000	0	671948	# cg.f:860	sparse_	0x4014de
+	3	167987
+	2	167987
+	1	167987
+	0	167987
+BLK	56	0xf0009000b0000	0	56000	# cg.f:869	sparse_	0x4014ed
+	3	14000
+	2	14000
+	1	14000
+	0	14000
+BLK	57	0xf0009000c0000	0	4	# cg.f:869	sparse_	0x4014fd
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	58	0xf0009000d0000	0	1	# cg.f:870	sparse_	0x401508
+	0	1
+BLK	59	0xf0009000e0000	0	4	# cg.f:815	sparse_	0x401518
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	60	0xf0009000f0000	0	4	# cg.f:815	sparse_	0x401525
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	61	0xf000900100000	0	13997	# cg.f:874	sparse_	0x40152d
+	3	3499
+	2	3499
+	1	3499
+	0	3500
+BLK	62	0xf000900110000	0	13993	# cg.f:873	sparse_	0x401544
+	3	3498
+	2	3498
+	1	3498
+	0	3499
+BLK	63	0xf000900120000	0	4	# cg.f:876	sparse_	0x401548
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	64	0xf000900130000	0	4	# cg.f:876	sparse_	0x40155a
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	65	0xf000900140000	0	4	# cg.f:877	sparse_	0x401572
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	66	0xf000900150000	0	4	# cg.f:880	sparse_	0x401577
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	67	0xf000900160000	0	4	# cg.f:881	sparse_	0x401589
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	68	0xf000900170000	0	3	# cg.f:881	sparse_	0x401598
+	3	1
+	2	1
+	1	1
+BLK	69	0xf000900180000	0	6	# cg.f:882	sparse_	0x4015a5
+	3	3
+	2	2
+	1	1
+BLK	70	0xf000900190000	0	3	# cg.f:885	sparse_	0x4015ba
+	3	1
+	2	1
+	1	1
+BLK	71	0xf0009001a0000	0	3	# cg.f:886	sparse_	0x4015be
+	3	1
+	2	1
+	1	1
+BLK	72	0xf0009001b0000	0	3	# cg.f:886	sparse_	0x4015c8
+	3	1
+	2	1
+	1	1
+BLK	73	0xf0009001c0000	0	10500	# cg.f:887	sparse_	0x4015cc
+	3	3500
+	2	3500
+	1	3500
+BLK	74	0xf0009001d0000	0	4	# cg.f:890	sparse_	0x4015de
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	75	0xf0009001e0000	0	4	# cg.f:891	sparse_	0x4015e3
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	87	0xf0009002a0000	0	4	# cg.f:910	sparse_	0x4016e7
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	88	0xf0009002b0000	0	4	# cg.f:912	sparse_	0x4016fd
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	89	0xf0009002c0000	0	14000	# cg.f:911	sparse_	0x401702
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	90	0xf0009002d0000	0	2015701	# cg.f:912	sparse_	0x40171f
+	3	502002
+	2	505796
+	1	500058
+	0	507845
+BLK	91	0xf0009002e0000	0	14000	# cg.f:815	sparse_	0x40173c
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	92	0xf0009002f0000	0	4	# cg.f:923	sparse_	0x40174c
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	93	0xf000900300000	0	4	# cg.f:923	sparse_	0x401778
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	94	0xf000900310000	0	4	# cg.f:925	sparse_	0x40178f
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	95	0xf000900320000	0	56000	# cg.f:926	sparse_	0x4017a4
+	3	14000
+	2	14000
+	1	14000
+	0	14000
+BLK	96	0xf000900330000	0	671948	# cg.f:927	sparse_	0x4017c9
+	3	167987
+	2	167987
+	1	167987
+	0	167987
+BLK	97	0xf000900340000	0	419476	# cg.f:929	sparse_	0x4017f6
+	3	41836
+	2	83989
+	1	125664
+	0	167987
+BLK	98	0xf000900350000	0	167987	# cg.f:931	sparse_	0x401805
+	3	41836
+	2	42153
+	1	41675
+	0	42323
+BLK	99	0xf000900360000	0	167987	# cg.f:944	sparse_	0x40182e
+	3	41836
+	2	42153
+	1	41675
+	0	42323
+BLK	100	0xf000900370000	0	2015701	# cg.f:933	sparse_	0x40183a
+	3	502002
+	2	505796
+	1	500058
+	0	507845
+BLK	101	0xf000900380000	0	167987	# cg.f:940	sparse_	0x40186a
+	3	41836
+	2	42153
+	1	41675
+	0	42323
+BLK	102	0xf000900390000	0	14000	# cg.f:941	sparse_	0x40186f
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	103	0xf0009003a0000	0	2015701	# cg.f:944	sparse_	0x401887
+	3	502002
+	2	505796
+	1	500058
+	0	507845
+BLK	104	0xf0009003b0000	0	77372414	# cg.f:945	sparse_	0x40189c
+	3	20063542
+	2	19858078
+	1	18844858
+	0	18605936
+BLK	105	0xf0009003c0000	0	1777554	# cg.f:945	sparse_	0x4018aa
+	3	443362
+	2	445851
+	1	440672
+	0	447669
+BLK	106	0xf0009003d0000	0	1777554	# cg.f:949	sparse_	0x4018b6
+	3	443362
+	2	445851
+	1	440672
+	0	447669
+BLK	107	0xf0009003e0000	0	207595589	# cg.f:950	sparse_	0x4018bb
+	3	51706709
+	2	52301376
+	1	51087435
+	0	52500069
+BLK	108	0xf0009003f0000	0	62213098	# cg.f:951	sparse_	0x4018c8
+	3	15616525
+	2	15693806
+	1	15252284
+	0	15650483
+BLK	109	0xf000900400000	0	207595589	# cg.f:949	sparse_	0x4018e4
+	3	51706709
+	2	52301376
+	1	51087435
+	0	52500069
+BLK	110	0xf000900410000	0	205818035	# cg.f:949	sparse_	0x4018e8
+	3	51263347
+	2	51855525
+	1	50646763
+	0	52052400
+BLK	111	0xf000900420000	0	1777554	# cg.f:949	sparse_	0x4018ed
+	3	443362
+	2	445851
+	1	440672
+	0	447669
+BLK	112	0xf000900430000	0	1777554	# cg.f:955	sparse_	0x4018f2
+	3	443362
+	2	445851
+	1	440672
+	0	447669
+BLK	113	0xf000900440000	0	75594860	# cg.f:959	sparse_	0x401909
+	3	19620180
+	2	19412227
+	1	18404186
+	0	18158267
+BLK	114	0xf000900450000	0	75550	# cg.f:959	sparse_	0x40190d
+	3	18143
+	2	19131
+	1	19109
+	0	19167
+BLK	115	0xf000900460000	0	75519310	# cg.f:965	sparse_	0x401915
+	3	19602037
+	2	19393096
+	1	18385077
+	0	18139100
+BLK	116	0xf000900470000	0	162597	# cg.f:965	sparse_	0x401919
+	3	40497
+	2	40814
+	1	40277
+	0	41009
+BLK	117	0xf000900480000	0	75356713	# cg.f:969	sparse_	0x401928
+	3	19561540
+	2	19352282
+	1	18344800
+	0	18098091
+BLK	118	0xf000900490000	0	75356713	# cg.f:969	sparse_	0x40192d
+	3	19561540
+	2	19352282
+	1	18344800
+	0	18098091
+BLK	124	0xf0009004f0000	0	2015701	# cg.f:932	sparse_	0x4019a8
+	3	502002
+	2	505796
+	1	500058
+	0	507845
+BLK	125	0xf000900500000	0	1847714	# cg.f:926	sparse_	0x4019bb
+	3	460166
+	2	463643
+	1	458383
+	0	465522
+BLK	126	0xf000900510000	0	671948	# cg.f:926	sparse_	0x4019c4
+	3	167987
+	2	167987
+	1	167987
+	0	167987
+BLK	127	0xf000900520000	0	56000	# cg.f:976	sparse_	0x4019d9
+	3	14000
+	2	14000
+	1	14000
+	0	14000
+BLK	128	0xf000900530000	0	55996	# cg.f:976	sparse_	0x4019ea
+	3	13999
+	2	13999
+	1	13999
+	0	13999
+BLK	129	0xf000900540000	0	4	# cg.f:976	sparse_	0x4019f3
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	130	0xf000900550000	0	4	# cg.f:978	sparse_	0x4019f8
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	131	0xf000900560000	0	4	# cg.f:815	sparse_	0x4019fd
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	132	0xf000900570000	0	13996	# cg.f:985	sparse_	0x401a14
+	3	3499
+	2	3499
+	1	3499
+	0	3499
+BLK	133	0xf000900580000	0	13992	# cg.f:984	sparse_	0x401a2b
+	3	3498
+	2	3498
+	1	3498
+	0	3498
+BLK	134	0xf000900590000	0	4	# cg.f:987	sparse_	0x401a2f
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	135	0xf0009005a0000	0	4	# cg.f:987	sparse_	0x401a41
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	136	0xf0009005b0000	0	4	# cg.f:988	sparse_	0x401a5c
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	137	0xf0009005c0000	0	4	# cg.f:991	sparse_	0x401a61
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	138	0xf0009005d0000	0	4	# cg.f:992	sparse_	0x401a73
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	139	0xf0009005e0000	0	3	# cg.f:992	sparse_	0x401a82
+	3	1
+	2	1
+	1	1
+BLK	140	0xf0009005f0000	0	6	# cg.f:993	sparse_	0x401a8f
+	3	3
+	2	2
+	1	1
+BLK	141	0xf000900600000	0	3	# cg.f:996	sparse_	0x401aa4
+	3	1
+	2	1
+	1	1
+BLK	142	0xf000900610000	0	3	# cg.f:997	sparse_	0x401aa8
+	3	1
+	2	1
+	1	1
+BLK	143	0xf000900620000	0	10500	# cg.f:998	sparse_	0x401abc
+	3	3500
+	2	3500
+	1	3500
+BLK	144	0xf000900630000	0	4	# cg.f:1001	sparse_	0x401ace
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	145	0xf000900640000	0	4	# cg.f:1003	sparse_	0x401ad3
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	146	0xf000900650000	0	4	# cg.f:1003	sparse_	0x401ad8
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	147	0xf000900660000	0	4	# cg.f:1003	sparse_	0x401ae0
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	148	0xf000900670000	0	4	# cg.f:1003	sparse_	0x401b1c
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	149	0xf000900680000	0	14000	# cg.f:1005	sparse_	0x401b38
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	150	0xf000900690000	0	13999	# cg.f:1006	sparse_	0x401b40
+	3	3500
+	2	3500
+	1	3500
+	0	3499
+BLK	151	0xf0009006a0000	0	14000	# cg.f:1010	sparse_	0x401b53
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	152	0xf0009006b0000	0	1853104	# cg.f:1013	sparse_	0x401b79
+	3	461505
+	2	464982
+	1	459781
+	0	466836
+BLK	153	0xf0009006c0000	0	14000	# cg.f:1003	sparse_	0x401ba9
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	154	0xf0009006d0000	0	13996	# cg.f:1003	sparse_	0x401bae
+	3	3499
+	2	3499
+	1	3499
+	0	3499
+BLK	157	0xf000900700000	0	14000	# cg.f:1021	sparse_	0x401bc2
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	158	0xf000900710000	0	4	# cg.f:1028	sparse_	0x401bdf
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	159	0xf000900720000	0	4	# cg.f:1003	sparse_	0x401be4
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	160	0xf000900730000	0	4	# cg.f:1003	sparse_	0x401bf6
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	161	0xf000900740000	0	4	# cg.f:1019	sparse_	0x401bff
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	162	0xf000a00010000	0	4	# cg.f:185	MAIN__.omp_fn.1	0x401c09
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	163	0xf000a00020000	0	4	# cg.f:195	MAIN__.omp_fn.1	0x401c5c
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	164	0xf000a00030000	0	4	# cg.f:207	MAIN__.omp_fn.1	0x401ccd
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	165	0xf000a00040000	0	4	# cg.f:207	MAIN__.omp_fn.1	0x401cd2
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	166	0xf000a00050000	0	4	# cg.f:207	MAIN__.omp_fn.1	0x401cd7
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	167	0xf000a00060000	0	4	# cg.f:207	MAIN__.omp_fn.1	0x401cde
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	168	0xf000a00070000	0	4	# cg.f:207	MAIN__.omp_fn.1	0x401d1d
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	169	0xf000a00080000	0	14000	# cg.f:209	MAIN__.omp_fn.1	0x401d37
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	170	0xf000a00090000	0	14000	# cg.f:209	MAIN__.omp_fn.1	0x401d56
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	171	0xf000a000a0000	0	4	# cg.f:209	MAIN__.omp_fn.1	0x401d5b
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	172	0xf000a000b0000	0	1853104	# cg.f:210	MAIN__.omp_fn.1	0x401d5d
+	3	461505
+	2	464982
+	1	459781
+	0	466836
+BLK	173	0xf000a000c0000	0	14000	# cg.f:218	MAIN__.omp_fn.1	0x401d6f
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	174	0xf000a000d0000	0	4	# cg.f:218	MAIN__.omp_fn.1	0x401d71
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	175	0xf000a000e0000	0	4	# cg.f:218	MAIN__.omp_fn.1	0x401da8
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	176	0xf000a000f0000	0	14001	# cg.f:220	MAIN__.omp_fn.1	0x401dbe
+	3	3498
+	2	3501
+	1	3501
+	0	3501
+BLK	177	0xf000a00100000	0	4	# cg.f:223	MAIN__.omp_fn.1	0x401dd1
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	178	0xf000a00110000	0	4	# cg.f:223	MAIN__.omp_fn.1	0x401e06
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	179	0xf000a00120000	0	14000	# cg.f:225	MAIN__.omp_fn.1	0x401e16
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	180	0xf000a00130000	0	4	# cg.f:293	MAIN__.omp_fn.1	0x401e40
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	181	0xf000b00010000	0	4	# cg.f:293	MAIN__.omp_fn.4	0x401e46
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	182	0xf000b00020000	0	4	# cg.f:293	MAIN__.omp_fn.4	0x401e4c
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	183	0xf000b00030000	0	4	# cg.f:293	MAIN__.omp_fn.4	0x401e53
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	184	0xf000b00040000	0	4	# cg.f:293	MAIN__.omp_fn.4	0x401e87
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	185	0xf000b00050000	0	14001	# cg.f:295	MAIN__.omp_fn.4	0x401e9c
+	3	3498
+	2	3501
+	1	3501
+	0	3501
+BLK	186	0xf000b00060000	0	4	# cg.f:340	MAIN__.omp_fn.4	0x401eae
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	187	0xf000c00010000	0	60	# cg.f:340	MAIN__.omp_fn.5	0x401eb0
+	3	15
+	2	15
+	1	15
+	0	15
+BLK	188	0xf000c00020000	0	60	# cg.f:340	MAIN__.omp_fn.5	0x401ec4
+	3	15
+	2	15
+	1	15
+	0	15
+BLK	189	0xf000c00030000	0	60	# cg.f:340	MAIN__.omp_fn.5	0x401ecb
+	3	15
+	2	15
+	1	15
+	0	15
+BLK	191	0xf000c00050000	0	60	# cg.f:340	MAIN__.omp_fn.5	0x401f09
+	3	15
+	2	15
+	1	15
+	0	15
+BLK	192	0xf000c00060000	0	210000	# cg.f:342	MAIN__.omp_fn.5	0x401f23
+	3	52500
+	2	52500
+	1	52500
+	0	52500
+BLK	193	0xf000c00070000	0	60	# cg.f:343	MAIN__.omp_fn.5	0x401f5d
+	3	15
+	2	15
+	1	15
+	0	15
+BLK	194	0xf000c00080000	0	60	# cg.f:361	MAIN__.omp_fn.5	0x401f62
+	3	15
+	2	15
+	1	15
+	0	15
+BLK	195	0xf000c00090000	0	60	# cg.f:361	MAIN__.omp_fn.5	0x401f84
+	3	15
+	2	15
+	1	15
+	0	15
+BLK	196	0xf000d00010000	0	60	# cg.f:361	MAIN__.omp_fn.6	0x401f8d
+	3	15
+	2	15
+	1	15
+	0	15
+BLK	197	0xf000d00020000	0	60	# cg.f:361	MAIN__.omp_fn.6	0x401f9d
+	3	15
+	2	15
+	1	15
+	0	15
+BLK	198	0xf000d00030000	0	60	# cg.f:361	MAIN__.omp_fn.6	0x401fa4
+	3	15
+	2	15
+	1	15
+	0	15
+BLK	199	0xf000d00040000	0	60	# cg.f:361	MAIN__.omp_fn.6	0x401fd1
+	3	15
+	2	15
+	1	15
+	0	15
+BLK	200	0xf000d00050000	0	210000	# cg.f:363	MAIN__.omp_fn.6	0x401fe0
+	3	52500
+	2	52500
+	1	52500
+	0	52500
+BLK	201	0xf000d00060000	0	60	# cg.f:264	MAIN__.omp_fn.6	0x402000
+	3	15
+	2	15
+	1	15
+	0	15
+BLK	202	0xf000e00010000	0	4	# cg.f:264	MAIN__.omp_fn.2	0x402005
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	203	0xf000e00020000	0	4	# cg.f:264	MAIN__.omp_fn.2	0x402019
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	204	0xf000e00030000	0	4	# cg.f:264	MAIN__.omp_fn.2	0x402020
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	206	0xf000e00050000	0	4	# cg.f:264	MAIN__.omp_fn.2	0x40205e
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	207	0xf000e00060000	0	14000	# cg.f:266	MAIN__.omp_fn.2	0x402078
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	208	0xf000e00070000	0	4	# cg.f:267	MAIN__.omp_fn.2	0x4020b2
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	209	0xf000e00080000	0	4	# cg.f:277	MAIN__.omp_fn.2	0x4020b7
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	210	0xf000e00090000	0	4	# cg.f:277	MAIN__.omp_fn.2	0x4020d9
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	211	0xf000f00010000	0	4	# cg.f:277	MAIN__.omp_fn.3	0x4020e2
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	212	0xf000f00020000	0	4	# cg.f:277	MAIN__.omp_fn.3	0x4020f2
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	213	0xf000f00030000	0	4	# cg.f:277	MAIN__.omp_fn.3	0x4020f9
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	214	0xf000f00040000	0	4	# cg.f:277	MAIN__.omp_fn.3	0x402126
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	215	0xf000f00050000	0	14000	# cg.f:279	MAIN__.omp_fn.3	0x402135
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+BLK	216	0xf000f00060000	0	4	# cg.f:514	MAIN__.omp_fn.3	0x402155
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	217	0xf001000010000	0	64	# cg.f:514	conj_grad_.omp_fn.0	0x40215a
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	218	0xf001000020000	0	64	# cg.f:519	conj_grad_.omp_fn.0	0x402170
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	219	0xf001000030000	0	64	# cg.f:519	conj_grad_.omp_fn.0	0x402177
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	220	0xf001000040000	0	64	# cg.f:519	conj_grad_.omp_fn.0	0x4021b2
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	221	0xf001000050000	0	224016	# cg.f:521	conj_grad_.omp_fn.0	0x4021be
+	3	55968
+	2	56016
+	1	56016
+	0	56016
+BLK	222	0xf001000060000	0	64	# cg.f:533	conj_grad_.omp_fn.0	0x4021fd
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	223	0xf001000070000	0	64	# cg.f:533	conj_grad_.omp_fn.0	0x402202
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	224	0xf001000080000	0	64	# cg.f:533	conj_grad_.omp_fn.0	0x40223f
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	225	0xf001000090000	0	224000	# cg.f:535	conj_grad_.omp_fn.0	0x40224d
+	3	56000
+	2	56000
+	1	56000
+	0	56000
+BLK	226	0xf0010000a0000	0	64	# cg.f:535	conj_grad_.omp_fn.0	0x402265
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	227	0xf0010000b0000	0	74	# cg.f:671	conj_grad_.omp_fn.0	0x40226d
+	3	19
+	2	17
+	1	20
+	0	18
+BLK	228	0xf0010000c0000	0	10	# cg.f:671	conj_grad_.omp_fn.0	0x402295
+	3	3
+	2	1
+	1	4
+	0	2
+BLK	229	0xf0010000d0000	0	64	# cg.f:671	conj_grad_.omp_fn.0	0x40229a
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	230	0xf0010000e0000	0	64	# cg.f:671	conj_grad_.omp_fn.0	0x40229f
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	231	0xf0010000f0000	0	64	# cg.f:671	conj_grad_.omp_fn.0	0x4022b0
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	232	0xf001000100000	0	64	# cg.f:671	conj_grad_.omp_fn.0	0x4022f2
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	233	0xf001000110000	0	224000	# cg.f:674	conj_grad_.omp_fn.0	0x402302
+	3	56000
+	2	56000
+	1	56000
+	0	56000
+BLK	235	0xf001000130000	0	224000	# cg.f:677	conj_grad_.omp_fn.0	0x40232d
+	3	56000
+	2	56000
+	1	56000
+	0	56000
+BLK	236	0xf001000140000	0	64	# cg.f:677	conj_grad_.omp_fn.0	0x40233c
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	237	0xf001000150000	0	224000	# cg.f:675	conj_grad_.omp_fn.0	0x40233e
+	3	56000
+	2	56000
+	1	56000
+	0	56000
+BLK	238	0xf001000160000	0	29649664	# cg.f:675	conj_grad_.omp_fn.0	0x402354
+	3	7384080
+	2	7439712
+	1	7356496
+	0	7469376
+BLK	239	0xf001000170000	0	224000	# cg.f:674	conj_grad_.omp_fn.0	0x40237a
+	3	56000
+	2	56000
+	1	56000
+	0	56000
+BLK	240	0xf001000180000	0	64	# cg.f:685	conj_grad_.omp_fn.0	0x40237c
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	241	0xf001000190000	0	64	# cg.f:685	conj_grad_.omp_fn.0	0x402381
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	242	0xf0010001a0000	0	64	# cg.f:685	conj_grad_.omp_fn.0	0x4023bd
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	243	0xf0010001b0000	0	224000	# cg.f:687	conj_grad_.omp_fn.0	0x4023d0
+	3	56000
+	2	56000
+	1	56000
+	0	56000
+BLK	244	0xf0010001c0000	0	64	# cg.f:688	conj_grad_.omp_fn.0	0x4023ee
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	245	0xf0010001d0000	0	69	# cg.f:544	conj_grad_.omp_fn.0	0x4023f5
+	3	17
+	2	16
+	1	18
+	0	18
+BLK	246	0xf0010001e0000	0	5	# cg.f:544	conj_grad_.omp_fn.0	0x402420
+	3	1
+	1	2
+	0	2
+BLK	247	0xf0010001f0000	0	1536	# cg.f:544	conj_grad_.omp_fn.0	0x402425
+	3	384
+	2	384
+	1	384
+	0	384
+BLK	248	0xf001000200000	0	1600	# cg.f:546	conj_grad_.omp_fn.0	0x40242a
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	249	0xf001000210000	0	1600	# cg.f:568	conj_grad_.omp_fn.0	0x402433
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	250	0xf001000220000	0	1600	# cg.f:568	conj_grad_.omp_fn.0	0x402438
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	251	0xf001000230000	0	1600	# cg.f:568	conj_grad_.omp_fn.0	0x40247a
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	252	0xf001000240000	0	5600000	# cg.f:571	conj_grad_.omp_fn.0	0x402481
+	3	1400000
+	2	1400000
+	1	1400000
+	0	1400000
+BLK	254	0xf001000260000	0	5600000	# cg.f:574	conj_grad_.omp_fn.0	0x4024a5
+	3	1400000
+	2	1400000
+	1	1400000
+	0	1400000
+BLK	255	0xf001000270000	0	1600	# cg.f:574	conj_grad_.omp_fn.0	0x4024b4
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	256	0xf001000280000	0	5600000	# cg.f:572	conj_grad_.omp_fn.0	0x4024b6
+	3	1400000
+	2	1400000
+	1	1400000
+	0	1400000
+BLK	257	0xf001000290000	0	741241600	# cg.f:572	conj_grad_.omp_fn.0	0x4024c5
+	3	184602000
+	2	185992800
+	1	183912400
+	0	186734400
+BLK	258	0xf0010002a0000	0	5600000	# cg.f:571	conj_grad_.omp_fn.0	0x4024eb
+	3	1400000
+	2	1400000
+	1	1400000
+	0	1400000
+BLK	259	0xf0010002b0000	0	1600	# cg.f:617	conj_grad_.omp_fn.0	0x4024ed
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	260	0xf0010002c0000	0	1600	# cg.f:617	conj_grad_.omp_fn.0	0x4024f2
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	261	0xf0010002d0000	0	1600	# cg.f:617	conj_grad_.omp_fn.0	0x402530
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	262	0xf0010002e0000	0	5600000	# cg.f:619	conj_grad_.omp_fn.0	0x40253e
+	3	1400000
+	2	1400000
+	1	1400000
+	0	1400000
+BLK	263	0xf0010002f0000	0	1600	# cg.f:627	conj_grad_.omp_fn.0	0x402558
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	264	0xf001000300000	0	1711	# cg.f:627	conj_grad_.omp_fn.0	0x40255c
+	3	416
+	2	441
+	1	417
+	0	437
+BLK	265	0xf001000310000	0	111	# cg.f:627	conj_grad_.omp_fn.0	0x402584
+	3	16
+	2	41
+	1	17
+	0	37
+BLK	266	0xf001000320000	0	1600	# cg.f:627	conj_grad_.omp_fn.0	0x402589
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	267	0xf001000330000	0	1600	# cg.f:627	conj_grad_.omp_fn.0	0x40258e
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	268	0xf001000340000	0	1600	# cg.f:633	conj_grad_.omp_fn.0	0x4025d6
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	269	0xf001000350000	0	5600000	# cg.f:635	conj_grad_.omp_fn.0	0x4025dc
+	3	1400000
+	2	1400000
+	1	1400000
+	0	1400000
+BLK	270	0xf001000360000	0	1600	# cg.f:651	conj_grad_.omp_fn.0	0x402635
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	271	0xf001000370000	0	1709	# cg.f:651	conj_grad_.omp_fn.0	0x402639
+	3	416
+	2	422
+	1	419
+	0	452
+BLK	272	0xf001000380000	0	109	# cg.f:651	conj_grad_.omp_fn.0	0x402661
+	3	16
+	2	22
+	1	19
+	0	52
+BLK	273	0xf001000390000	0	1600	# cg.f:651	conj_grad_.omp_fn.0	0x402666
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	274	0xf0010003a0000	0	1600	# cg.f:651	conj_grad_.omp_fn.0	0x40266b
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	275	0xf0010003b0000	0	1600	# cg.f:656	conj_grad_.omp_fn.0	0x4026af
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	276	0xf0010003c0000	0	5600000	# cg.f:658	conj_grad_.omp_fn.0	0x4026b5
+	3	1400000
+	2	1400000
+	1	1400000
+	0	1400000
+BLK	277	0xf0010003d0000	0	1600	# cg.f:544	conj_grad_.omp_fn.0	0x4026de
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	278	0xf0010003e0000	0	1600	# cg.f:544	conj_grad_.omp_fn.0	0x4026e3
+	3	400
+	2	400
+	1	400
+	0	400
+BLK	279	0xf0010003f0000	0	64	# cg.f:544	conj_grad_.omp_fn.0	0x4026ee
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	280	0xf001000400000	0	400	# cg.f:550	conj_grad_.omp_fn.0	0x4026f5
+	0	400
+BLK	281	0xf001000410000	0	64	# cg.f:469	conj_grad_.omp_fn.0	0x402710
+	3	16
+	2	16
+	1	16
+	0	16
+BLK	282	0xf001100010000	0	16	# cg.f:514	conj_grad_	0x40271f
+	0	16
+BLK	283	0xf001100020000	0	16	# cg.f:693	conj_grad_	0x402788
+	0	16
+BLK	284	0xf001100030000	0	16	# cg.f:693	conj_grad_	0x402790
+	0	16
+BLK	285	0xf001100040000	0	16	# cg.f:693	conj_grad_	0x402795
+	0	16
+BLK	286	0xf001200010000	0	1	# cg.f:50	MAIN__	0x4027ad
+	0	1
+BLK	287	0xf001200020000	0	1	# cg.f:98	MAIN__	0x4027cd
+	0	1
+BLK	288	0xf001200030000	0	3	# cg.f:99	MAIN__	0x4027e0
+	0	3
+BLK	289	0xf001200040000	0	3	# cg.f:98	MAIN__	0x4027ed
+	0	3
+BLK	290	0xf001200050000	0	1	# cg.f:102	MAIN__	0x402803
+	0	1
+BLK	291	0xf001200060000	0	1	# cg.f:103	MAIN__	0x402886
+	0	1
+BLK	294	0xf001200090000	0	1	# cg.f:110	MAIN__	0x40291d
+	0	1
+BLK	295	0xf0012000a0000	0	1	# cg.f:113	MAIN__	0x402927
+	0	1
+BLK	296	0xf0012000b0000	0	1	# cg.f:115	MAIN__	0x402936
+	0	1
+BLK	297	0xf0012000c0000	0	1	# cg.f:167	MAIN__	0x4029d0
+	0	1
+BLK	298	0xf0012000d0000	0	1	# cg.f:168	MAIN__	0x4029d8
+	0	1
+BLK	299	0xf0012000e0000	0	1	# cg.f:168	MAIN__	0x402a2c
+	0	1
+BLK	300	0xf0012000f0000	0	1	# cg.f:168	MAIN__	0x402a3e
+	0	1
+BLK	301	0xf001200100000	0	1	# cg.f:169	MAIN__	0x402a46
+	0	1
+BLK	302	0xf001200110000	0	1	# cg.f:169	MAIN__	0x402a9a
+	0	1
+BLK	303	0xf001200120000	0	1	# cg.f:169	MAIN__	0x402aac
+	0	1
+BLK	304	0xf001200130000	0	1	# cg.f:170	MAIN__	0x402ab4
+	0	1
+BLK	305	0xf001200140000	0	1	# cg.f:170	MAIN__	0x402b08
+	0	1
+BLK	306	0xf001200150000	0	1	# cg.f:170	MAIN__	0x402b12
+	0	1
+BLK	307	0xf001200160000	0	1	# cg.f:170	MAIN__	0x402b2e
+	0	1
+BLK	308	0xf001200170000	0	1	# cg.f:171	MAIN__	0x402b36
+	0	1
+BLK	309	0xf001200180000	0	1	# cg.f:171	MAIN__	0x402b73
+	0	1
+BLK	310	0xf001200190000	0	1	# cg.f:178	MAIN__	0x402b7b
+	0	1
+BLK	311	0xf0012001a0000	0	1	# cg.f:233	MAIN__	0x402ba3
+	0	1
+BLK	312	0xf0012001b0000	0	1	# cg.f:233	MAIN__	0x402bad
+	0	1
+BLK	313	0xf0012001c0000	0	1	# cg.f:233	MAIN__	0x402bb2
+	0	1
+BLK	314	0xf0012001d0000	0	1	# cg.f:264	MAIN__	0x402bf1
+	0	1
+BLK	315	0xf0012001e0000	0	1	# cg.f:264	MAIN__	0x402c33
+	0	1
+BLK	316	0xf0012001f0000	0	1	# cg.f:264	MAIN__	0x402c64
+	0	1
+BLK	317	0xf001200200000	0	1	# cg.f:264	MAIN__	0x402c6c
+	0	1
+BLK	318	0xf001200210000	0	1	# cg.f:271	MAIN__	0x402c71
+	0	1
+BLK	319	0xf001200220000	0	1	# cg.f:240	MAIN__	0x402cb0
+	0	1
+BLK	320	0xf001200230000	0	1	# cg.f:240	MAIN__	0x402cb8
+	0	1
+BLK	321	0xf001200240000	0	1	# cg.f:293	MAIN__	0x402cbd
+	0	1
+BLK	322	0xf001200250000	0	1	# cg.f:293	MAIN__	0x402cd7
+	0	1
+BLK	323	0xf001200260000	0	1	# cg.f:293	MAIN__	0x402ceb
+	0	1
+BLK	324	0xf001200270000	0	1	# cg.f:293	MAIN__	0x402cf5
+	0	1
+BLK	325	0xf001200280000	0	1	# cg.f:299	MAIN__	0x402cfa
+	0	1
+BLK	326	0xf001200290000	0	1	# cg.f:303	MAIN__	0x402d15
+	0	1
+BLK	327	0xf0012002a0000	0	1	# cg.f:303	MAIN__	0x402d69
+	0	1
+BLK	328	0xf0012002b0000	0	1	# cg.f:303	MAIN__	0x402d78
+	0	1
+BLK	329	0xf0012002c0000	0	1	# cg.f:303	MAIN__	0x402d96
+	0	1
+BLK	330	0xf0012002d0000	0	1	# cg.f:306	MAIN__	0x402d9e
+	0	1
+BLK	331	0xf0012002e0000	0	1	# cg.f:327	MAIN__	0x402dad
+	0	1
+BLK	332	0xf0012002f0000	0	15	# cg.f:327	MAIN__	0x402de5
+	0	15
+BLK	334	0xf001200310000	0	15	# cg.f:327	MAIN__	0x402dfd
+	0	15
+BLK	335	0xf001200320000	0	15	# cg.f:340	MAIN__	0x402e3f
+	0	15
+BLK	337	0xf001200340000	0	15	# cg.f:340	MAIN__	0x402e57
+	0	15
+BLK	338	0xf001200350000	0	15	# cg.f:340	MAIN__	0x402e8f
+	0	15
+BLK	339	0xf001200360000	0	15	# cg.f:340	MAIN__	0x402e97
+	0	15
+BLK	340	0xf001200370000	0	15	# cg.f:348	MAIN__	0x402e9c
+	0	15
+BLK	341	0xf001200380000	0	1	# cg.f:352	MAIN__	0x402eda
+	0	1
+BLK	342	0xf001200390000	0	1	# cg.f:352	MAIN__	0x402f2b
+	0	1
+BLK	343	0xf0012003a0000	0	15	# cg.f:353	MAIN__	0x402f38
+	0	15
+BLK	344	0xf0012003b0000	0	15	# cg.f:353	MAIN__	0x402f84
+	0	15
+BLK	345	0xf0012003c0000	0	15	# cg.f:353	MAIN__	0x402f94
+	0	15
+BLK	346	0xf0012003d0000	0	15	# cg.f:353	MAIN__	0x402fa4
+	0	15
+BLK	347	0xf0012003e0000	0	15	# cg.f:353	MAIN__	0x402fb9
+	0	15
+BLK	348	0xf0012003f0000	0	15	# cg.f:313	MAIN__	0x402fc1
+	0	15
+BLK	349	0xf001200400000	0	15	# cg.f:313	MAIN__	0x403003
+	0	15
+BLK	350	0xf001200410000	0	15	# cg.f:313	MAIN__	0x40300b
+	0	15
+BLK	351	0xf001200420000	0	15	# cg.f:370	MAIN__	0x403010
+	0	15
+BLK	352	0xf001200430000	0	1	# cg.f:370	MAIN__	0x40302a
+	0	1
+BLK	353	0xf001200440000	0	1	# cg.f:376	MAIN__	0x403039
+	0	1
+BLK	354	0xf001200450000	0	1	# cg.f:376	MAIN__	0x403048
+	0	1
+BLK	355	0xf001200460000	0	1	# cg.f:379	MAIN__	0x4030a5
+	0	1
+BLK	356	0xf001200470000	0	1	# cg.f:383	MAIN__	0x4030ad
+	0	1
+BLK	357	0xf001200480000	0	1	# cg.f:386	MAIN__	0x4030bb
+	0	1
+BLK	358	0xf001200490000	0	1	# cg.f:387	MAIN__	0x4030f8
+	0	1
+BLK	359	0xf0012004a0000	0	1	# cg.f:388	MAIN__	0x4030fe
+	0	1
+BLK	360	0xf0012004b0000	0	1	# cg.f:389	MAIN__	0x40315d
+	0	1
+BLK	361	0xf0012004c0000	0	1	# cg.f:390	MAIN__	0x403165
+	0	1
+BLK	362	0xf0012004d0000	0	1	# cg.f:390	MAIN__	0x4031b9
+	0	1
+BLK	363	0xf0012004e0000	0	1	# cg.f:390	MAIN__	0x4031ce
+	0	1
+BLK	364	0xf0012004f0000	0	1	# cg.f:391	MAIN__	0x4031d6
+	0	1
+BLK	365	0xf001200500000	0	1	# cg.f:391	MAIN__	0x40322a
+	0	1
+BLK	366	0xf001200510000	0	1	# cg.f:391	MAIN__	0x40323f
+	0	1
+BLK	367	0xf001200520000	0	1	# cg.f:391	MAIN__	0x403247
+	0	1
+BLK	384	0xf001200630000	0	1	# cg.f:414	MAIN__	0x4034ce
+	0	1
+BLK	385	0xf001200640000	0	1	# cg.f:414	MAIN__	0x4034e1
+	0	1
+BLK	386	0xf001200650000	0	1	# cg.f:418	MAIN__	0x4034e3
+	0	1
+BLK	388	0xf001200670000	0	1	# cg.f:438	MAIN__	0x403512
+	0	1
+BLK	389	0xf001200680000	0	1	# cg.f:438	MAIN__	0x403638
+	0	1
+BLK	415	0xf001200820000	0	1	# cg.f:460	MAIN__	0x403998
+	0	1
+BLK	416	0xf001300010000	0	4	# print_results.f:25	print_results_.omp_fn.0	0x4039b0
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	417	0xf001300020000	0	4	# print_results.f:26	print_results_.omp_fn.0	0x4039b9
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	418	0xf001300030000	0	1	# print_results.f:27	print_results_.omp_fn.0	0x4039bd
+	0	1
+BLK	419	0xf001300040000	0	1	# print_results.f:27	print_results_.omp_fn.0	0x4039c2
+	0	1
+BLK	420	0xf001300050000	0	4	# print_results.f:2	print_results_.omp_fn.0	0x4039c7
+	3	1
+	2	1
+	1	1
+	0	1
+BLK	421	0xf001400010000	0	1	# print_results.f:20	print_results_	0x4039c9
+	0	1
+BLK	422	0xf001400020000	0	1	# print_results.f:21	print_results_	0x403a00
+	0	1
+BLK	423	0xf001400030000	0	1	# print_results.f:25	print_results_	0x403a2d
+	0	1
+BLK	424	0xf001400040000	0	1	# print_results.f:25	print_results_	0x403a35
+	0	1
+BLK	425	0xf001400050000	0	1	# print_results.f:32	print_results_	0x403a3a
+	0	1
+BLK	426	0xf001400060000	0	1	# print_results.f:32	print_results_	0x403a7f
+	0	1
+BLK	427	0xf001400070000	0	1	# print_results.f:32	print_results_	0x403a91
+	0	1
+BLK	428	0xf001400080000	0	1	# print_results.f:35	print_results_	0x403a99
+	0	1
+BLK	429	0xf001400090000	0	1	# print_results.f:35	print_results_	0x403aed
+	0	1
+BLK	430	0xf0014000a0000	0	1	# print_results.f:35	print_results_	0x403afd
+	0	1
+BLK	431	0xf0014000b0000	0	1	# print_results.f:43	print_results_	0x403b05
+	0	1
+BLK	432	0xf0014000c0000	0	1	# print_results.f:43	print_results_	0x403b0f
+	0	1
+BLK	433	0xf0014000d0000	0	1	# print_results.f:44	print_results_	0x403b1a
+	0	1
+BLK	434	0xf0014000e0000	0	1	# print_results.f:44	print_results_	0x403b31
+	0	1
+BLK	443	0xf001400170000	0	1	# print_results.f:51	print_results_	0x403c65
+	0	1
+BLK	444	0xf001400180000	0	1	# print_results.f:51	print_results_	0x403cb9
+	0	1
+BLK	445	0xf001400190000	0	1	# print_results.f:51	print_results_	0x403cc9
+	0	1
+BLK	446	0xf0014001a0000	0	1	# print_results.f:51	print_results_	0x403cd1
+	0	1
+BLK	452	0xf001400200000	0	1	# print_results.f:59	print_results_	0x403d62
+	0	1
+BLK	453	0xf001400210000	0	1	# print_results.f:59	print_results_	0x403db6
+	0	1
+BLK	454	0xf001400220000	0	1	# print_results.f:59	print_results_	0x403dc8
+	0	1
+BLK	455	0xf001400230000	0	1	# print_results.f:62	print_results_	0x403dd0
+	0	1
+BLK	456	0xf001400240000	0	1	# print_results.f:62	print_results_	0x403e24
+	0	1
+BLK	457	0xf001400250000	0	1	# print_results.f:62	print_results_	0x403e39
+	0	1
+BLK	458	0xf001400260000	0	1	# print_results.f:65	print_results_	0x403e41
+	0	1
+BLK	459	0xf001400270000	0	1	# print_results.f:65	print_results_	0x403e95
+	0	1
+BLK	460	0xf001400280000	0	1	# print_results.f:65	print_results_	0x403ea7
+	0	1
+BLK	461	0xf001400290000	0	1	# print_results.f:68	print_results_	0x403eaf
+	0	1
+BLK	462	0xf0014002a0000	0	1	# print_results.f:68	print_results_	0x403f03
+	0	1
+BLK	463	0xf0014002b0000	0	1	# print_results.f:68	print_results_	0x403f15
+	0	1
+BLK	464	0xf0014002c0000	0	1	# print_results.f:71	print_results_	0x403f1d
+	0	1
+BLK	467	0xf0014002f0000	0	1	# print_results.f:74	print_results_	0x403f83
+	0	1
+BLK	468	0xf001400300000	0	1	# print_results.f:74	print_results_	0x403fd7
+	0	1
+BLK	469	0xf001400310000	0	1	# print_results.f:74	print_results_	0x403fec
+	0	1
+BLK	470	0xf001400320000	0	1	# print_results.f:77	print_results_	0x403ff4
+	0	1
+BLK	471	0xf001400330000	0	1	# print_results.f:77	print_results_	0x404048
+	0	1
+BLK	472	0xf001400340000	0	1	# print_results.f:77	print_results_	0x404082
+	0	1
+BLK	473	0xf001400350000	0	1	# print_results.f:80	print_results_	0x40408a
+	0	1
+BLK	474	0xf001400360000	0	1	# print_results.f:80	print_results_	0x4040de
+	0	1
+BLK	475	0xf001400370000	0	1	# print_results.f:80	print_results_	0x4040f3
+	0	1
+BLK	476	0xf001400380000	0	1	# print_results.f:83	print_results_	0x4040fb
+	0	1
+BLK	477	0xf001400390000	0	1	# print_results.f:84	print_results_	0x404108
+	0	1
+BLK	478	0xf0014003a0000	0	1	# print_results.f:84	print_results_	0x40415c
+	0	1
+BLK	479	0xf0014003b0000	0	1	# print_results.f:84	print_results_	0x40416e
+	0	1
+BLK	480	0xf0014003c0000	0	1	# print_results.f:84	print_results_	0x404176
+	0	1
+BLK	484	0xf001400400000	0	1	# print_results.f:90	print_results_	0x4041e6
+	0	1
+BLK	485	0xf001400410000	0	1	# print_results.f:90	print_results_	0x40423a
+	0	1
+BLK	486	0xf001400420000	0	1	# print_results.f:90	print_results_	0x404251
+	0	1
+BLK	487	0xf001400430000	0	1	# print_results.f:93	print_results_	0x404259
+	0	1
+BLK	488	0xf001400440000	0	1	# print_results.f:93	print_results_	0x4042ad
+	0	1
+BLK	489	0xf001400450000	0	1	# print_results.f:93	print_results_	0x4042c4
+	0	1
+BLK	490	0xf001400460000	0	1	# print_results.f:97	print_results_	0x4042cc
+	0	1
+BLK	491	0xf001400470000	0	1	# print_results.f:97	print_results_	0x404320
+	0	1
+BLK	492	0xf001400480000	0	1	# print_results.f:97	print_results_	0x404337
+	0	1
+BLK	493	0xf001400490000	0	1	# print_results.f:101	print_results_	0x40433f
+	0	1
+BLK	494	0xf0014004a0000	0	1	# print_results.f:101	print_results_	0x404393
+	0	1
+BLK	495	0xf0014004b0000	0	1	# print_results.f:101	print_results_	0x4043aa
+	0	1
+BLK	496	0xf0014004c0000	0	1	# print_results.f:104	print_results_	0x4043b2
+	0	1
+BLK	497	0xf0014004d0000	0	1	# print_results.f:104	print_results_	0x404406
+	0	1
+BLK	498	0xf0014004e0000	0	1	# print_results.f:104	print_results_	0x40441d
+	0	1
+BLK	499	0xf0014004f0000	0	1	# print_results.f:107	print_results_	0x404425
+	0	1
+BLK	500	0xf001400500000	0	1	# print_results.f:107	print_results_	0x404479
+	0	1
+BLK	501	0xf001400510000	0	1	# print_results.f:107	print_results_	0x404490
+	0	1
+BLK	502	0xf001400520000	0	1	# print_results.f:110	print_results_	0x404498
+	0	1
+BLK	503	0xf001400530000	0	1	# print_results.f:110	print_results_	0x4044ec
+	0	1
+BLK	504	0xf001400540000	0	1	# print_results.f:110	print_results_	0x404503
+	0	1
+BLK	505	0xf001400550000	0	1	# print_results.f:113	print_results_	0x40450b
+	0	1
+BLK	506	0xf001400560000	0	1	# print_results.f:113	print_results_	0x40455f
+	0	1
+BLK	507	0xf001400570000	0	1	# print_results.f:113	print_results_	0x404576
+	0	1
+BLK	508	0xf001400580000	0	1	# print_results.f:116	print_results_	0x40457e
+	0	1
+BLK	509	0xf001400590000	0	1	# print_results.f:116	print_results_	0x4045d2
+	0	1
+BLK	510	0xf0014005a0000	0	1	# print_results.f:116	print_results_	0x4045e9
+	0	1
+BLK	511	0xf0014005b0000	0	1	# print_results.f:134	print_results_	0x4045f1
+	0	1
+BLK	512	0xf0014005c0000	0	1	# print_results.f:134	print_results_	0x404645
+	0	1
+BLK	513	0xf0014005d0000	0	1	# print_results.f:134	print_results_	0x40464d
+	0	1
+BLK	514	0xf001500010000	0	901450	# randi8.f:31	randlc_	0x404660
+	3	360695
+	2	270519
+	1	180221
+	0	90015
+BLK	519	0xf001700010000	0	3	# timers.f:16	timer_clear_	0x4046e4
+	0	3
+BLK	520	0xf001800010000	0	2	# timers.f:82	timer_read_	0x4046f5
+	0	2
+BLK	521	0xf001900010000	0	4	# timers.f:104	elapsed_time_	0x404703
+	0	4
+BLK	522	0xf001900020000	0	4	# timers.f:46	elapsed_time_	0x404711
+	0	4
+BLK	523	0xf001a00010000	0	2	# timers.f:59	timer_stop_	0x404716
+	0	2
+BLK	524	0xf001a00020000	0	2	# timers.f:60	timer_stop_	0x404724
+	0	2
+BLK	525	0xf001b00010000	0	2	# timers.f:37	timer_start_	0x404747
+	0	2
+BLK	526	0xf001b00020000	0	2	# timers.f:37	timer_start_	0x404759
+	0	2
+BLK	531	0xf001d00010000	0	1	# __pebil_no_string__:0	main	0x4047c0
+	0	1
+BLK	532	0xf001d00020000	0	1	# __pebil_no_string__:0	main	0x4047db
+	0	1
+BLK	533	0xf001d00030000	0	1	# __pebil_no_string__:0	main	0x4047e5
+	0	1
+BLK	534	0xf001d00040000	0	1	# __pebil_no_string__:0	main	0x4047ea
+	0	1
+LPP	0xf000600030000	0	14000	# cg.f:1135	vecset_	0x400fc9
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+LPP	0xf000700020000	0	420159	# cg.f:1068	sprnvc_	0x401046
+	3	168057
+	2	126048
+	1	84034
+	0	42020
+LPP	0xf000700020000	0	485564	# cg.f:1068	sprnvc_	0x401046
+	3	194290
+	2	145711
+	1	97076
+	0	48487
+LPP	0xf000700090000	0	350159	# cg.f:1083	sprnvc_	0x40109f
+	3	140057
+	2	105048
+	1	70034
+	0	35020
+LPP	0xf000700020000	0	100723	# cg.f:1068	sprnvc_	0x401046
+	3	40347
+	2	30259
+	1	20110
+	0	10007
+LPP	0xf000800020000	0	4	# cg.f:771	makea_	0x401136
+	3	1
+	2	1
+	1	1
+	0	1
+LPP	0xf000800090000	0	4	# cg.f:788	makea_	0x4011f7
+	3	1
+	2	1
+	1	1
+	0	1
+LPP	0xf0008000e0000	0	14000	# cg.f:794	makea_	0x401299
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+LPP	0xf000900030000	0	4	# cg.f:856	sparse_	0x401446
+	3	1
+	2	1
+	1	1
+	0	1
+LPP	0xf000900060000	0	4	# cg.f:860	sparse_	0x40148f
+	3	1
+	2	1
+	1	1
+	0	1
+LPP	0xf000900070000	0	56000	# cg.f:861	sparse_	0x4014a5
+	3	14000
+	2	14000
+	1	14000
+	0	14000
+LPP	0xf000900100000	0	4	# cg.f:874	sparse_	0x40152d
+	3	1
+	2	1
+	1	1
+	0	1
+LPP	0xf000900180000	0	3	# cg.f:882	sparse_	0x4015a5
+	3	1
+	2	1
+	1	1
+LPP	0xf0009001c0000	0	3	# cg.f:887	sparse_	0x4015cc
+	3	1
+	2	1
+	1	1
+LPP	0xf0009002c0000	0	4	# cg.f:911	sparse_	0x401702
+	3	1
+	2	1
+	1	1
+	0	1
+LPP	0xf0009002d0000	0	14000	# cg.f:912	sparse_	0x40171f
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+LPP	0xf000900320000	0	4	# cg.f:926	sparse_	0x4017a4
+	3	1
+	2	1
+	1	1
+	0	1
+LPP	0xf000900330000	0	56000	# cg.f:927	sparse_	0x4017c9
+	3	14000
+	2	14000
+	1	14000
+	0	14000
+LPP	0xf000900370000	0	167987	# cg.f:933	sparse_	0x40183a
+	3	41836
+	2	42153
+	1	41675
+	0	42323
+LPP	0xf0009003b0000	0	2015701	# cg.f:945	sparse_	0x40189c
+	3	502002
+	2	505796
+	1	500058
+	0	507845
+LPP	0xf0009003e0000	0	1777554	# cg.f:950	sparse_	0x4018bb
+	3	443362
+	2	445851
+	1	440672
+	0	447669
+LPP	0xf000900570000	0	4	# cg.f:985	sparse_	0x401a14
+	3	1
+	2	1
+	1	1
+	0	1
+LPP	0xf0009005f0000	0	3	# cg.f:993	sparse_	0x401a8f
+	3	1
+	2	1
+	1	1
+LPP	0xf000900620000	0	3	# cg.f:998	sparse_	0x401abc
+	3	1
+	2	1
+	1	1
+LPP	0xf000900680000	0	4	# cg.f:1005	sparse_	0x401b38
+	3	1
+	2	1
+	1	1
+	0	1
+LPP	0xf0009006b0000	0	14000	# cg.f:1013	sparse_	0x401b79
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+LPP	0xf000900700000	0	4	# cg.f:1021	sparse_	0x401bc2
+	3	1
+	2	1
+	1	1
+	0	1
+LPP	0xf000a00080000	0	4	# cg.f:209	MAIN__.omp_fn.1	0x401d37
+	3	1
+	2	1
+	1	1
+	0	1
+LPP	0xf000a000b0000	0	14000	# cg.f:210	MAIN__.omp_fn.1	0x401d5d
+	3	3500
+	2	3500
+	1	3500
+	0	3500
+LPP	0xf000a000f0000	0	4	# cg.f:220	MAIN__.omp_fn.1	0x401dbe
+	3	1
+	2	1
+	1	1
+	0	1
+LPP	0xf000a00120000	0	4	# cg.f:225	MAIN__.omp_fn.1	0x401e16
+	3	1
+	2	1
+	1	1
+	0	1
+LPP	0xf000b00050000	0	4	# cg.f:295	MAIN__.omp_fn.4	0x401e9c
+	3	1
+	2	1
+	1	1
+	0	1
+LPP	0xf000c00060000	0	60	# cg.f:342	MAIN__.omp_fn.5	0x401f23
+	3	15
+	2	15
+	1	15
+	0	15
+LPP	0xf000d00050000	0	60	# cg.f:363	MAIN__.omp_fn.6	0x401fe0
+	3	15
+	2	15
+	1	15
+	0	15
+LPP	0xf000e00060000	0	4	# cg.f:266	MAIN__.omp_fn.2	0x402078
+	3	1
+	2	1
+	1	1
+	0	1
+LPP	0xf000f00050000	0	4	# cg.f:279	MAIN__.omp_fn.3	0x402135
+	3	1
+	2	1
+	1	1
+	0	1
+LPP	0xf001000050000	0	64	# cg.f:521	conj_grad_.omp_fn.0	0x4021be
+	3	16
+	2	16
+	1	16
+	0	16
+LPP	0xf001000090000	0	64	# cg.f:535	conj_grad_.omp_fn.0	0x40224d
+	3	16
+	2	16
+	1	16
+	0	16
+LPP	0xf0010000b0000	0	64	# cg.f:671	conj_grad_.omp_fn.0	0x40226d
+	3	16
+	2	16
+	1	16
+	0	16
+LPP	0xf001000110000	0	64	# cg.f:674	conj_grad_.omp_fn.0	0x402302
+	3	16
+	2	16
+	1	16
+	0	16
+LPP	0xf001000160000	0	224000	# cg.f:675	conj_grad_.omp_fn.0	0x402354
+	3	56000
+	2	56000
+	1	56000
+	0	56000
+LPP	0xf0010001b0000	0	64	# cg.f:687	conj_grad_.omp_fn.0	0x4023d0
+	3	16
+	2	16
+	1	16
+	0	16
+LPP	0xf0010001d0000	0	64	# cg.f:544	conj_grad_.omp_fn.0	0x4023f5
+	3	16
+	2	16
+	1	16
+	0	16
+LPP	0xf001000200000	0	64	# cg.f:546	conj_grad_.omp_fn.0	0x40242a
+	3	16
+	2	16
+	1	16
+	0	16
+LPP	0xf001000240000	0	1600	# cg.f:571	conj_grad_.omp_fn.0	0x402481
+	3	400
+	2	400
+	1	400
+	0	400
+LPP	0xf001000290000	0	5600000	# cg.f:572	conj_grad_.omp_fn.0	0x4024c5
+	3	1400000
+	2	1400000
+	1	1400000
+	0	1400000
+LPP	0xf0010002e0000	0	1600	# cg.f:619	conj_grad_.omp_fn.0	0x40253e
+	3	400
+	2	400
+	1	400
+	0	400
+LPP	0xf001000300000	0	1600	# cg.f:627	conj_grad_.omp_fn.0	0x40255c
+	3	400
+	2	400
+	1	400
+	0	400
+LPP	0xf001000350000	0	1600	# cg.f:635	conj_grad_.omp_fn.0	0x4025dc
+	3	400
+	2	400
+	1	400
+	0	400
+LPP	0xf001000370000	0	1600	# cg.f:651	conj_grad_.omp_fn.0	0x402639
+	3	400
+	2	400
+	1	400
+	0	400
+LPP	0xf0010003c0000	0	1600	# cg.f:658	conj_grad_.omp_fn.0	0x4026b5
+	3	400
+	2	400
+	1	400
+	0	400
+LPP	0xf001200030000	0	1	# cg.f:99	MAIN__	0x4027e0
+	0	1
+LPP	0xf0012001d0000	0	1	# cg.f:264	MAIN__	0x402bf1
+	0	1
+LPP	0xf0012002f0000	0	1	# cg.f:327	MAIN__	0x402de5
+	0	1

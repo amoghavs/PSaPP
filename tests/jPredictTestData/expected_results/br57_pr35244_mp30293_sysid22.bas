@@ -1,0 +1,11 @@
+profile  = 35244
+mprofile = 30293
+cache id = 22
+baseprof = 35244 (the same)
+testcase = HPCMO_ti10_round1.icepic_standard_64
+resource = NAVO_IBM_p655_2912_16_1900000000_4 57
+bmetasim = 7786.178
+metasim  = 7786.178
+ratio    = 1.0
+ratiometh= average memory time
+usesimem = yes

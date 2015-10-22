@@ -1,0 +1,16 @@
+EXT_LIB := ../external_libs
+EXT_JAR := $(shell ls $(foreach dir,$(EXT_LIB),$(wildcard $(dir)/*.jar)) | tr [:space:] :)
+CPATH   := -classpath $(CLASSPATH):$(EXT_JAR)../..
+JC      := javac
+JFLAGS  := -g -source 1.6 -J-Xms16m -J-Xmx1024m $(CPATH)
+SOURCES := $(shell ls *.java)
+CLASSES := $(patsubst %.java,%.class,$(SOURCES))
+
+%.class: %.java
+	@rm -f %.class
+	$(JC) $(JFLAGS) $<
+
+all: $(CLASSES)
+
+clean:
+	rm -f core *~ *.class

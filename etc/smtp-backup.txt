@@ -1,0 +1,11 @@
+# list the default smtp configuration information
+
+server        : smtp.gmail.com
+port          : 587
+login         : pmaclabs@gmail.com
+password      : pmac1234
+from          : "PMaC Tools Automated Sender" <do_not_reply@pmaclabs.com>
+cc            : pmaclabs@gmail.com,michaell@pmaclabs.com
+subject       : PMaC Tools Backend Notification -- Default
+usetls        : 1
+# end of listing

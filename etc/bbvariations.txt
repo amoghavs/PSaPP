@@ -1,0 +1,18 @@
+
+# example file for bb variations for avus 64 for instance
+
+
+function  | .__chemkin_m_NMOD_reaction_rate_vec  |  57,BWMethodStretchedExp,2.0:21,BWMethodStretchedExp,3.0,5.0,7.0
+block     | 281822870175744                      |  21,BWMethodTestExp,9.0,-5.0
+block     | 281822871289856                      |  21,*,9.0:57,*,-1.0
+
+function  | .__chemkin_m_NMOD_reaction_rate_vec  |  21,BWMethodStretchedExp,11.0
+
+# .getrates_i
+block     | 281844352811008                      |  21,BWMethodStretchedExp,13,15.0,17.0
+block     | 281844352876544                      |  21,BWMethodTestExp,19.0
+
+function  | .ratt_i                              |  57,BWMethodStretchedExp,21.0
+block     | 281852939468800                      |  57,*,23
+function  | .__vexp_GR_                          |  21,BWMethodExample,21.0
+function  | thereisnofunction                    |  21,BWMethodExample,21.0

@@ -1,0 +1,11 @@
+profile  = 40811
+mprofile = 271303
+cache id = 77
+baseprof = 35244
+testcase = HPCMO_ti10_round1.icepic_standard_64
+resource = ERDC_SGI_Intel Nehalem_15360_8_2800000000_4 143
+bmetasim = 7786.178
+metasim  = 1707.9216265029706
+ratio    = 4.558861413297091
+ratiometh= average memory time
+usesimem = yes

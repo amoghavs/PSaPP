@@ -1,0 +1,10 @@
+              # list all possible cases for Agencies Projects Applications Sizes BaseResources
+
+Agencies      : HPCMO,NSF,ORNL,TI09,DOE,UCSD,ORNL
+Projects      : ti07,ti08,ti09,peri,ti10,power,convey
+Applications  : hycom,avus,cth,icepic,amr,flash3,gtc,s3d,sgbench,s3d.vector,lu,bt,flash,flashChanged,flashConvey,flash016,flash032,flash064,flash128,flashTest
+Sizes         : standard,medium,large,A,NA,c2h4.30,A,B
+BaseResources : babbage,bassi,davinci
+PsinsPath     : /mnt/home/michaell/PSiNS
+
+# end of listing

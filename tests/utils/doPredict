@@ -1,0 +1,24 @@
+#!/bin/bash
+
+set -e
+set -u
+
+jPredict --funding_agency $AGENCY \
+         --project $PROJECT \
+         --round $ROUND \
+         --application $APPLICATION \
+         --dataset $DATASET \
+         --cpu_count $CPU_COUNT \
+         --scratch $SCRATCH \
+         --direct_dir $PROCESSED \
+         --shortname "test" \
+         --base_system 57 \
+         --profile_list 40811 \
+         --prediction_group 270606 \
+         --use_sim_memtime \
+         --psins_model cont \
+         --user pmacdata
+ 
+
+
+

@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>PMaC Tools Automated Modeling Analysis></title>
+<link rel="stylesheet" href="pmac-tools-report.css">
+</head>
+<body>
+<div id="container">
+<div id="intro">
+<div id="logoheader">
+<a href="http://www.pmaclabs.com/"> <img src="pmac_logo_whitebg.gif" width="530" height="82"  alt="PMaC Laboratories, Inc."></a>
+<a href="http://pettt-ace.com/"> <img src="ace_logo.png" width="63" height="80"  alt="Pettt-Ace"></a>
+</div>
+<div id="testcase">
+<h1>Test Case Summary - diamond</h1>
+<table>
+<tr>
+<td><b>Application:</b>icepic</td>
+<td><b>Data Set:</b>standard</td>
+<td><b>CPU Count:</b>64</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="supportingdata">
+<a name="message_passing_overview"></a>
+<h1>Total Processing and Message Passing Time</h1>
+<table>
+<tr>
+<td><img src="icepic_standard_0064_pr41363_etime_piechart.png" width="514px"></td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<th>MPI Event</th>
+<th>Total Bytes</th>
+<th>Number of Calls</th>
+<th>Avg. Bytes</th>
+</tr>
+<tr>
+<td>MPI_Waitany</td>
+<td>44004281888</td>
+<td>3563508</td>
+<td>12348.59</td>
+</tr>
+<tr>
+<td>MPI_Allreduce</td>
+<td>185760304</td>
+<td>56808</td>
+<td>3269.97</td>
+</tr>
+<tr>
+<td>MPI_Bcast</td>
+<td>20843978</td>
+<td>379896</td>
+<td>54.87</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div id="supportingdata">
+<a name="message_passing_per_cpu"></a>
+<h1>Per-Task Processing and Message Passing Time</h1>
+<img src="icepic_standard_0064_pr41363_etasktime_barchart.png" width="514px">
+<h3><a title="Load imbalance due to an MPI event is identified when the time spent in that event for a given task is significantly different than the average for all tasks. Based on this criteria the following MPI events have been identified as causing a load imbalance in at least one specific task:">Imbalanced</a> MPI Functions:</h3>
+CPUTime, MPI_Allreduce, MPI_Barrier, MPI_Bcast, MPI_Finalize, MPI_Irecv, MPI_Issend, MPI_Recv, MPI_Reduce, MPI_Send, MPI_Ssend, MPI_Waitall, MPI_Waitany
+</div>
+<div id="supportingdata">
+<a name="function_time_overview"></a>
+<h1>Functions With Highest Processing Time</h1>
+<img src="icepic_standard_0064_pr41363_functime_piechart.png" width="514px">
+<table>
+<tr>
+<th>Function Name</th>
+<th>Run Time</th>
+<th>Avg. L1 Hit rate</th>
+<th>Avg. L2 Hit rate</th>
+<th>Avg. L3 Hit rate</th>
+</tr>
+<tr>
+<td>EFieldUpdate</td>
+<td>470.80</td>
+<td>93.31%</td>
+<td>94.41%</td>
+<td>94.60%</td>
+</tr>
+<tr>
+<td>BFieldUpdate</td>
+<td>344.10</td>
+<td>83.29%</td>
+<td>86.82%</td>
+<td>87.18%</td>
+</tr>
+<tr>
+<td>_pow</td>
+<td>95.12</td>
+<td>99.87%</td>
+<td>100.00%</td>
+<td>100.00%</td>
+</tr>
+<tr>
+<td>WeightVtoJCar</td>
+<td>64.79</td>
+<td>96.27%</td>
+<td>97.32%</td>
+<td>98.91%</td>
+</tr>
+<tr>
+<td>PointInRect</td>
+<td>63.28</td>
+<td>99.43%</td>
+<td>99.99%</td>
+<td>99.99%</td>
+</tr>
+<tr>
+<td>InterpolateFieldFromPreCar</td>
+<td>60.45</td>
+<td>96.13%</td>
+<td>98.64%</td>
+<td>99.70%</td>
+</tr>
+</table>
+</div>
+<div id="supportingdata">
+<a name="cache_behavior_overview"></a>
+<h1>Analysis of Data Movement</h1>
+Our analysis shows that your application is spending its time <a title="The hit rate data for each basic-block was captured using runtime cache simulation of the application's memory address stream. Data is assumed to be in L1 cache if it has hit rates >= 99.5%, in L2 cache if it has hit rates >= 99.5%, and in L3 cache if it has hit rates >= 98.0%">waiting for memory</a> in the following places:
+<img src="icepic_standard_0064_pr41363_hitrates_piechart.png" width="514px">
+<table>
+<tr>
+<th>Cache Level</th>
+<th>Time Spent</th>
+<th>% Time</th>
+</tr>
+<tr>
+<td>L1</td>
+<td>806.46</td>
+<td>44.95%</td>
+</tr>
+<tr>
+<td>L2</td>
+<td>135.82</td>
+<td>7.57%</td>
+</tr>
+<tr>
+<td>L3</td>
+<td>287.30</td>
+<td>16.01%</td>
+</tr>
+<tr>
+<td>Main Mem.</td>
+<td>564.54</td>
+<td>31.47%</td>
+</tr>
+</table>
+</div>
+<div id="linkList">
+<div id="listmenu">
+<h1><span>App Characterization</span></h1>
+<ul id="listmenu">
+<li><a href="#message_passing_overview" title="Overall application time, broken down by computation vs. communication">MPI Overview</a>&nbsp;</li>
+<li><a href="#message_passing_per_cpu" title="Application time per CPU, broken down by computation vs. communication">MPI Per-Task</a>&nbsp;</li>
+<li><a href="#function_time_overview" title="Time spent per function">Function Timing</a>&nbsp;</li>
+<li><a href="#cache_behavior_overview" title="Application cache behavior">Data Motion</a>&nbsp;</li>
+</ul>
+</div>
+<div id="listmenu">
+<h1><span>Other Resources</span></h3>
+<ul id="listmenu">
+<li><a href="http://apps.ccac.hpc.mil/PMaC/faq.html/">FAQ</a>&nbsp;</li>
+<li><a href="http://apps.ccac.hpc.mil/PMaC/faq.html/">pmac-tools Home</a>&nbsp;</li>
+<li><a href="http://en.wikibooks.org/wiki/Message-Passing_Interface/MPI_function_reference">MPI Function Interface</a>&nbsp;</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

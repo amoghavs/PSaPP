@@ -1,0 +1,13 @@
+#!/bin/bash
+
+jRunTool --funding_agency $AGENCY \
+         --project $PROJECT \
+         --round $ROUND \
+         --application $APPLICATION \
+         --dataset $DATASET \
+         --cpu_count $CPU_COUNT \
+         --scratch_dir $SCRATCH \
+         --processed_dir $PROCESSED \
+         --raw_pmactrace $RAW \
+         --report all
+

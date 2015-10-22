@@ -1,0 +1,36 @@
+Application: icepic
+Data Set: standard
+CPU Count: 64
+Simulated System: diamond
+
+Processing and Communication Time As Percentage of Total
+--------------------------------------------------------
+CPUTime	54.18
+MPI_Issend	0.22
+MPI_Recv	0.02
+MPI_Waitany	37.0
+MPI_Allreduce	1.87
+MPI_Barrier	0.5
+MPI_Bcast	6.2
+
+Functions Calls With Most Processing Time
+-----------------------------------------
+EFieldUpdate	30131.10
+BFieldUpdate	22022.12
+_pow	6087.65
+WeightVtoJCar	4146.53
+PointInRect	4049.79
+
+Hit Rates
+---------
+L1 - 44%
+L2 - 7%
+L3 - 16%
+Main memory - 31%
+
+Task Time Stats
+---------------
+Min - 865.44
+Max - 2366.40
+Mean - 1892.25
+Standard Deviation - 253.45

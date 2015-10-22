@@ -1,0 +1,23 @@
+This file describes how to install and run the tools contained in the PSaPP package.
+
+PSaPP has lots of configurable options, as such it uses a config file located
+at $PSAPP_ROOT/etc/config.txt to read these options. You need to set the
+PSAPP_ROOT environment variable to the root of your PSaPP installation directory.
+You should also look through the example configuration files in etc/ and select the 
+one best suited to your purpose and make a copy/link of at etc/config.txt.
+
+PSaPP also depends on some external java libraries, which need to be found on
+your CLASSPATH in order to run correctly. For the sake of convenience, we provide
+these packages in PSaPP/external_libs that you can optionally use.
+
+The easiest way to do this then is to put something like the following commands 
+in your shell login script (bash):
+export PSAPP_ROOT=/path/to/PSaPP
+export CLASSPATH=`ls $PSAPP_ROOT/external_libs/*.jar | tr [:space:] :`${CLASSPATH}
+
+
+SDSC Notes:
+- clear your CLASSPATH before compiling
+- prepend /projects/pmac/apps/jdk1.6.0_24/bin to your path since the reference compiler
+  is woefully out of date
+

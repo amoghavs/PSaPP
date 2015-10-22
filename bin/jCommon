@@ -1,0 +1,42 @@
+#!/bin/sh
+
+#
+# Get the current working directory.
+# Try to avoid automounter directories by checking
+# if $HOME or $PWD is the same directory as pwd,
+# and removing the automount directory component.
+# 
+
+cwd="`/bin/pwd 2> /dev/null`"
+
+if [ -h "$0" ]; then
+ script_var=`readlink $0`
+ script_dir=`dirname "$script_var"`
+else
+ script_dir=`dirname "$0"`
+ cd "$script_dir"
+ script_dir="`/bin/pwd 2> /dev/null`"
+ cd "$cwd"
+fi
+psapp_dir="`dirname "$script_dir"`"
+cpath_dir="`dirname "$psapp_dir"`"
+
+if [ -z "$cwd" -o ! -d "$cwd" ] ; then
+  printf "%s\n" "ERROR: Cannot determine current directory."
+  exit 1 
+fi
+
+if [ "$HOME" -a -d "$HOME" ] && [ "`cd / ; cd "$HOME" ; /bin/pwd`" = "$cwd" ] ; then
+  cwd="$HOME"
+elif [ "$PWD" -a -d "$PWD" ] && [ "`cd / ; cd "$PWD" ; /bin/pwd`" = "$cwd" ] ; then
+  cwd="$PWD"
+fi
+
+export PWD="$cwd"
+export CLASSPATH=${CLASSPATH}:`ls -m $psapp_dir/lib/*.jar $psapp_dir/external_libs/*.jar | tr -d [:space:] | tr , :`
+export JFLAGS="-Xms8m -Xmx8000m -XX:+HeapDumpOnOutOfMemoryError"
+
+command="java $JFLAGS -classpath "${CLASSPATH}" -ea $psapp_cmd ${1+"$@"}"
+echo "running ==> $command"
+#LD_PRELOAD=$EVENTTRACER_ROOT/lib/libio_etrace_preld.so exec java ${JFLAGS} -classpath "${CLASSPATH}" -ea $psapp_cmd ${1+"$@"}
+exec java ${JFLAGS} -classpath "${CLASSPATH}" -ea $psapp_cmd ${1+"$@"}

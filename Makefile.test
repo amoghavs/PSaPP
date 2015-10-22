@@ -1,0 +1,68 @@
+CPATH = -classpath `pwd`/..
+RECV_PREFIX  = java $(CPATH) -ea PSaPP.recv.Receive --inbox ./test/recv/inb --primary ./test/recv/pri --secondary ./test/recv/sec --scratch_dir ./test/recv/scratch --database ./test/dbase/dbase.raw
+
+SEND_PREFIX  = java $(CPATH) -ea PSaPP.send.Send --funding_agency HPCMO --project ti08 --application testapp --cpu_count 64 --dataset standard --round 1 --notify mtikir@sdsc.edu 
+
+PRED_PREFIX  = java $(CPATH) -ea PSaPP.pred.Predict --prediction_group 10001 --shortname testing --user mtikir --funding_agency HPCMO --project ti08 --round 1 --application testapp --cpu_count 64 --dataset standard --direct_dir ./test/pred/ --scratch_dir ./test/pred/scratch --database ./test/dbase/dbase.raw --stats
+NETWORK1 = --network_simulator psins --psins_model pmac --netsim_dir /projects/pmac/mtikir/ExecutionSimulator/PSiNS
+NETWORK2 = --network_simulator dimemas --psins_model pmac 
+
+COMMON = --shortname testing --user mtikir --funding_agency HPCMO --project ti08 --round 1 --application testapp --cpu_count 64 --dataset standard --direct_dir ./test/pred/ --noDim --stats
+
+ACT_PREFIX   = java $(CPATH) -ea PSaPP.dbase.Actions --action add
+VERSION = 1
+SUBDIRS = util stats post dbase data recv send pred 
+
+VERIFY = #--noverify
+
+test1:
+	#$(PRED_PREFIX) $(NETWORK1) --base_profile 1001 --machine_list 1,2,3 --use_sim_memtime --ratio_method avg
+	#$(PRED_PREFIX) $(NETWORK1) --base_system  1 --profile_list 1001,1003,1005,1007,1009 --ratio_method max 
+	#$(PRED_PREFIX) $(NETWORK1) --base_profile 1002 --profile_list 1004,1006,1008,1010 --noDim --ratio_method avg
+	#$(PRED_PREFIX) $(NETWORK2) --base_system 1 --ratio 1.5 --profile_list 1001-1010 --ratio_method max
+	#$(PRED_PREFIX) $(NETWORK2) --base_system 1 --profile_list 1001-1010
+	$(PRED_PREFIX) $(NETWORK2) --base_system 1 --profile_list 1005 --network_simulator psins
+
+test2:
+	#$(SEND_PREFIX) $(VERIFY) --resource babbage --exec test/exe/testapp_standard_0064.exe,100
+	#$(SEND_PREFIX) $(VERIFY)                    --pmacinst_dir ./test/pmacTRACE --jbbinst
+	#$(SEND_PREFIX) $(VERIFY)                    --pmacinst_dir ./test/pmacTRACE --jbbcoll 150
+	#$(SEND_PREFIX) $(VERIFY)                    --pmacinst_dir ./test/pmacTRACE --siminst p01 --num_phases 1
+	#$(SEND_PREFIX) $(VERIFY)                    --pmacinst_dir ./test/pmacTRACE --simcoll p01=101 --num_phases 1
+	#$(SEND_PREFIX) $(VERIFY) --resource babbage --psinstrace test/psins/testapp_standard_0064.psins.gz,175
+	#$(SEND_PREFIX) $(VERIFY) --resource babbage --mpidtrace test/trf/testapp_standard_0064.trf.gz,200
+
+test3:
+	$(RECV_PREFIX)
+
+test4:
+	rm -f test/dbase/dbase.raw
+	$(ACT_PREFIX) --database test/dbase/dbase.raw --type BaseResource --input ./test/dbase/BaseResource.inp
+	$(ACT_PREFIX) --database test/dbase/dbase.raw --type TestCaseData --input ./test/dbase/TestCaseData.inp
+	$(ACT_PREFIX) --database test/dbase/dbase.raw --type PredictionGroup --input ./test/dbase/PredictionGroup.inp
+	$(ACT_PREFIX) --database test/dbase/dbase.raw --type ActualRuntime --input ./test/dbase/ActualRuntime.inp
+
+	$(ACT_PREFIX) --database test/dbase/dbase.raw --type MemoryBenchmarkData --input ./test/dbase/MemoryBenchmarkData.inp
+	$(ACT_PREFIX) --database test/dbase/dbase.raw --type NetworkBenchmarkData --input ./test/dbase/NetworkBenchmarkData.inp
+	$(ACT_PREFIX) --database test/dbase/dbase.raw --type MachineProfile --input ./test/dbase/MachineProfile.inp
+
+	$(ACT_PREFIX) --database test/dbase/dbase.raw --type DefaultProfile --input ./test/dbase/DefaultProfile.inp
+	$(ACT_PREFIX) --database test/dbase/dbase.raw --type MachWMemoryProfile --input ./test/dbase/MachWMemoryProfile.inp
+	$(ACT_PREFIX) --database test/dbase/dbase.raw --type PredictionRun --input ./test/dbase/PredictionRun.inp
+
+
+
+ti09:
+	rm -rf test/pred/scratch/155441/*
+	rm -rf test/pred/scratch/10001/*
+	pmacPredict $(COMMON) --prediction_group 155441 --scratch_dir ./test/pred/scratch/155441 --base_profile 30950 --profile_list 30950,30870,31039 --bw_method BWstretchedExp --ratio_method app_avg
+	java $(CPATH) -ea PSaPP.pred.Predict $(COMMON) --prediction_group 10001 --scratch_dir ./test/pred/scratch --database ./test/dbase/dbase.raw --base_profile 1001 --profile_list 1001,1003,1005 --ratio_method avg
+	pmacPredict $(COMMON) --prediction_group 155441 --scratch_dir ./test/pred/scratch/155441 --base_profile 30936 --profile_list 30936,30856,31025 --bw_method BWstretchedExp --ratio_method app_avg
+	java $(CPATH) -ea PSaPP.pred.Predict $(COMMON) --prediction_group 10001 --scratch_dir ./test/pred/scratch --database ./test/dbase/dbase.raw --base_profile 1002 --profile_list 1002,1004,1006 --ratio_method avg
+
+
+ti08:
+	rm -rf test/pred/scratch/155441/*
+	rm -rf test/pred/scratch/10001/*
+	pmacPredict $(COMMON) --prediction_group 155441 --scratch_dir ./test/pred/scratch/155441 --base_profile 23719 --profile_list 23719,26461,23725,26498 --bw_method BWexppenDrop --ratio_method app_avg
+	java $(CPATH) -ea PSaPP.pred.Predict --prediction_group 10001 --scratch_dir ./test/pred/scratch --database ./test/dbase/dbase.raw --base_profile 1007 --profile_list 1007,1008,1009,1010 --ratio_method avg

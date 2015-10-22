@@ -1,0 +1,3 @@
+#!/bin/sh
+psapp_cmd="PSaPP.vis.VisRunner"
+. `dirname $0`/jCommon

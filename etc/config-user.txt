@@ -1,0 +1,22 @@
+# This file contains all configuration settings used by PSaPP.It is assumed to 
+# be in the following format:
+# key    = value(s)
+# where key is a known string followed by an equals sign `=` and the value(s)
+# which can be any string. If the setting contains multiple values, they should
+# be delimited with white spaces. Regular expressions may be used with the 
+# TestCase and Base Resource settings. The other default config settings may 
+# use macros in the following manner:
+# A `$` indicates a macro (environment variable) that can be expanded. The
+# macro should be enclosed in braces if it is to be expanded and is followed by
+# a character other than a white space. The tidle `~` will be expanded to the 
+# value of $HOME. Enclose the value(s) string in strong (single) quotes to 
+# prevent expansion.
+
+# This section contains valid TestCase values and Base Resources: 
+Agencies        = HPCMP
+Projects        = ti10 ti11 user gpu
+Applications    = .*
+Sizes           = .*
+Base Resources  = mana diamond harold davinci einstein hawk jade garnet chugach raptor mjm
+
+FTP Url         = ftp://trebek.pmaclabs.com/incoming

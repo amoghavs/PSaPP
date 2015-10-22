@@ -1,0 +1,36 @@
+#!/bin/bash
+
+set -e
+set -u
+
+testcase=$1
+
+
+if [ $testcase = "mpi" ]
+then
+    echo "Setting testcase to mpi"
+    export RAW=traces/cg.A.4.mpi/raw
+    export REFERENCE=traces/cg.A.4.mpi/processed
+    export AGENCY=none
+    export PROJECT=test
+    export ROUND=1
+    export DATASET=standard
+    export CPU_COUNT=4
+    export APPLICATION=cg.A.4
+
+elif [ $testcase = "omp" ]
+then
+    echo "Setting testcase to omp"
+    export RAW=traces/cg.omp/raw
+    export REFERENCE=traces/cg.omp/processed
+    export AGENCY=none
+    export PROJECT=test
+    export ROUND=1
+    export DATASET=standard
+    export CPU_COUNT=1
+    export APPLICATION=cg.A
+else
+    echo "Invalid test case $testcase"
+    exit 1
+fi
+

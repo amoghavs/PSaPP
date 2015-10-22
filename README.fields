@@ -1,0 +1,16 @@
+TestCaseData          agency , project , round , application , dataset , cpucount
+BaseResource          center , vendor , cpu , core , corepernode , frequency , FPpercycle , name
+MemoryBenchmarkData   BwCalcType , level_count , (cycs , bws , exps , pens) or (bws , taus , betas) , label
+NetworkBenchmarkData  netbw , netlat , nodebw , nodelat , corepernode , bus , inplink , outlink
+MachWMemoryProfile    resource_dbid , sysidx , BwCalcType , level_count , (cycs , bws , exps , pens) or (bws , taus , betas) , label
+MachineProfile        resource_dbid , memorybench_dbid , networkbench_dbid , sysidx , label
+DefaultProfile        resource_dbid , profile_dbid
+PredictionGroup       name , comment
+ActualRuntime         testcase_dbid , resource_dbid , time
+PredictionRun         pred_group , base_profile , machine_profile , testcase_dbid , 
+                      memory_time , ratio , predicted_time , simulation_comp_time , 
+                      sim_type , sim_mod , ratio_meth , use_sim_memtime , short_name , date
+TraceStatus           testcase_dbid , exdate , exmach , exuser , exfile , extime , psdate , psmach , psuser , psfile , pstime , 
+                      dsdate , dsmach , dsuser , dsfile , dstime , jidate , jimach , jiuser , jifile , jitime , 
+                      jcdate , jcmach , jcuser , jcfile , jctime , num_phases
+PhaseStatus           testcase_dbid , phaseno , sidate , simach , siuser , sifile , sitime , scdate , scmach , scuser , scfile , sctime

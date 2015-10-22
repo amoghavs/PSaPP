@@ -1,0 +1,57 @@
+# This file contains all configuration settings used by PSaPP.It is assumed to 
+# be in the following format:
+# key    = value(s)
+# where key is a known string followed by an equals sign `=` and the value(s)
+# which can be any string. If the setting contains multiple values, they should
+# be delimited with white spaces. Regular expressions may be used with the 
+# TestCase and Base Resource settings. The other default config settings may 
+# use macros in the following manner:
+# A `$` indicates a macro (environment variable) that can be expanded. The
+# macro should be enclosed in braces if it is to be expanded and is followed by
+# a character other than a white space. The tidle `~` will be expanded to the 
+# value of $HOME. Enclose the value(s) string in strong (single) quotes to 
+# prevent expansion.
+
+# This section contains valid TestCase values and Base Resources: 
+Agencies        = .*
+Projects        = ti10 ti11 gpu user test
+Applications    = .*
+Sizes           = .*
+Base Resources  = .*
+
+# All remaining sections contain default config settings:
+## smtp related settings
+SMTP Server     = localhost
+SMTP Port       = 24
+SMTP Login      = 
+SMTP Password   = 
+SMTP Use TLS    = false
+Email Sender    = "pmac-tools report daemon" <do_not_reply@pmaclabs.com>
+Email CC        = michaell@pmaclabs.com
+Email Subject   = pmac-tools Backend Notification -- Default
+Email Limit     = 65536
+Email Disable   = false
+Keep Scratch    = false
+
+## simulation settings
+PSiNS Path      = /usr/local/app/PSiNS/
+Dimemas Path    = /usr/local/app/Dimemas/
+Database        = jdbc:postgresql://trebek.pmaclabs.com/pmacdata
+GATraining Path = /usr/local/app/MapsGATraining.svn
+OpenSSL Keyfile = /usr/local/app/usertools/openssl/pmac.key
+
+## automated training
+MultiMAPS Data Path = /usr/local/app/PSaPP/multimaps
+GATraining Options = --score wrel --mutate sumg --island 3 --popsiz 1000 --gensiz 800
+GATraining BWMethod = BWstretchedExp
+GATraining Type = ga_stretched
+PSiNS Comm Model = cont
+Force New Training = yes
+
+## reporter settings
+Report Resources = 143,144,130,107,178,174,113
+Report Database = /usr/local/app/usertools/web
+Skip Report     = true
+
+## trace database settings
+Sysid Process = 72,77,78,82,110,130,131,140,81

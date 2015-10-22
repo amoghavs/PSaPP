@@ -1,0 +1,25 @@
+#!/bin/bash
+
+set -e
+set -u
+
+reference=$1
+test=$2
+
+if [ -f $reference -a -f $test ]
+then
+    echo "Comparing files $reference and $test"
+    diff $reference $test
+
+elif [ -d $reference -a -d $test ]
+then
+    echo "Comparing directories $reference and $test"
+    for f in `ls $reference`
+    do
+        doCompare $reference/$f $test/`basename $f`
+    done
+else
+    echo "One of $reference or $test is missing or they have different file types"
+fi
+
+
